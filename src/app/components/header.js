@@ -109,7 +109,7 @@ const Header = () => {
         className={`hidden md:flex flex-row justify-between items-center font-bold text-gray-800 z-50 w-full px-10 py-4`}
       >
         {/* Logo */}
-        <Image src="/logo.jpg" width={230} height={200} alt="logo" />
+        <Image src="/logo.png" width={230} height={200} alt="logo" />
 
         {/* Navbar Links */}
         <div className="flex flex-row space-x-6 relative">
