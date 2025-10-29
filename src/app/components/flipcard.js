@@ -6,6 +6,8 @@ export default function FlipCard({pic}) {
   return (
     <motion.div className="flex justify-center items-center min-h-screen"
     initial={{
+      x:0,
+      y:20
     }}
     animate={{x:100}}
     transition={{duration:1,

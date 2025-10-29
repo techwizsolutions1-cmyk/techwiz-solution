@@ -42,13 +42,13 @@ export default function Hero() {
         {/* ✅ Right Side */}
         <div className="relative md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
           {/* Desktop FlipCards - positioned absolutely */}
-          <div className="hidden md:block absolute top-20 right-64">
+          <div className="hidden md:block absolute top-20 right-74">
             <FlipCard pic="/hero.png" />
           </div>
-          <div className="hidden md:block absolute top-2 right-36">
+          <div className="hidden md:block absolute right-30">
             <FlipCard2 pic="/hero.png" />
           </div>
-          <div className="hidden md:block absolute bottom-44 right-64">
+          <div className="hidden md:block absolute bottom-44 right-54">
             <FlipCard3 pic="/hero.png" />
           </div>
 

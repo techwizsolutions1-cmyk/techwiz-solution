@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -45,12 +46,12 @@ export default function About() {
         </div>
 
         {/* Button */}
-        <button
+      <Link href='/abc/forms'>  <button
           className="px-6 md:px-8 py-3 md:py-4 w-max font-bold border-2 border-blue-900 rounded-2xl text-blue-900 hover:bg-blue-900 cursor-pointer hover:text-white hover:scale-105 mx-auto md:mx-0 transition"
           id="btn"
         >
           Get a Quote Now →
-        </button>
+        </button></Link>
       </div>
     </div>
   );

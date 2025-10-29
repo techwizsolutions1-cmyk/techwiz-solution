@@ -141,7 +141,7 @@ const Header = () => {
         </div>
 
         <Link
-          href="#contact"
+          href="/abc/forms"
           className="pl-6 pr-6 py-3 border-2 border-blue-900 rounded-2xl hover:scale-105 hover:text-white text-blue-900 hover:bg-blue-900 transition"
         >
           Get a Quote Now →
@@ -203,7 +203,7 @@ const Header = () => {
           ))}
 
           <Link
-            href="#contact"
+            href="/abc/forms"
             className="mt-3 border-2 border-blue-900 text-blue-900 rounded-2xl py-2 text-center hover:bg-blue-900 hover:text-white"
           >
             Get a Quote Now →

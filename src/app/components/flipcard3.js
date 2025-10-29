@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 export default function FlipCard3({pic}) {
   return (
     <motion.div className="flex justify-center items-center min-h-screen"
-    initial={{y:0
+    initial={{x:0
     }}
-    animate={{y:100}}
+    animate={{x:10,y:100}}
     transition={{duration:1,
       
     }}

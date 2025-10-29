@@ -8,7 +8,7 @@ import { Globe, Brain, Code, PenTool, BarChart2, Mail, Repeat, FileText, Users, 
 export default function Services() {
  const cards = [
   {
-    id: "seo-audit",
+    id: "seo",
     title: "SEO Audit",
     icon: <BarChart2 className="w-10 h-10" />,
     desc: `Comprehensive SEO audits to identify opportunities, fix issues, and boost your website’s search performance.`,
@@ -64,7 +64,7 @@ export default function Services() {
     button: "Explore Email Marketing",
   },
   {
-    id: "ai-technology",
+    id: "ai",
     title: "AI Technology",
     icon: <Brain className="w-10 h-10" />,
     desc: `Cutting-edge AI services to automate workflows, optimize data insights, and enable smarter business operations.`,
@@ -92,7 +92,7 @@ export default function Services() {
     button: "Explore Guest Blogging",
   },
   {
-    id: "ui-ux-design",
+    id: "uiux",
     title: "UI / UX Design",
     icon: <PenTool className="w-10 h-10" />,
     desc: `Craft intuitive and engaging interfaces for web and mobile platforms with a focus on usability and aesthetics.`,
@@ -106,7 +106,7 @@ export default function Services() {
     button: "Explore UI/UX Design",
   },
   {
-    id: "social-media-marketing",
+    id: "social-media",
     title: "Social Media Marketing",
     icon: <Users className="w-10 h-10" />,
     desc: `Build your social presence, engage your audience, and drive traffic and conversions across social channels.`,
