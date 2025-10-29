@@ -1,0 +1,68 @@
+"use client";
+import React from "react";
+import { FaSearch, FaMapMarkerAlt, FaShoppingCart, FaCog } from "react-icons/fa";
+import Serviceleft from "./serviceleft";
+
+const Seo = () => {
+  return (
+    <div className="w-full px-4 md:px-10 lg:px-20 py-10">
+      <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8">
+        {/* Left Section */}
+        <div className="w-full md:w-[45%]">
+          <Serviceleft />
+        </div>
+
+        {/* Right Section */}
+        <div className="w-full md:w-[55%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* 1️⃣ GEO / AEO */}
+            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
+              <FaSearch className="text-blue-600 text-4xl mb-4" />
+              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+                GEO / AEO
+              </h4>
+              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
+                Improve visibility, attract traffic, and grow your online presence.
+              </p>
+            </div>
+
+            {/* 2️⃣ Local SEO */}
+            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
+              <FaMapMarkerAlt className="text-blue-600 text-4xl mb-4" />
+              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+                Local SEO
+              </h4>
+              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
+                Strategic solutions to achieve sustainable business growth.
+              </p>
+            </div>
+
+            {/* 3️⃣ Ecommerce SEO */}
+            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
+              <FaShoppingCart className="text-blue-600 text-4xl mb-4" />
+              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+                Ecommerce SEO
+              </h4>
+              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
+                Creative, user-friendly designs that enhance digital experiences.
+              </p>
+            </div>
+
+            {/* 4️⃣ Traditional SEO */}
+            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
+              <FaCog className="text-blue-600 text-4xl mb-4" />
+              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+                Traditional SEO
+              </h4>
+              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
+                Secure, scalable, and efficient solutions for modern businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Seo;
