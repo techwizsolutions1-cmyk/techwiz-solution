@@ -3,6 +3,30 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 export default function FlipCard3({pic}) {
+
+
+    const [flipped, setFlipped] = useState(false);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!cardRef.current) return;
+
+      const cardTop = cardRef.current.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      // Jab card screen ke 80% tak visible ho jaye to flip ho jaye
+      if (cardTop < windowHeight * 0.8) {
+        setFlipped(true);
+      } else {
+        setFlipped(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <motion.div className="flex justify-center items-center min-h-screen"
     initial={{x:0

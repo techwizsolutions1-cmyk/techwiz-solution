@@ -46,7 +46,8 @@ const Header = () => {
   return (
     <div className="flex flex-col w-full">
       {/* 🔹 Top Header */}
-      <div className="text-gray-500 pt-3 hidden md:flex flex-row pl-10 space-x-18 font-semibold relative">
+      <div className="text-gray-500 pt-3 hidden 
+      md:flex flex-row pl-10 space-x-18 font-semibold relative">
         <div className="flex flex-row items-center gap-2">
           <FaPhoneVolume />
           <Link href="tel:+9223114661100">+92 231 1466100</Link>
@@ -106,10 +107,11 @@ const Header = () => {
             : "0px 0px 0px transparent",
           transition: { duration: 0.4, ease: "easeInOut" },
         }}
-        className={`hidden md:flex flex-row justify-between items-center font-bold text-gray-800 z-50 w-full px-10 py-4`}
+        className={`hidden md:flex flex-row justify-between items-center
+           font-bold text-gray-800 z-50 w-full px-10 py-4`}
       >
         {/* Logo */}
-        <Image src="/logo.png" width={230} height={200} alt="logo" />
+        <Image src="/logo.jpg" width={150} height={200} alt="logo" />
 
         {/* Navbar Links */}
         <div className="flex flex-row space-x-6 relative">
