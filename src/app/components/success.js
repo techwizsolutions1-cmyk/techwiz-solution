@@ -6,7 +6,7 @@ const Success = () => {
             {/* right */}
             < div className='w-full relative flex flex-col  bg-gray-200 pl-10 p-10 rounded-sm'>
                 <Image src="/dot.png" alt='pic' width={150} height={100} className='absolute top-0 left-120 animate-bounce '></Image>
-                <Image src="/cde.png" alt='pic' width={500} height={600} className='  rounded-2xl z-50  ' style={{ boxShadow: "10px 10px 20px 10px rgba(0, 0, 0, 0.2)" }}></Image>
+                <Image src="/cde.png" alt='pic' width={500} height={600} className='  rounded-2xl   ' style={{ boxShadow: "10px 10px 20px 10px rgba(0, 0, 0, 0.2)" }}></Image>
 
             </div>
             {/* left */}
