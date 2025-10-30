@@ -2,6 +2,9 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 export default function FlipCard3({pic}) {
 
 
