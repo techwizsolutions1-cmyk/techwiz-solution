@@ -228,63 +228,63 @@ const slidesData = [
       <>
         <tr className="hover:bg-blue-50 transition">
           <td>1</td>
-          <td>wall decor dubai</td>
-          <td><Link href="#">3</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Interior Vinyl Film</td>
+          <td><Link href="https://interiorfilm.ae/">1</Link></td>
+          <td><Link href="https://interiorfilm.ae/ ">https://interiorfilm.ae/ </Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>2</td>
-          <td>interior films Dubai</td>
-          <td><Link href="#">6</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Pure Gold Vinyl</td>
+          <td><Link href="https://i.imgur.com/9RL1AFb.png">1</Link></td>
+          <td><Link href="https://interiorfilm.ae/products?category=cement-grey-series ">https://interiorfilm.ae/products?category=cement-grey-series </Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>3</td>
-          <td>glass films Dubai</td>
-          <td><Link href="#">8</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Cement Grey Vinyl</td>
+          <td><Link href="https://interiorfilm.ae/products?category=cement-grey-series">1</Link></td>
+          <td><Link href="https://interiorfilm.ae/products?category=cement-grey-series">https://interiorfilm.ae/products?category=cement-grey-series</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>4</td>
-          <td>frosted films UAE</td>
-          <td><Link href="#">12</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Offwhite Fabric Vinyl</td>
+          <td><Link href="https://i.imgur.com/lWinmSJ.png">1</Link></td>
+          <td><Link href="https://interiorfilm.ae/product/offwhite-fabric-vinyl">https://interiorfilm.ae/product/offwhite-fabric-vinyl</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>5</td>
-          <td>decorative films Dubai</td>
-          <td><Link href="#">15</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>White Vinyl Film</td>
+          <td><Link href="https://i.imgur.com/PCLnfCd.png">1</Link></td>
+          <td><Link href="https://interiorfilm.ae/product/pure-white-vinyl-film">https://interiorfilm.ae/product/pure-white-vinyl-film</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>6</td>
-          <td>window films UAE</td>
-          <td><Link href="#">18</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Interior Film Accessories</td>
+          <td><Link href="https://i.imgur.com/M5TL6qz.png">1</Link></td>
+          <td><Link href="https://interiorfilm.ae/">https://interiorfilm.ae/</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>7</td>
-          <td>privacy films Dubai</td>
-          <td><Link href="#">21</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>wood vinyl wrap</td>
+          <td><Link href="https://i.imgur.com/WRa05ZP.png">2</Link></td>
+          <td><Link href="https://interiorfilm.ae/products?category=wood-grain-series">https://interiorfilm.ae/products?category=wood-grain-series</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>8</td>
-          <td>vinyl films UAE</td>
-          <td><Link href="#">24</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Grey Wood Vinyl</td>
+          <td><Link href="https://i.imgur.com/uPqLixN.png">2</Link></td>
+          <td><Link href="https://interiorfilm.ae/product/grey-wood-vinyl">https://interiorfilm.ae/product/grey-wood-vinyl</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>9</td>
-          <td>interior wall films</td>
-          <td><Link href="#">28</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Metallic Vinyl</td>
+          <td><Link href="https://i.imgur.com/rptamdb.png">3</Link></td>
+          <td><Link href="https://interiorfilm.ae/product/metallic-silver-vinyl">https://interiorfilm.ae/product/metallic-silver-vinyl</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>10</td>
-          <td>office decorative films</td>
-          <td><Link href="#">30</Link></td>
-          <td><Link href="#">#</Link></td>
+          <td>Marble Wrap</td>
+          <td><Link href="https://i.imgur.com/yQcwRM8.png">3</Link></td>
+          <td><Link href="https://interiorfilm.ae/product/grey-marble-vinyl-wrap ">https://interiorfilm.ae/product/grey-marble-vinyl-wrap</Link></td>
         </tr>
       </>
     ),
@@ -292,19 +292,28 @@ const slidesData = [
 ];
 
 const Pseo = () => {
-  const [activeTable, setActiveTable] = useState(null); // store active index
+  const [activeTable, setActiveTable] = useState(null);
+  const [activeSlide, setActiveSlide] = useState(0); // track current slide for dots
   const sliderRef = useRef(null);
 
-  const scrollLeft = () => {
+  const scrollToSlide = (index) => {
     if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: -sliderRef.current.offsetWidth, behavior: "smooth" });
+      sliderRef.current.scrollTo({
+        left: sliderRef.current.offsetWidth * index,
+        behavior: "smooth",
+      });
+      setActiveSlide(index);
     }
   };
 
+  const scrollLeft = () => {
+    const newIndex = activeSlide > 0 ? activeSlide - 1 : slidesData.length - 1;
+    scrollToSlide(newIndex);
+  };
+
   const scrollRight = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: sliderRef.current.offsetWidth, behavior: "smooth" });
-    }
+    const newIndex = activeSlide < slidesData.length - 1 ? activeSlide + 1 : 0;
+    scrollToSlide(newIndex);
   };
 
   return (
@@ -322,19 +331,29 @@ const Pseo = () => {
           </button>
 
           {/* Slider */}
-          <div ref={sliderRef} className="flex overflow-x-auto scroll-smooth scrollbar-hide">
+          <div
+            ref={sliderRef}
+            className="flex overflow-x-hidden scroll-smooth"
+          >
             {slidesData.map((slide, i) => (
               <div key={i} className="flex-shrink-0 w-full px-2">
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
                   <div className="w-full h-64 relative">
-                    <Image src={slide.img} alt={slide.title} fill className="object-contain" />
+                    <Image
+                      src={slide.img}
+                      alt={slide.title}
+                      fill
+                      className="object-contain hover:scale-110"
+                    />
                   </div>
-                  <h3 className="mt-2 font-semibold text-gray-800 text-center">{slide.title}</h3>
+                  <h3 className="mt-2 font-semibold text-gray-800 text-center">
+                    {slide.title}
+                  </h3>
                   <button
                     onClick={() => setActiveTable(i)}
                     className="mt-2 text-blue-600 font-semibold underline hover:text-blue-800"
                   >
-                    View result
+                   Real Result
                   </button>
                 </div>
               </div>
@@ -348,6 +367,19 @@ const Pseo = () => {
           >
             &#8594;
           </button>
+
+          {/* Dots */}
+          <div className="flex justify-center space-x-2 mt-4">
+            {slidesData.map((_, i) => (
+              <button
+                key={i}
+                className={`w-3 h-3 rounded-full transition ${
+                  activeSlide === i ? "bg-blue-500" : "bg-gray-300"
+                }`}
+                onClick={() => scrollToSlide(i)}
+              ></button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -360,29 +392,45 @@ const Pseo = () => {
           className="absolute top-0 border-4 border-black z-50 w-full bg-white/95 backdrop-blur-lg shadow-2xl rounded-xl p-6 overflow-y-auto"
         >
           {/* Header */}
-          <div className="flex flex-col md:flex-row justify-between items-center mb-6 border-b pb-4">
+          <div className="flex flex-col md:flex-row  items-center mb-6 border-b pb-4 justify-between">
             <h4 className="text-2xl font-bold text-gray-800">{slidesData[activeTable].title}</h4>
-            <button className="mt-3 md:mt-0 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-full font-semibold hover:scale-105 transition-all duration-200 shadow-md">
-              Get Free Consultation
-            </button>
-            <div className="text-2xl cursor-pointer" onClick={() => setActiveTable(null)}>
+           
+<div className="flex flex-row justify-center space-x-5">
+             <Link href="/free-quates"> 
+             <button className="mt-3 md:mt-0 bg-blue-950 text-white px-3 py-4 font-semibold hover:scale-105 transition-all duration-200 shadow-md">
+            Send Me a Proposal
+            </button></Link>
+            <div className="text-3xl cursor-pointer font-bold" onClick={() => setActiveTable(null)}>
               x
             </div>
+</div>
           </div>
-
+  <div className="overflow-hidden">
+      <motion.span
+        className="text-sm  font-normal inline-block whitespace-nowrap"
+        initial={{ x: -200 }}
+        animate={{ x: 400 }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+         
+        }}
+      >
+        👉👉 Click on the rank number to instantly view the live Google search
+        results and explore how your website appears in real-time.
+      </motion.span>
+    </div>
           {/* Table */}
           <div className="w-full overflow-x-auto">
             <table className="min-w-full border border-gray-300 text-center rounded-lg shadow-sm overflow-hidden">
-              <thead className="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+              <thead className="bg-blue-900 text-white">
                 <tr>
                   <th className="px-4 py-3">#</th>
                   <th className="px-4 py-3">Keywords</th>
-                  <th className="px-4 py-3">
+                  <th className="px-4 py-3 overflow-hidden">
                     Rank Position
-                    <br />
-                    <span className="text-sm text-red-700 font-normal">
-                      👉👉(click on position to see live result)
-                    </span>
+                   
+          
                   </th>
                   <th className="px-4 py-3">Ranked Links in SERPs</th>
                 </tr>

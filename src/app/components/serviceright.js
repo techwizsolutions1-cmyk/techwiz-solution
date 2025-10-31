@@ -6,7 +6,7 @@ import { FaWordpress, FaShopify, FaStore, FaCode } from "react-icons/fa";
 
 const Serviceright = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row md:pl-10 md:pr-10 pt-10 mt-10 items-center md:items-start gap-8">
+    <div className="w-full flex pr-3 pl-3 flex-col md:flex-row md:pl-10 md:pr-10 pt-10 mt-10 items-center md:items-start gap-8">
       {/* ✅ Left Section */}
       <div className="w-full md:w-1/2">
         <Serviceleft />
@@ -19,7 +19,7 @@ const Serviceright = () => {
           <div className="flex flex-col items-center text-center space-y-3">
             <FaWordpress className="text-blue-600 text-4xl" />
             <h4 className="font-bold text-lg md:text-xl text-blue-800">
-              Wordpress
+              Wordpresss
             </h4>
           </div>
           <p className="text-sm md:text-base text-gray-700 font-semibold mt-4 text-center">

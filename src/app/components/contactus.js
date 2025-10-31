@@ -2,10 +2,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="w-full relative bg-gradient-to-r from-blue-50 to-blue-100 py-20 px-4 md:px-20 lg:px-32 overflow-hidden">
+    <div id="contact" className=" w-full relative
+     bg-gradient-to-r from-blue-50 to-blue-100 py-20 px-4 md:px-20 lg:px-32 overflow-hidden">
       {/* Animated Background Circles */}
       <motion.div
         animate={{ rotate: 360 }}
@@ -74,7 +76,7 @@ const ContactUs = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition"
+              className="bg-blue-900 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition"
             >
               Send Message
             </motion.button>
@@ -99,14 +101,19 @@ const ContactUs = () => {
               <FaPhone className="text-blue-600 text-2xl" />
               <div>
                 <h4 className="font-semibold">Phone</h4>
-                <p>+92 231 1466100</p>
+             <Link href="tel:+92 231 1466100"  className="text-blue-600 hover:underline">+92 231 1466100</Link>
               </div>
             </div>
             <div className="flex items-center gap-4 text-gray-700">
               <FaEnvelope className="text-blue-600 text-2xl" />
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p>info@techwizpk.com</p>
+            <Link
+  href="mailto:info@techwizpk.com"
+  className="text-blue-600 hover:underline"
+>
+  info@techwizpk.com
+</Link>
               </div>
             </div>
             <div className="flex items-center gap-4 text-gray-700">
@@ -115,7 +122,12 @@ const ContactUs = () => {
                 <h4 className="font-semibold">Location</h4>
                 <p>Lahore, Pakistan</p>
               </div>
+            
             </div>
+              <motion.div className="overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d83025.91402397878!2d74.09512048961231!3d31.381287103236232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOpposite%20Tower%20One%2C%20D%20Block%2C%20Near%20Bowl%20Chowk%2C%20New%20Lahore%20City%20Phase%202%2C%20Zip%20Code%2053720%2C%20Canal%20Road%20Lahore!5e1!3m2!1sen!2spl!4v1761896168270!5m2!1sen!2spl" 
+                  loading="lazy" referrerPolicy="no-referrer-when-downgrade" className=""></iframe>
+              </motion.div>
           </motion.div>
 
           {/* Social Media */}

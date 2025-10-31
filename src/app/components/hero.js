@@ -17,11 +17,11 @@ export default function Hero() {
             Welcome to Techwiz Solutions
           </h4>
 
-          <h4
+          <h1
             className="font-bold text-3xl md:text-5xl text-white leading-snug"
           >
             Power Growth with Proven Digital Services like
-          </h4>
+          </h1>
 
           <p className="text-white text-sm md:text-base leading-relaxed">
             Take your business to the next level with our expert Web Development,
@@ -35,7 +35,7 @@ export default function Hero() {
             className="px-6 md:px-10 py-3 md:py-4 bg-white font-bold border-2 w-max border-blue-400 rounded-2xl text-blue-900 hover:bg-blue-900 cursor-pointer hover:text-white mx-auto md:mx-0"
             id="btn"
           >
-          <Link href="#contact">  Book a strategy now →</Link>
+          <Link href="https://wa.me/+923156540669">  Book a Strategy Now →</Link>
           </button>
         </div>
 

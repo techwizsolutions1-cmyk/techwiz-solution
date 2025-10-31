@@ -54,7 +54,7 @@ const Offer = () => {
             src="/larki.png"
             alt="offer-image"
             fill
-            className="object-cover rounded-2xl"
+            className=" object-fill  rounded-2xl"
           />
         </motion.div>
       </motion.div>

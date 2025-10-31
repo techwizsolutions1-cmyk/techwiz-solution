@@ -8,19 +8,19 @@ export default function Question() {
   const faqs = [
     {
       question: "What services does TechWizPK offer?",
-      answer: "We offer web development, SEO, digital marketing, and branding solutions.",
+      answer: "We provide a complete range of IT solutions including SEO, digital marketing, web development, web solutions, and graphic designing to help your business grow online.",
     },
     {
       question: "How can SEO help my business grow?",
-      answer: "SEO improves your website visibility on search engines, bringing in organic traffic and more leads.",
+      answer: "SEO improves your website’s visibility on search engines, drives targeted traffic, and increases sales by connecting you with the right audience.",
     },
     {
       question: "Do you provide custom website design and development?",
-      answer: "Yes! We build fully custom, responsive websites tailored to your brand and goals.",
+      answer: "Yes, we create fast, secure, and user-friendly websites tailored to your business needs and goals.",
     },
     {
       question: "Can you manage digital marketing for small businesses?",
-      answer: "Absolutely. We create marketing strategies that fit your budget and goals.",
+      answer: "Absolutely! Our digital marketing strategies are designed for businesses of all sizes, helping startups and small companies reach more customers effectively.",
     },
     {
       question: "How long does it take to see results from your services?",
@@ -35,18 +35,18 @@ export default function Question() {
   return (
     <div className="max-w-5xl mx-auto py-16 px-4">
       <h2 className="text-4xl font-bold text-center mb-10">
-        Freequently <span className="text-blue-600">Asked</span> Question
+        Freequently <span className="text-blue-900">Asked</span> Question
       </h2>
 
-      <div className="space-y-4">
+      <div className="space-y-4 p-2">
         {faqs.map((faq, index) => (
           <div
             key={index}
             onClick={() => toggleFAQ(index)}
             className={`cursor-pointer transition-all duration-300 rounded-lg border border-gray-200 ${
               activeIndex === index
-                ? "bg-[#00D8FF] text-white"
-                : "hover:bg-[#00D8FF] hover:text-white bg-[#f9f9f9]"
+                ? "bg-blue-900 text-white"
+                : "hover:bg-blue-900 hover:text-white bg-[#f9f9f9]"
             }`}
           >
             <div className="flex justify-between items-center p-5 text-lg font-semibold">

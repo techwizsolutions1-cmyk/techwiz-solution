@@ -14,7 +14,7 @@ const Portfolio = () => {
     Seo: <Pseo />,
     "Digital Marketing": <Digitalmarketing/>,
     "Web Solutions": <Pweb />,
-    "UI/UX": "not found",
+   
   };
 
   return (

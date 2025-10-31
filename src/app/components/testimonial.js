@@ -32,7 +32,7 @@ export default function Testimonial() {
 
   return (
     <section className="bg-[#07092B] text-white py-20">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 p-3">
         <h2 className="text-4xl font-bold">
           What Says Our <span className="text-blue-600">Happy</span> Clients About Us
         </h2>
@@ -49,7 +49,7 @@ export default function Testimonial() {
         breakpoints={{
           768: { slidesPerView: 2 },
         }}
-        className="max-w-6xl mx-auto px-6 pb-14"
+        className="max-w-6xl mx-auto px-6 pb-14 "
       >
         {clients.map((client, index) => (
           <SwiperSlide key={index}>

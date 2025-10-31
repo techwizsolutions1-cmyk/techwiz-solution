@@ -5,9 +5,18 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+
 export default function FlipCard3({pic}) {
 
-
+ const [isSticky, setIsSticky] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+          if (window.scrollY > 100) setIsSticky(true);
+          else setIsSticky(false);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
     const [flipped, setFlipped] = useState(false);
   const cardRef = useRef(null);
 
@@ -42,9 +51,9 @@ export default function FlipCard3({pic}) {
     
     >
       <div className="group [perspective:1000px] w-55 h-55 rounded-full border-4 border-amber-50">
-        <div
-          className="relative w-full h-full transition-transform duration-700
-          [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+       <div
+          className={`relative w-full h-full transition-transform duration-700
+          [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ${isSticky ?"[transform:rotateY(360deg)] duration-200":"[transform:rotateY(0deg)]"} `}
         >
           {/* Front Side */}
           <div

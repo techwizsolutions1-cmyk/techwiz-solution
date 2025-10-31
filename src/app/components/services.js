@@ -3,7 +3,7 @@
 
 import React from "react";
 
-import { Globe, Brain, Code, PenTool, BarChart2, Mail, Repeat, FileText, Users, ArrowRight } from "lucide-react";
+import { Globe, Brain, Code, PenTool,  Mail, BarChart2,Repeat, FileText, Users, ArrowRight } from "lucide-react";
 
 export default function Services() {
  const cards = [
@@ -19,7 +19,7 @@ export default function Services() {
       "Backlink Profile Analysis",
     ],
     link: "#seo-audit",
-    button: "Explore SEO Audit",
+    button: "Explore More",
   },
   {
     id: "remarketing",
@@ -33,7 +33,7 @@ export default function Services() {
       "Performance Tracking",
     ],
     link: "#remarketing",
-    button: "Explore Remarketing",
+  
   },
   {
     id: "content-marketing",
@@ -47,7 +47,7 @@ export default function Services() {
       "SEO-Optimized Copywriting",
     ],
     link: "#content-marketing",
-    button: "Explore Content Marketing",
+    
   },
   {
     id: "email-marketing",
@@ -61,7 +61,7 @@ export default function Services() {
       "Performance Tracking & Reporting",
     ],
     link: "#email-marketing",
-    button: "Explore Email Marketing",
+  
   },
   {
     id: "ai",
@@ -75,7 +75,7 @@ export default function Services() {
       "Computer Vision",
     ],
     link: "#ai-technology",
-    button: "Explore AI Solutions",
+   
   },
   {
     id: "guest-blogging",
@@ -89,7 +89,7 @@ export default function Services() {
       "Traffic & Engagement Analysis",
     ],
     link: "#guest-blogging",
-    button: "Explore Guest Blogging",
+ 
   },
   {
     id: "uiux",
@@ -115,6 +115,20 @@ export default function Services() {
       "Content Creation & Scheduling",
       "Community Management",
       "Ads & Paid Campaigns",
+    ],
+    link: "#social-media-marketing",
+    button: "Explore Social Media Marketing",
+  },
+   {
+    id: "technical-seo",
+    title: "Technical Seo",
+    icon: <BarChart2 className="w-10 h-10" />,
+    desc: `Optimizing website structure, speed, and crawlability to improve search engine visibility and drive organic growth.`,
+    points: [
+      "Page Speed",
+      "Core Web Vital",
+        "Schema Markup",
+           "Crowd Ability Optimization"
     ],
     link: "#social-media-marketing",
     button: "Explore Social Media Marketing",
@@ -159,13 +173,13 @@ export default function Services() {
 
           {/* Right Action Button */}
           <div className="flex-shrink-0 text-center md:text-right">
-            <a
+            {/* <a
               href={card.link}
               className="group inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 text-white font-semibold text-base shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
             >
               {card.button}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </a> */}
           </div>
         </div>
       ))}

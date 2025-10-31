@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa6";
 import {
   FaPhoneVolume,
   FaFacebookF,
@@ -9,6 +10,7 @@ import {
   FaBars,
   FaTimes,
   FaInstagram,
+   
 } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import Image from "next/image";
@@ -16,7 +18,8 @@ import Image from "next/image";
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [openDesktopSubmenu, setOpenDesktopSubmenu] = useState(null);
+  const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,8 +49,7 @@ const Header = () => {
   return (
     <div className="flex flex-col w-full">
       {/* 🔹 Top Header */}
-      <div className="text-gray-500 pt-3 hidden 
-      md:flex flex-row pl-10 space-x-18 font-semibold relative">
+      <div className="text-gray-500 pt-3 hidden md:flex flex-row pl-10 space-x-18 font-semibold relative">
         <div className="flex flex-row items-center gap-2">
           <FaPhoneVolume />
           <Link href="tel:+9223114661100">+92 231 1466100</Link>
@@ -79,7 +81,7 @@ const Header = () => {
 
         <div className="h-px w-px bg-gray-300"></div>
 
-        <div className="flex flex-row space-x-2">
+        <div className="flex flex-row space-x-4 text-xl">
           <Link href="https://www.facebook.com/techwizpk">
             <FaFacebookF />
           </Link>
@@ -89,6 +91,7 @@ const Header = () => {
           <Link href="https://www.linkedin.com/in/tech-wizpk-b442b8361/">
             <FaLinkedinIn />
           </Link>
+          <Link href="https://wa.me/+923156540669"><FaWhatsapp /></Link>
         </div>
       </div>
 
@@ -117,16 +120,29 @@ const Header = () => {
         <div className="flex flex-row space-x-6 relative">
           {navItems.map((item, index) => (
             <div key={index} className="group relative">
-              <Link href={item.id} className="hover:text-blue-600">
+              <Link
+                href={item.id}
+                className="hover:text-blue-600"
+                onClick={(e) => {
+                  if (item.sub) {
+                    e.preventDefault();
+                    setOpenDesktopSubmenu(
+                      openDesktopSubmenu === index ? null : index
+                    );
+                  } else {
+                    setMenuOpen(false);
+                  }
+                }}
+              >
                 {item.name}
               </Link>
 
               {/* Underline */}
               <div className="hidden h-1 w-full bg-blue-400 group-hover:block absolute top-8 transition-all duration-200"></div>
 
-              {/* Submenu */}
-              {item.sub && (
-                <div className=" text-center hidden group-hover:flex flex-col absolute top-10 -right-40 bg-white shadow-lg border border-gray-100 rounded-xl p-3 space-y-2 min-w-[400px] z-50">
+              {/* Desktop Submenu */}
+              {item.sub && openDesktopSubmenu === index && (
+                <div className="flex flex-col absolute top-10 bg-white shadow-lg border border-gray-100 rounded-xl space-y-2 p-5 z-50">
                   {item.sub.map((subItem, i) => (
                     <Link
                       key={i}
@@ -143,7 +159,7 @@ const Header = () => {
         </div>
 
         <Link
-          href="/abc/forms"
+          href="/free-quates"
           className="pl-6 pr-6 py-3 border-2 border-blue-900 rounded-2xl hover:scale-105 hover:text-white text-blue-900 hover:bg-blue-900 transition"
         >
           Get a Quote Now →
@@ -158,11 +174,11 @@ const Header = () => {
             : "relative bg-white"
         }`}
       >
-        {/* Logo */}
-        <Image src="/logo.png" width={150} height={100} alt="logo" />
-
-        {/* Hamburger Icon */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">
+        <Image src="/logo.jpg" width={150} height={100} alt="logo" />
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="text-2xl"
+        >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
@@ -179,7 +195,11 @@ const Header = () => {
             <div key={index}>
               <button
                 onClick={() =>
-                  item.sub ? setSubmenuOpen(!submenuOpen) : setMenuOpen(false)
+                  item.sub
+                    ? setOpenMobileSubmenu(
+                        openMobileSubmenu === index ? null : index
+                      )
+                    : setMenuOpen(false)
                 }
                 className="w-full text-left hover:text-blue-600"
               >
@@ -187,7 +207,7 @@ const Header = () => {
               </button>
 
               {/* Mobile Submenu */}
-              {item.sub && submenuOpen && (
+              {item.sub && openMobileSubmenu === index && (
                 <div className="pl-4 mt-2 space-y-1 text-gray-600">
                   {item.sub.map((sub, i) => (
                     <Link
@@ -218,9 +238,7 @@ const Header = () => {
             <Link href="#">
               <FaInstagram />
             </Link>
-            <Link href="https://www.linkedin.com/in/tech-wizpk-b442b8361/">
-              <FaLinkedinIn />
-            </Link>
+          
           </div>
         </motion.div>
       )}

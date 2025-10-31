@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FaSearch, FaMapMarkerAlt, FaShoppingCart, FaCog } from "react-icons/fa";
-import Serviceleft from "./serviceleft";
+import Serviceleft2 from "./serviceleft2";
 
 const Seo = () => {
   return (
@@ -9,7 +9,7 @@ const Seo = () => {
       <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8">
         {/* Left Section */}
         <div className="w-full md:w-[45%]">
-          <Serviceleft />
+          <Serviceleft2 />
         </div>
 
         {/* Right Section */}

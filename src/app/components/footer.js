@@ -116,16 +116,7 @@ export default function Footer() {
       </div>
 
       {/* --- Google Map Section --- */}
-      <div className="w-full">
-        <iframe
-          src="https://maps.google.com/maps?ll=31.439091,74.173733&z=12&t=m&hl=en&output=embed"
-          width="100%"
-          height="300"
-          loading="lazy"
-          className="border-0 grayscale hover:grayscale-0 transition duration-500"
-        ></iframe>
-      </div>
-
+     
       {/* --- Bottom Bar --- */}
       <div className="text-center py-5 text-gray-400 text-sm border-t border-gray-700">
         © {new Date().getFullYear()} <span className="text-[#00D8FF]">TechWiz</span>. All rights reserved.

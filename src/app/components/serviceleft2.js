@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { abc } from "@/app/components/contextprovider";
 
-const Serviceleft = () => {
+const Serviceleft2 = () => {
   const { val, setVal } = useContext(abc);
   const [show, setShow] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -21,15 +21,15 @@ const Serviceleft = () => {
 
   return (
     <div
-      className="relative h-[83vh] bg-[url('/service.png')] bg-cover bg-center group"
+      className="relative h-[75vh] bg-[url('/service.png')] bg-cover bg-center group"
       onClick={() => isMobile && setShow(!show)}
     >
       {/* Front Side */}
       <div className="pt-20 flex flex-col gap-y-7 pl-5 pr-5">
         <div className="font-semibold text-xl text-blue-300">Our Services</div>
-        <h4 className="font-bold text-4xl">
-          Custom Web Solutions That Drive{" "}
-          <span className="text-blue-900">Results</span>
+        <h4 className="font-bold text-2xl md:text-4xl">
+         Custom SEO Solutions That 
+          <span className="text-blue-900 ml-2">business strong</span>
         </h4>
       </div>
 
@@ -53,9 +53,10 @@ const Serviceleft = () => {
         </h4>
 
         <motion.p>
-          Professional, responsive, and scalable websites tailored to your
-          business needs, built for performance, security, and user experience,
-          powered by modern technologies to ensure growth and digital success.
+        Professional, responsive, and scalable websites tailored to your
+         business needs, built for performance, security, and user
+          experience, powered by modern technologies to ensure growth and
+           digital success modern technologies  growth and digital success.experience, powered 
         </motion.p>
 
         <div className="flex flex-row gap-2 w-full">
@@ -79,4 +80,4 @@ const Serviceleft = () => {
   );
 };
 
-export default Serviceleft;
+export default Serviceleft2;
