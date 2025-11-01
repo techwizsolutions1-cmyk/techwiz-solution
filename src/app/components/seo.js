@@ -5,7 +5,7 @@ import Serviceleft2 from "./serviceleft2";
 
 const Seo = () => {
   return (
-    <div className="w-full px-4 md:px-10 lg:px-20 py-10">
+    <div id="seo" className="w-full px-4 md:px-10 lg:px-20 py-10">
       <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8">
         {/* Left Section */}
         <div className="w-full md:w-[45%]">
@@ -22,7 +22,8 @@ const Seo = () => {
                 GEO / AEO
               </h4>
               <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-                Improve visibility, attract traffic, and grow your online presence.
+               Optimize for AI-driven search engines and large language models to ensure your brand 
+               appears in conversational answers and voice queries.
               </p>
             </div>
 
@@ -33,7 +34,7 @@ const Seo = () => {
                 Local SEO
               </h4>
               <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-                Strategic solutions to achieve sustainable business growth.
+               Enhance visibility in global search and Google Business Profile  optimization, securing higher rankings in local and AI-powered results.
               </p>
             </div>
 
@@ -44,7 +45,7 @@ const Seo = () => {
                 Ecommerce SEO
               </h4>
               <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-                Creative, user-friendly designs that enhance digital experiences.
+                Boost online sales with product page optimization, structured data, and conversion-focused strategies built for growth.
               </p>
             </div>
 
@@ -55,7 +56,8 @@ const Seo = () => {
                 Traditional SEO
               </h4>
               <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-                Secure, scalable, and efficient solutions for modern businesses.
+              Refine on-page, off-page, and technical SEO to strengthen rankings, fix errors, and sustain organic performance.
+
               </p>
             </div>
           </div>

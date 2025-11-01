@@ -13,10 +13,9 @@ const Technology = () => {
             <div className='flex flex-col  justify-center space-y-9 w-full  md:pr-30'>
                 <div className='text-blue-300 font-semibold'>Innovation That Leads</div>
                 <h4 className='text-black font-bold text-3xl md:text-4xl'>
-                   Passion, Purpose, and Progress</h4>
+                   Smart Technology, Real Results</h4>
                 <p>
-At TechWiz, we believe in four core pillars that drive our growth and define our work. These values are ingrained in everything we do, guiding us to use technology for building smarter, 
-stronger, and future-ready digital solutions.
+Leveraging cutting-edge tools, AI insights, and automation, we transform marketing challenges into opportunities. Our tech-driven approach ensures smarter decisions, faster results, and sustainable growth that delivers real competitive advantage.
                 </p>
             </div>
 

@@ -114,6 +114,15 @@ const ContactUs = () => {
 >
   info@techwizpk.com
 </Link>
+{/*  <Link href="https://www.facebook.com/techwizpk">
+            <FaFacebookF />
+          </Link>
+          <Link href="#">
+            <FaInstagram />
+          </Link>
+          <Link href="https://www.linkedin.com/in/tech-wizpk-b442b8361/">
+            <FaLinkedinIn />
+          </Link> */}
               </div>
             </div>
             <div className="flex items-center gap-4 text-gray-700">
@@ -138,9 +147,9 @@ const ContactUs = () => {
             className="flex gap-6 justify-center md:justify-start"
           >
             {[
-              { icon: <FaFacebookF />, color: "text-blue-600", link: "#" },
+              { icon: <FaFacebookF />, color: "text-blue-600", link: "https://www.facebook.com/techwizpk" },
               { icon: <FaInstagram />, color: "text-pink-500", link: "#" },
-              { icon: <FaLinkedinIn />, color: "text-blue-700", link: "#" },
+              { icon: <FaLinkedinIn />, color: "text-blue-700", link: "https://www.linkedin.com/in/tech-wizpk-b442b8361/" },
             ].map((social, idx) => (
               <motion.a
                 key={idx}

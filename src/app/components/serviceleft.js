@@ -21,21 +21,21 @@ const Serviceleft = () => {
 
   return (
     <div
-      className="relative h-[83vh] bg-[url('/service.png')] bg-cover bg-center group"
+      className="relative h-[96vh] bg-[url('/service.png')] bg-cover bg-center group "
       onClick={() => isMobile && setShow(!show)}
     >
       {/* Front Side */}
       <div className="pt-20 flex flex-col gap-y-7 pl-5 pr-5">
         <div className="font-semibold text-xl text-blue-300">Our Services</div>
         <h4 className="font-bold text-4xl">
-          Custom Web Solutions That Drive{" "}
-          <span className="text-blue-900">Results</span>
+         Secure, Scalable, and User-Focused {" "}
+          <span className="text-blue-900">Web Experiences</span>
         </h4>
       </div>
 
       {/* Back Side */}
       <motion.div
-        className={`absolute top-0 left-0 w-full h-full flex-col justify-center items-start gap-2 md:gap-6 p-5 bg-blue-200 transition-all duration-300
+        className={`absolute top-0 left-0 w-full  h-full  flex-col justify-center items-start gap-2 md:gap-6 p-5 bg-blue-200 transition-all duration-300
           ${
             isMobile
               ? show

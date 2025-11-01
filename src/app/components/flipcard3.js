@@ -11,7 +11,7 @@ export default function FlipCard3({pic}) {
  const [isSticky, setIsSticky] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-          if (window.scrollY > 100) setIsSticky(true);
+          if (window.scrollY > 30) setIsSticky(true);
           else setIsSticky(false);
         };
         window.addEventListener("scroll", handleScroll);
@@ -53,7 +53,7 @@ export default function FlipCard3({pic}) {
       <div className="group [perspective:1000px] w-55 h-55 rounded-full border-4 border-amber-50">
        <div
           className={`relative w-full h-full transition-transform duration-700
-          [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ${isSticky ?"[transform:rotateY(360deg)] duration-200":"[transform:rotateY(0deg)]"} `}
+          [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ${isSticky ?"[transform:rotateY(180deg)] duration-200":"[transform:rotateY(0deg)]"} `}
         >
           {/* Front Side */}
           <div
@@ -61,7 +61,7 @@ export default function FlipCard3({pic}) {
             justify-center items-center backface-hidden"
           >
             <Image
-              src="/ai.png"
+              src="/aitechnology.png"
               alt="pic"
               fill
               className="rounded-full object-cover"
@@ -73,10 +73,9 @@ export default function FlipCard3({pic}) {
             className="absolute inset-0 bg-blue-500 text-white rounded-full flex
             flex-col justify-center items-center [transform:rotateY(180deg)] backface-hidden"
           >
-            <h2 className="text-xl font-semibold mb-2">About Me</h2>
+           
             <p className="px-4 text-center text-sm">
-              Passionate about building modern, responsive websites using React
-              and Tailwind CSS.
+            Empower your business with next-gen automation and smart insights
             </p>
           </div>
         </div>

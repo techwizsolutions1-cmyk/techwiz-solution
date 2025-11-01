@@ -18,17 +18,14 @@ export default function Hero() {
           </h4>
 
           <h1
-            className="font-bold text-3xl md:text-5xl text-white leading-snug"
+            className="font-bold text-3xl md:text-3xl text-white leading-snug"
           >
-            Power Growth with Proven Digital Services like
+          Full-Stack Digital Marketing for B2B, B2C, and SAAS Growth
           </h1>
 
           <p className="text-white text-sm md:text-base leading-relaxed">
-            Take your business to the next level with our expert Web Development,
-            SEO, and Digital Marketing services. We help you build a strong online
-            presence, attract the right audience, and scale smarter with strategies
-            designed for growth and success. Partner with us today and turn your
-            vision into reality…
+         Level up your growth with custom web development, performance SEO, and full-funnel digital marketing. We design fast, responsive websites, improve search visibility and organic traffic with technical/on-page SEO, and run data-driven campaigns that attract qualified leads and lift revenue. 
+         Partner with TechWizPK to turn a stronger online presence into measurable results.
           </p>
 
           <button
@@ -40,17 +37,20 @@ export default function Hero() {
         </div>
 
         {/* ✅ Right Side */}
-        <div className="relative md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
+        <div className="relative md:w-1/2 flex justify-center items-center mt-20 md:mt-0">
           {/* Desktop FlipCards - positioned absolutely */}
-          <div className="hidden md:block absolute top-20 right-74">
-            <FlipCard pic="/hero.png" />
-          </div>
-          <div className="hidden md:block absolute right-30">
-            <FlipCard2 pic="/hero.png" />
-          </div>
-          <div className="hidden md:block absolute bottom-44 right-54">
+          {/* 2 */}
+           <div className="hidden md:block absolute  -top-2 right-50  ">
             <FlipCard3 pic="/hero.png" />
           </div>
+          <div className="hidden md:block absolute  left-50">
+            <FlipCard2 pic="/hero.png" />
+          </div>
+          
+          <div className="hidden md:block  absolute bottom-22 right-80">
+            <FlipCard pic="/hero.png" />
+          </div>
+         
 
           {/* ✅ Mobile FlipCards - stacked vertically */}
           

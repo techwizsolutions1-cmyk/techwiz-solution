@@ -15,12 +15,13 @@ import Portfolio from "./components/portfolio";
 import Pseo from "./components/pseo";
 import Pweb from "./components/pweb";
 import ContactUs from "./components/contactus";
+import Digitalmarketingright from "./components/digitalmarketingright";
  
 
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <Header />
+      
       <Hero />
       <About/>
    
@@ -33,10 +34,11 @@ export default function Home() {
 <Services/>
 
 <Chooseus/>
+<Digitalmarketingright/>
 <ContactUs/>
 <Testimonial/>
 <Question/>
-<Footer/>
+
     </div>
   );
 }

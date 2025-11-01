@@ -11,6 +11,8 @@ const Industries = () => {
     { name: "Technology & Startups", id: 2 },
     { name: "Education & E-Learning", id: 3 },
     { name: "Corporate & Professional Services", id: 4 },
+    {name:"Finance & Fintech",id:5},
+    {name:"Retail & E-Commerce",id:6}
   ];
 
   const card = [
@@ -38,10 +40,19 @@ const Industries = () => {
     {
       id: 4,
       name: "Corporate & Professional Services",
-      path: "/it4.webp",
+      path: "/professional.png",
       details:
         "We design customized digital strategies for professional businesses and enterprises to strengthen branding, generate high-quality leads, and expand market reach. Through expert SEO, advanced web solutions, and result-driven marketing, we help companies establish authority, grow consistently, and achieve long-term success in highly competitive industries.",
     },
+    {id:5,
+      name:"Finance & Fintech",
+      path:"/finances.png",
+      details:"We build trust for banks, fintech startups, and financial advisors through compliant, conversion-focused digital marketing. From SEO and paid ads to secure web solutions, we help financial brands improve visibility, acquire clients, and scale responsibly."
+    },
+     {name:"Retail & E-Commerce",id:6,
+      path:"/retails.png",
+      details:"Our tailored e-commerce marketing solutions drive sales across platforms. From SEO-optimized product pages to performance ads and conversion funnels, we help retail brands grow revenue, improve customer experience, and expand globally with scalable, data-driven strategies."
+     }
   ];
 
   return (
@@ -92,7 +103,7 @@ const Industries = () => {
             .map((e) => (
               <div
                 key={e.id}
-                className="bg-cover bg-center flex flex-col items-center justify-center p-6 md:p-10 text-gray-800"
+                className="bg-cover bg-center md:h-[70vh] flex flex-col items-center justify-center p-6 md:p-10 text-gray-800"
                 style={{ backgroundImage: `url(${e.path})` }}
               >
                 <div className="bg-white/85 p-5 md:p-8 rounded-xl text-center space-y-3 md:space-y-5 max-w-3xl">

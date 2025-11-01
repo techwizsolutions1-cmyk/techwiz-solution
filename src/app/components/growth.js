@@ -11,11 +11,15 @@ const Growth = () => {
             </div>
             {/* left */}
             <div className='flex flex-col  justify-center space-y-9 w-full  md:pr-30 '>
-                <div className='text-blue-300 font-semibold'>Touching Lives Through Technology</div>
+                <div className='text-blue-300 font-semibold'>Touching lives through Technologies</div>
                 <h4 className='text-black font-bold  text-3xl md:text-4xl'>
-                    TechWiz 4 Pillars of Strength</h4>
-                <p>We believe in four guiding pillars
-                    that drive our growth and success. These principles are ingrained in everything we do, helping us harness technology to create smarter solutions and a better digital future.
+                  Fueling Business Growth
+</h4>
+                <p>
+                    We craft data-driven strategies that fuel
+                     consistent business growth. From brand visibility
+                      to lead generation, our solutions empower companies 
+                      to expand their reach, strengthen engagement, and unlock long-term profitability.
 
                 </p>
             </div>

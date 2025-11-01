@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { abc } from "@/app/components/contextprovider";
 
-const Serviceleft = () => {
+const Digitalmarketingleft = () => {
   const { val, setVal } = useContext(abc);
   const [show, setShow] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -21,15 +21,16 @@ const Serviceleft = () => {
 
   return (
     <div
-      className="relative h-[83vh] bg-[url('/service.png')] bg-cover bg-center group"
+      className="relative h-[100vh] bg-[url('/service.png')] bg-cover bg-center group"
       onClick={() => isMobile && setShow(!show)}
     >
       {/* Front Side */}
       <div className="pt-20 flex flex-col gap-y-7 pl-5 pr-5">
         <div className="font-semibold text-xl text-blue-300">Our Services</div>
-        <h4 className="font-bold text-4xl">
-          Custom Web Solutions That Drive{" "}
-          <span className="text-blue-900">Results</span>
+        <h4 className="font-bold text-2xl md:text-4xl">
+ Strengthen Your Brand With Proven Digital Marketing
+
+          <span className="text-blue-900 ml-2"> Growth</span>
         </h4>
       </div>
 
@@ -48,14 +49,14 @@ const Serviceleft = () => {
       >
         <div className="font-semibold text-xl text-blue-600">Our Services</div>
         <h4 className="font-bold text-2xl md:text-4xl">
-          Custom Web Solutions That Drive{" "}
-          <span className="text-blue-900">Results</span>
+       Grow your Brand with Powerful 
+          <span className="text-blue-900">Digital Strategies</span>
         </h4>
 
         <motion.p>
-          Professional, responsive, and scalable websites tailored to your
-          business needs, built for performance, security, and user experience,
-          powered by modern technologies to ensure growth and digital success.
+    Strengthen your brand with proven digital marketing strategies designed to deliver measurable impact. From advanced SEO and content marketing to social media management and paid advertising, we create tailored solutions that amplify your visibility and connect you with the right audience. Our data-driven approach ensures every campaign
+     is optimized for maximum reach, engagement, and conversions.
+     
         </motion.p>
 
         <div className="flex flex-row gap-2 w-full">

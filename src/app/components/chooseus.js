@@ -23,12 +23,12 @@ const Chooseus = () => {
           Why Choose Us?
         </div>
         <h4 className="text-2xl md:text-4xl font-bold leading-snug">
-          We work with businesses
+         We Partner With Businesses 
         </h4>
         <h4 className="text-2xl md:text-4xl font-bold leading-snug">
-          <span className="text-blue-800">across</span> multiple{" "}
+          <span className="text-blue-800"> Across </span> Diverse {" "}
           <br className="hidden md:block" />
-          industries.
+        Industries
         </h4>
       </div>
 
@@ -47,7 +47,7 @@ const Chooseus = () => {
             onClick={() => setval(1)}
           >
             <div className="font-bold text-sm md:text-base">
-              Our Purpose: Your Growth Partner
+            Fueling Business Growth
             </div>
             {val === 1 && (
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-[90%] h-1 mt-2 rounded-full"></div>
@@ -62,7 +62,7 @@ const Chooseus = () => {
             onClick={() => setval(2)}
           >
             <div className="font-bold text-sm md:text-base">
-              Your Success, Our Priority
+              Your Goals, Our Commitment
             </div>
             {val === 2 && (
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-[90%] h-1 mt-2 rounded-full"></div>
@@ -77,7 +77,7 @@ const Chooseus = () => {
             onClick={() => setval(3)}
           >
             <div className="font-bold text-sm md:text-base">
-              Technology That Works for You
+            Smart Technology, Real Results
             </div>
             {val === 3 && (
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-[90%] h-1 mt-2 rounded-full"></div>

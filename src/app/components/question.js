@@ -7,24 +7,24 @@ export default function Question() {
 
   const faqs = [
     {
-      question: "What services does TechWizPK offer?",
-      answer: "We provide a complete range of IT solutions including SEO, digital marketing, web development, web solutions, and graphic designing to help your business grow online.",
+      question: "What digital marketing services does TechWizPK offer?",
+      answer: " We provide a full suite of digital marketing services including SEO, PPC, social media marketing, content creation, email marketing, and web development. Each service is customized to help businesses improve online visibility and generate measurable ROI.",
     },
     {
-      question: "How can SEO help my business grow?",
-      answer: "SEO improves your website’s visibility on search engines, drives targeted traffic, and increases sales by connecting you with the right audience.",
+      question: "How can SEO help my business grow online?",
+      answer: " SEO improves your website’s visibility on search engines like Google, driving more qualified traffic to your site. With the right SEO strategy, you can increase leads, boost sales, and build long-term brand authority.",
     },
     {
-      question: "Do you provide custom website design and development?",
-      answer: "Yes, we create fast, secure, and user-friendly websites tailored to your business needs and goals.",
+      question: "Do you offer custom website design and development?",
+      answer: " Yes, TechWizPK specializes in custom web design and development tailored to your goals. We create responsive, SEO-friendly websites optimized for speed, user experience, and conversions, ensuring your site is both attractive and effective.",
     },
     {
       question: "Can you manage digital marketing for small businesses?",
-      answer: "Absolutely! Our digital marketing strategies are designed for businesses of all sizes, helping startups and small companies reach more customers effectively.",
+      answer: " Absolutely. Our digital marketing services are scalable, making them ideal for startups and small businesses. We focus on cost-effective strategies like local SEO, targeted ads, and content marketing to help small businesses grow sustainably.",
     },
     {
-      question: "How long does it take to see results from your services?",
-      answer: "Typically within 2–3 months, depending on the service and your industry.",
+      question: "How long does SEO take to deliver results?",
+      answer: " SEO is a long-term strategy. Most websites begin seeing noticeable improvements in 3–6 months, depending on competition and goals. For faster wins, we combine SEO with PPC and content marketing for measurable short-term and long-term growth.",
     },
   ];
 

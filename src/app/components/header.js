@@ -36,14 +36,10 @@ const Header = () => {
     {
       name: "DIGITAL MARKETING",
       id: "#digital",
-      sub: [
-        { name: "Content Marketing", id: "#content-marketing" },
-        { name: "Social Media Marketing", id: "#social-media" },
-        { name: "Email Marketing", id: "#email-marketing" },
-      ],
+    
     },
-    { name: "UI/UX DESIGN", id: "#uiux" },
-    { name: "AI TECHNOLOGY", id: "#ai" },
+   
+     { name: "OTHER EXPERTISE", id: "#service" },
   ];
 
   return (
@@ -111,13 +107,13 @@ const Header = () => {
           transition: { duration: 0.4, ease: "easeInOut" },
         }}
         className={`hidden md:flex flex-row justify-between items-center
-           font-bold text-gray-800 z-50 w-full px-10 py-4`}
+           font-bold text-gray-800 z-50 w-full px-2 py-4`}
       >
         {/* Logo */}
         <Image src="/logo.jpg" width={150} height={200} alt="logo" />
 
         {/* Navbar Links */}
-        <div className="flex flex-row space-x-6 relative">
+        <div className="flex flex-row space-x-4 relative">
           {navItems.map((item, index) => (
             <div key={index} className="group relative">
               <Link

@@ -13,10 +13,12 @@ const Success = () => {
             <div className='flex flex-col  justify-center space-y-9 w-full  md:pr-30'>
                 <div className='text-blue-300 font-semibold'>Fuel Your Curiosity</div>
                 <h4 className='text-black font-bold  text-3xl md:text-4xl'>
-                    A Trusted Technology Partner</h4>
+                    Your Goals, Our Commitment</h4>
                 <p>
-                    At TechWiz, we believe in four strong pillars that shape our growth and guide our journey. These values are part of everything we do, enabling us to use technology
-                     to build smarter solutions and a better digital future.
+                    Your success is our priority. We align every 
+                    strategy with your goals, delivering tailored digital
+                     marketing solutions built on trust, transparency, and measurable 
+                    results to ensure lasting partnerships and business growth.
 
                 </p>
             </div>

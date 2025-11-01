@@ -22,7 +22,8 @@ const Offer = () => {
   return (
     <motion.div
       id="colr"
-      className="flex flex-col md:flex-row mt-10 md:space-x-10 py-4 text-white bg-[#010024] pt-20  md:px-20 overflow-hidden"
+      className="flex flex-col md:flex-row mt-10 md:space-x-10
+       py-4 text-white bg-[#010024] pt-20  md:px-10 overflow-hidden"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -46,12 +47,12 @@ const Offer = () => {
         </motion.h4>
 
         <motion.div
-          className="relative w-[320px] md:w-[550px] h-[400px] md:h-[475px] rounded-2xl overflow-hidden"
+          className="relative w-[320px] md:w-[550px] h-[400px] md:h-[475px] rounded-2xl overflow-hidden md:mt-5"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.4 }}
         >
           <Image
-            src="/larki.png"
+            src="/larki.jpg"
             alt="offer-image"
             fill
             className=" object-fill  rounded-2xl"
@@ -71,19 +72,19 @@ const Offer = () => {
             id: 1,
             img: "/agreement.png",
             title: "Consulting",
-            desc: "TechWiz offers expert consulting in SEO, web solutions, and digital marketing, helping businesses build stronger online visibility and achieve sustainable growth.",
+            desc: "TechWizPK provides expert consulting in web development, SEO, and digital strategy, helping brands strengthen their online visibility, reach the right audience, and unlock consistent business growth with data-backed decisions and actionable insights.",
           },
           {
             id: 2,
             img: "/agrement1.png",
             title: "Support",
-            desc: "TechWizPK provides reliable support services to keep your digital presence running smoothly, ensuring quick solutions, expert guidance, and uninterrupted growth.",
+            desc: "Our dedicated support team ensures your digital platforms stay secure, fast, and reliable. From troubleshooting and updates to proactive monitoring, TechWizPK delivers seamless assistance that keeps your business running without disruptions.",
           },
           {
             id: 3,
             img: "/agreement.png",
             title: "Production",
-            desc: "TechWiz delivers innovative digital production solutions, from web development to marketing campaigns, ensuring high-quality results that drive growth and impact.",
+            desc: "We craft high-impact digital production services, from custom websites and eCommerce platforms to content creation and ad campaigns. TechWizPK focuses on delivering quality outputs that engage audiences, build trust, and accelerate business success.",
           },
         ].map((item, i) => (
           <motion.div

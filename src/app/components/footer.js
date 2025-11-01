@@ -34,11 +34,11 @@ export default function Footer() {
         {/* Left Section */}
         <div className="lg:w-1/3 space-y-5">
           <div className="flex items-center gap-3">
-            <img
+            {/* <img
               src="/logo.png"
               alt="TechWiz Logo"
               className="w-14 h-14 object-contain"
-            />
+            /> */}
             <div>
               <h3 className="text-2xl font-semibold">TECHWIZ</h3>
               <p className="text-sm text-[#00D8FF] tracking-wider">
