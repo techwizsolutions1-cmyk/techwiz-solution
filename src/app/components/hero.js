@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="bg-[url('/hero.png')] bg-cover bg-center w-full h-screen relative mt-1">
+    <div className="bg-[url('/hero.png')] bg-cover bg-center w-full h-[100vh] relative mt-1">
       <div
         className="flex flex-col md:flex-row pt-10 w-full justify-between md:pt-20 md:pl-20 px-5 md:pr-10"
       >
@@ -18,7 +18,7 @@ export default function Hero() {
           </h4>
 
           <h1
-            className="font-bold text-3xl md:text-3xl text-white leading-snug"
+            className="font-bold text-xl md:text-3xl  text-white leading-snug"
           >
           Full-Stack Digital Marketing for B2B, B2C, and SAAS Growth
           </h1>
@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="relative md:w-1/2 flex justify-center items-center mt-20 md:mt-0">
           {/* Desktop FlipCards - positioned absolutely */}
           {/* 2 */}
-           <div className="hidden md:block absolute  -top-2 right-50  ">
+           <div className="  hidden md:block md:absolute  md:-top-2 md:right-50  ">
             <FlipCard3 pic="/hero.png" />
           </div>
           <div className="hidden md:block absolute  left-50">
