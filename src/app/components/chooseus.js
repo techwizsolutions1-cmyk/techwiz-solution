@@ -22,7 +22,9 @@ const Chooseus = () => {
         <div className="text-blue-300 font-semibold text-base md:text-lg">
           Why Choose Us?
         </div>
-        <h4 className="text-2xl md:text-4xl font-bold leading-snug">
+       
+       <div className="flex flex-col">
+         <h4 className="text-2xl md:text-4xl font-bold leading-snug">
          We Partner With Businesses 
         </h4>
         <h4 className="text-2xl md:text-4xl font-bold leading-snug">
@@ -30,6 +32,7 @@ const Chooseus = () => {
           <br className="hidden md:block" />
         Industries
         </h4>
+       </div>
       </div>
 
       {/* ✅ Tab Navigation */}
@@ -90,7 +93,7 @@ const Chooseus = () => {
       </div>
 
       {/* ✅ Content Section */}
-      <div className="mt-8">
+      <div className="md:mt-8 ">
         {newcontain
           .filter((e) => e.id === val)
           .map((e) => (

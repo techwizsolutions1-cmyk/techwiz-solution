@@ -344,13 +344,14 @@ const Pseo = () => {
                 <div className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center">
                   <div className="w-full h-64 relative">
                     <Image
+                  
                       src={slide.img}
                       alt={slide.title}
                       fill
-                      className="object-contain hover:scale-110"
+                      className=" hover:scale-110 object-cover md:object-cover"
                     />
                   </div>
-                  <h3 className="mt-2 font-semibold text-gray-800 text-center">
+                  <h3 className=" mt-6 font-semibold text-gray-800 text-center">
                     {slide.title}
                   </h3>
                   <button

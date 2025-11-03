@@ -23,7 +23,7 @@ export default function Home() {
     <div className="overflow-hidden">
       
       <Hero />
-      <div id="about" className="mt-10"></div>
+    
       <About/>
    
         <Industries/>

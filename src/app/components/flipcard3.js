@@ -73,7 +73,7 @@ export default function FlipCard3({pic}) {
             className="absolute inset-0 bg-blue-500 text-white rounded-full flex
             flex-col justify-center items-center [transform:rotateY(180deg)] backface-hidden"
           >
-           
+           <h1 className="text-xl font-bold text-center">Ai Technology</h1>
             <p className="px-4 text-center text-sm">
             Empower your business with next-gen automation and smart insights
             </p>

@@ -53,7 +53,7 @@ const Digitalmarketingleft = () => {
           <span className="text-blue-900">Digital Strategies</span>
         </h4>
 
-        <motion.p>
+        <motion.p className="text-sm">
     Strengthen your brand with proven digital marketing strategies designed to deliver measurable impact. From advanced SEO and content marketing to social media management and paid advertising, we create tailored solutions that amplify your visibility and connect you with the right audience. Our data-driven approach ensures every campaign
      is optimized for maximum reach, engagement, and conversions.
      

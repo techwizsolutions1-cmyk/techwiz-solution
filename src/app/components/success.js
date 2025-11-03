@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Success = () => {
     return (
-        <div className='w-full  relative pt-10 flex flex-col md:flex-row space-x-20 pb-30' >
+        <div className='w-full  relative pt-10 flex flex-col md:flex-row space-x-20 ' >
             {/* right */}
             < div className='w-full relative flex flex-col  bg-gray-200 pl-10 p-10 rounded-sm'>
                 <Image src="/dot.png" alt='pic' width={150} height={100} className='absolute top-0 left-120 animate-bounce '></Image>
@@ -10,7 +10,7 @@ const Success = () => {
 
             </div>
             {/* left */}
-            <div className='flex flex-col  justify-center space-y-9 w-full  md:pr-30'>
+            <div className='flex flex-col  justify-center md:space-y-9 space-y-4 w-full  md:pr-30'>
                 <div className='text-blue-300 font-semibold'>Fuel Your Curiosity</div>
                 <h4 className='text-black font-bold  text-3xl md:text-4xl'>
                     Your Goals, Our Commitment</h4>

@@ -25,9 +25,9 @@ const Serviceleft2 = () => {
       onClick={() => isMobile && setShow(!show)}
     >
       {/* Front Side */}
-      <div className="pt-20 flex flex-col gap-y-7 pl-5 pr-5">
-        <div className="font-semibold text-xl text-blue-300">Our Services</div>
-        <h4 className="font-bold text-2xl md:text-4xl">
+      <div className="pt-20 flex flex-col justify-center md:justify-start gap-y-7 pl-5 pr-5 ">
+        <div className="font-semibold text-xl text-blue-300 text-center md:text-start">Our Services</div>
+        <h4 className="font-bold text-3xl  text-center md:text-start md:text-4xl">
    Advanced SEO Solutions That Drive Visibility & 
 
           <span className="text-blue-900 ml-2"> Growth</span>
@@ -36,7 +36,8 @@ const Serviceleft2 = () => {
 
       {/* Back Side */}
       <motion.div
-        className={`absolute top-0 left-0 w-full h-full flex-col justify-center items-start gap-2 md:gap-6 p-5 bg-blue-200 transition-all duration-300
+        className={`absolute top-0 left-0 w-full h-full flex-col justify-center items-start
+           gap-2 md:gap-6 p-5 bg-blue-200 transition-all duration-300
           ${
             isMobile
               ? show
@@ -53,7 +54,7 @@ const Serviceleft2 = () => {
           <span className="text-blue-900">Strong</span>
         </h4>
 
-        <motion.p>
+        <motion.p className="text-sm">
      From optimizing site architecture and improving page 
      speed to implementing structured data and mobile-first indexing,
       these solutions ensure search engines can easily crawl, understand,

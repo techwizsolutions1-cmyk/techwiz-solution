@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
+   icons: {
+    icon: "/favicon.ico",
+  },
   description:
     "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
 

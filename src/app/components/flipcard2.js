@@ -49,7 +49,7 @@ export default function FlipCard2({pic}) {
             className="absolute inset-0 bg-blue-500 text-white rounded-full flex
             flex-col justify-center items-center [transform:rotateY(180deg)] backface-hidden"
           >
-           
+               <h1 className="font-bold text-xl text-center">Marketing Growth</h1>
             <p className="px-4 text-center text-sm">
             Unlock data-driven campaigns that inspire action and real growth
             </p>

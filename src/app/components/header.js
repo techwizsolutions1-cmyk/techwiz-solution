@@ -185,7 +185,8 @@ const Header = () => {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          className="md:hidden bg-white shadow-lg flex flex-col space-y-3 py-4 px-5 text-gray-800 font-semibold"
+          className="md:hidden bg-white shadow-lg flex flex-col space-y-3 
+          py-4 px-5 text-gray-800 font-semibold"
         >
           {navItems.map((item, index) => (
             <div key={index}>
@@ -199,7 +200,7 @@ const Header = () => {
                 }
                 className="w-full text-left hover:text-blue-600"
               >
-                {item.name}
+                <Link href={item.id}>{item.name}</Link>
               </button>
 
               {/* Mobile Submenu */}

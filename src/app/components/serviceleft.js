@@ -21,13 +21,13 @@ const Serviceleft = () => {
 
   return (
     <div
-      className="relative h-[96vh] bg-[url('/service.png')] bg-cover bg-center group "
+      className="relative h-[96vh] bg-[url('/service.png')] bg-cover bg-center group rounded-xl "
       onClick={() => isMobile && setShow(!show)}
     >
       {/* Front Side */}
-      <div className="pt-20 flex flex-col gap-y-7 pl-5 pr-5">
-        <div className="font-semibold text-xl text-blue-300">Our Services</div>
-        <h4 className="font-bold text-4xl">
+      <div className="pt-20 flex flex-col gap-y-7 pl-5 pr-5 justify-center items-center md:items-start">
+        <div className="font-semibold text-xl text-blue-300 ">Our Services</div>
+        <h4 className="font-bold text-4xl text-center md:text-start">
          Secure, Scalable, and User-Focused {" "}
           <span className="text-blue-900">Web Experiences</span>
         </h4>
@@ -35,7 +35,7 @@ const Serviceleft = () => {
 
       {/* Back Side */}
       <motion.div
-        className={`absolute top-0 left-0 w-full  h-full  flex-col justify-center items-start gap-2 md:gap-6 p-5 bg-blue-200 transition-all duration-300
+        className={`absolute top-0 left-0 w-full  h-full  flex-col justify-center items-start gap-4 md:gap-6 p-5 bg-blue-200 transition-all duration-300
           ${
             isMobile
               ? show
@@ -52,7 +52,7 @@ const Serviceleft = () => {
           <span className="text-blue-900">Results</span>
         </h4>
 
-        <motion.p>
+        <motion.p className="text-sm">
           Professional, responsive, and scalable websites tailored to your
           business needs, built for performance, security, and user experience,
           powered by modern technologies to ensure growth and digital success.

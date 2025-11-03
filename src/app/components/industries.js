@@ -56,23 +56,25 @@ const Industries = () => {
   ];
 
   return (
-    <div className="w-full py-10">
+    <div className="w-full md:py-10">
       {/* ✅ Header Section */}
       <div className="pt-10 pb-8 flex flex-col items-center w-[90vw] md:w-[70vw] mx-auto space-y-3 text-center">
-        <div className="font-bold text-lg md:text-xl text-blue-500">
+        <div className="font-bold  md:text-xl text-blue-500">
           Industries We Serve
         </div>
-        <h4 className="text-2xl md:text-4xl font-bold text-gray-800 leading-snug">
+       <div className="flex flex-col">
+         <h4 className="text-xl md:text-4xl font-bold text-gray-800 leading-snug">
           Tailored <span className="text-blue-900">IT Solutions</span> Backed by
         </h4>
-        <h4 className="text-2xl md:text-4xl font-bold text-gray-800 leading-snug">
+        <h4 className="text-xl md:text-4xl font-bold text-gray-800 ">
           <span className="text-blue-900">Expertise</span> Serving a Wide Range
           of Industries
         </h4>
+       </div>
       </div>
 
       {/* ✅ Main Section */}
-      <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center justify-center px-4 md:px-10 mt-5">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center justify-center px-4 md:px-10 md:mt-5">
         {/* Left List (Scrollable on mobile) */}
         <div className="flex md:flex-col flex-col gap-3 md:gap-y-4 overflow-x-auto md:overflow-visible w-full md:w-auto pb-3 md:pb-0">
           {services.map((e) => (

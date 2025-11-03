@@ -54,9 +54,9 @@ export default function About() {
         </div>
 
         {/* ✅ Feature Cards - Always in One Row */}
-        <div className="flex flex-row justify-center md:justify-start items-center gap-6 md:gap-10 pt-4 flex-wrap">
+        <div className="flex flex-row  justify-center md:justify-start items-center gap-6 md:gap-10 pt-4 flex-wrap">
           {/* Card 1 */}
-          <div className="flex items-center space-x-3.5 bg-blue-50 rounded-xl px-4 py-3 hover:shadow-md transition">
+          <div className=" pl-10 pr-4 flex items-center space-x-3.5 bg-blue-50 rounded-xl px-4 py-3 hover:shadow-md transition">
             <div className="p-3 bg-white rounded-full shadow-sm">
               <Settings className="text-blue-900 stroke-[1.5]" />
             </div>

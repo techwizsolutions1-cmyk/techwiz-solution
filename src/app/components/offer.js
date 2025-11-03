@@ -3,32 +3,51 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Briefcase, Headphones, Hammer } from "lucide-react"; // imported icons
 
 const Offer = () => {
-  // Animation variants for right-side cards
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
     visible: (i) => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.2, // stagger effect
+        delay: i * 0.2,
         duration: 0.6,
         ease: "easeOut",
       },
     }),
   };
 
+  const services = [
+    {
+      id: 1,
+      icon: <Briefcase size={50} className="text-blue-300" />,
+      title: "Consulting",
+      desc: "TechWizPK provides expert consulting in web development, SEO, and digital strategy, helping brands strengthen their online visibility, reach the right audience, and unlock consistent business growth with data-backed decisions and actionable insights.",
+    },
+    {
+      id: 2,
+      icon: <Headphones size={50} className="text-blue-300" />,
+      title: "Support",
+      desc: "Our dedicated support team ensures your digital platforms stay secure, fast, and reliable. From troubleshooting and updates to proactive monitoring, TechWizPK delivers seamless assistance that keeps your business running without disruptions.",
+    },
+    {
+      id: 3,
+      icon: <Hammer size={50} className="text-blue-300" />,
+      title: "Production",
+      desc: "We craft high-impact digital production services, from custom websites and eCommerce platforms to content creation and ad campaigns. TechWizPK focuses on delivering quality outputs that engage audiences, build trust, and accelerate business success.",
+    },
+  ];
+
   return (
     <motion.div
       id="colr"
-      className="flex flex-col md:flex-row mt-10 md:space-x-10
-       py-4 text-white bg-[#010024] pt-20  md:px-10 overflow-hidden"
+      className="flex flex-col md:flex-row mt-10 md:space-x-10 py-4 text-white bg-[#010024] pt-20 md:px-10 overflow-hidden"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      
     >
       {/* LEFT SECTION */}
       <motion.div
@@ -55,63 +74,36 @@ const Offer = () => {
             src="/larki.jpg"
             alt="offer-image"
             fill
-            className=" object-fill  rounded-2xl"
+            className="object-fill rounded-2xl"
           />
         </motion.div>
       </motion.div>
 
       {/* RIGHT SECTION */}
       <motion.div
-        className="flex flex-col space-y-6 md:w-1/2 mt-10 md:mt-0"
+        className="flex flex-col space-y-6 md:w-1/2 mt-10 md:mt-0 px-4"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        {[
-          {
-            id: 1,
-            img: "/agreement.png",
-            title: "Consulting",
-            desc: "TechWizPK provides expert consulting in web development, SEO, and digital strategy, helping brands strengthen their online visibility, reach the right audience, and unlock consistent business growth with data-backed decisions and actionable insights.",
-          },
-          {
-            id: 2,
-            img: "/agrement1.png",
-            title: "Support",
-            desc: "Our dedicated support team ensures your digital platforms stay secure, fast, and reliable. From troubleshooting and updates to proactive monitoring, TechWizPK delivers seamless assistance that keeps your business running without disruptions.",
-          },
-          {
-            id: 3,
-            img: "/agreement.png",
-            title: "Production",
-            desc: "We craft high-impact digital production services, from custom websites and eCommerce platforms to content creation and ad campaigns. TechWizPK focuses on delivering quality outputs that engage audiences, build trust, and accelerate business success.",
-          },
-        ].map((item, i) => (
+        {services.map((item, i) => (
           <motion.div
             key={item.id}
-            className="border-2 border-white rounded-2xl p-4 hover:bg-blue-900/10 transition-transform"
+            className="border-2 border-white rounded-2xl px-3 py-3 md:p-4 hover:bg-blue-900/10 transition-transform"
             variants={cardVariants}
-            initial={{x:-200, }}
-            animate={{x:0,
-            
-            }}
-            transition={{duration:2}}
+            initial={{ x: -200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 2 }}
             custom={i}
             whileHover={{ scale: 1.03 }}
           >
             <div className="flex flex-row items-center space-x-4 mb-2">
-              <Image
-                src={item.img}
-                alt="icon"
-                width={60}
-                height={60}
-                className="rounded-lg"
-              />
-              <h4 className="text-blue-300 text-xl font-bold hover:text-blue-900 transition-colors">
+              <div>{item.icon}</div>
+              <h4 className="text-blue-300 text-xl font-bold  hover:text-blue-900 transition-colors">
                 {item.title}
               </h4>
             </div>
-            <p className="text-gray-300">{item.desc}</p>
+            <p className="text-sm md:text-normal text-gray-300">{item.desc}</p>
           </motion.div>
         ))}
       </motion.div>

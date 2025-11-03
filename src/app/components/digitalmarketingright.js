@@ -13,7 +13,9 @@ const Digitalmarketingright = () => {
   return (
     <div
       id="digital"
-      className="w-full flex pr-3 pl-3 flex-col md:flex-row md:pl-10 md:pr-10 pt-10 mt-10 items-center md:items-start gap-8"
+      className="w-full flex pr-3 pl-3 flex-col
+       md:flex-row md:pl-10 md:pr-10 pt-10 md:mt-10 items-center 
+       md:items-start gap-8"
     >
       {/* ✅ Left Section */}
       <div className="w-full md:w-1/2">

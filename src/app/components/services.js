@@ -136,10 +136,9 @@ export default function Services() {
 ];
 
   return (
-    <section className="w-full bg-gradient-to-br md:mt-20 from-sky-50 to-white py-12 md:py-16 px-6 md:px-12 rounded-3xl shadow-sm border border-slate-200 space-y-16">
+    <section id="service" className="w-full bg-gradient-to-br md:mt-20 from-sky-50 to-white py-12 md:py-16 px-6 md:px-12 rounded-3xl shadow-sm border border-slate-200 space-y-16">
 <div className="flex flex-col space-y-3">
-      <h4 className="text-center font-bold text-xl" id="service">Smart Innovation</h4>
-    <h3 className="text-center font-bold text-4xl">Our Digital Marketing Expertise</h3>
+   
 </div>
       {cards.map((card) => (
         <div
