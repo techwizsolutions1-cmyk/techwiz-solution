@@ -24,7 +24,7 @@ const Seo = () => {
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 GEO / AEO
               </h4>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed lg:text-base">
                 Optimize for AI-driven search engines and large language models to ensure your brand appears in conversational answers and voice queries.
               </p>
             </div>
@@ -35,7 +35,7 @@ const Seo = () => {
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 Local SEO
               </h4>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed lg:text-base">
                 Enhance visibility in global search and Google Business Profile optimization, securing higher rankings in local and AI-powered results.
               </p>
             </div>
@@ -46,7 +46,7 @@ const Seo = () => {
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 Ecommerce SEO
               </h4>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed lg:text-base">
                 Boost online sales with product page optimization, structured data, and conversion-focused strategies built for growth.
               </p>
             </div>
@@ -57,7 +57,7 @@ const Seo = () => {
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 Traditional SEO
               </h4>
-              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed lg:text-base">
                 Refine on-page, off-page, and technical SEO to strengthen rankings, fix errors, and sustain organic performance.
               </p>
             </div>

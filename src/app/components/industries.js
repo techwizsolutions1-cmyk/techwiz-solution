@@ -74,9 +74,9 @@ const Industries = () => {
       </div>
 
       {/* ✅ Main Section */}
-      <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center justify-center px-4 md:px-10 md:mt-5">
+      <div className=" w-full flex flex-col lg:flex-row gap-8 md:gap-10 items-center justify-center px-4 lg:px-10 lg:mt-5">
         {/* Left List (Scrollable on mobile) */}
-        <div className="flex md:flex-col flex-col gap-3 md:gap-y-4 overflow-x-auto md:overflow-visible w-full md:w-auto pb-3 md:pb-0">
+        <div className="flex lg:flex-col flex-col gap-3 lg:gap-y-4 overflow-x-auto lg:overflow-visible w-full lg:w-auto pb-3 lg:pb-0">
           {services.map((e) => (
             <button
               key={e.id}

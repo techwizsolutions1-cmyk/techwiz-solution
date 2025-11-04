@@ -36,7 +36,8 @@ const Serviceleft2 = () => {
 
       {/* ✅ BACK SIDE */}
       <motion.div
-        className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start gap-3 sm:gap-4 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-100/95 backdrop-blur-sm transition-all duration-500
+        className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center
+           items-start gap-0 sm:gap-4 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-100/95 backdrop-blur-sm transition-all duration-500
         ${isMobile ? (show ? "flex" : "hidden") : "hidden group-hover:flex"}`}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -45,7 +46,7 @@ const Serviceleft2 = () => {
           Our Services
         </div>
 
-        <h4 className="font-bold text-2xl sm:text-3xl md:text-4xl leading-tight text-gray-800">
+        <h4 className="font-bold text-xl sm:text-3xl md:text-4xl leading-tight text-gray-800">
           Custom SEO Solutions that Make Businesses{" "}
           <span className="text-blue-900">Stronger</span>
         </h4>

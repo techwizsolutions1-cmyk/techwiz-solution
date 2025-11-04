@@ -49,10 +49,10 @@ const Serviceright = () => {
               hover:shadow-md hover:bg-blue-100/60 transition-all duration-300 text-center h-full"
           >
             {service.icon}
-            <h4 className="font-semibold text-base sm:text-lg text-blue-800 mt-1">
+            <h4 className="font-bold text-base lg:text-2xl sm:text-lg text-blue-800 mt-1">
               {service.title}
             </h4>
-            <p className="text-xs sm:text-sm text-gray-700 font-medium mt-2 leading-snug">
+            <p className="text-xs sm:text-sm text-gray-600 font-medium mt-2 leading-snug lg:text-lg">
               {service.desc}
             </p>
           </div>

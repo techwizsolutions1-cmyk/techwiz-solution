@@ -7,53 +7,51 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="bg-[url('/hero.png')] bg-cover bg-center w-full h-[100vh] relative mt-1">
-      <div className="flex flex-col  md:justify-center md:items-center  lg:flex-row pt-10 w-full justify-between lg:pt-20 lg:pl-20 px-5 lg:pr-10">
+    <section className="relative bg-[url('/hero.png')] bg-cover bg-center w-full h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* 🔹 Overlay for text contrast */}
+      <div className="absolute inset-0 bg-black/50" />
+
+      <div className="relative z-10 flex flex-col lg:flex-col xl:flex-row items-center justify-between w-full max-w-7xl px-6 sm:px-10 xl:px-20 gap-10">
         
-        {/* ✅ Left Side */}
-        <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-8 lg:w-1/2 text-center lg:text-left">
-          <h4 className="font-semibold text-blue-300 text-lg md:text-xl md:justify-center md:items-center md:h-full">
+        {/* ✅ Left Side (Text Content) */}
+        <div className="flex flex-col text-center lg:text-left space-y-5 lg:w-1/2">
+          <h4 className="text-blue-300 font-semibold text-lg sm:text-xl">
             Welcome to Techwiz Solutions
           </h4>
 
-          <h1 className="font-bold text-2xl md:text-3xl text-white leading-snug">
-            Full-Stack Digital Marketing for B2B, B2C, and SAAS Growth
+          <h1 className="text-white font-extrabold text-2xl sm:text-2xl lg:text-5xl leading-tight">
+            Full-Stack Digital Marketing for B2B, B2C & SaaS Growth
           </h1>
 
-          <p className="text-white text-sm md:text-base leading-relaxed">
+          <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
             Level up your growth with custom web development, performance SEO, and full-funnel digital marketing. 
-            We design fast, responsive websites, improve search visibility and organic traffic with technical/on-page SEO, 
-            and run data-driven campaigns that attract qualified leads and lift revenue. 
-            Partner with TechWizPK to turn a stronger online presence into measurable results.
+            We build fast, responsive websites and run data-driven campaigns that attract qualified leads and boost revenue. 
+            Partner with TechWizPK to transform your online presence into measurable results.
           </p>
 
-          <Link href="https://wa.me/+923156540669" className="mx-auto lg:mx-0">
-            <button
-              className="px-6 md:px-10 py-3 md:py-4 bg-white font-bold border-2 border-blue-400 rounded-2xl text-blue-900 hover:bg-blue-900 hover:text-white transition-all duration-300"
-              id="btn"
-            >
-              Book a Strategy Now →
-            </button>
-          </Link>
+          <div>
+            <Link href="https://wa.me/+923156540669">
+              <button className="mt-4 px-8 py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg transition duration-300">
+                Book a Strategy Call →
+              </button>
+            </Link>
+          </div>
         </div>
 
-        {/* ✅ Right Side */}
-        <div className="flex relative justify-center items-center mt-10 md:mt-16 lg:mt-0 lg:w-1/2">
-    
-        
-
-          {/* 💻 Laptop/Desktop Layout (original absolute-position cards) */}
-          <div className="hidden lg:block md:absolute md:-top-2 md:right-50">
-            <FlipCard3 pic="/hero.png" />
-          </div>
-          <div className="hidden lg:block absolute left-50">
-            <FlipCard2 pic="/hero.png" />
-          </div>
-          <div className="hidden lg:block absolute bottom-22 right-80">
+        {/* ✅ Right Side (Three FlipCards — visible only on laptops/desktops) */}
+        <div className="hidden lg:hidden xl:flex lg:flex-row justify-center items-center lg:w-1/2 gap-6 relative">
+          <div className="w-48 xl:w-56 lg:absolute lg:-bottom-35 lg:left-0 ">
             <FlipCard pic="/hero.png" />
           </div>
+          <div className="w-48 xl:w-56  lg:absolute lg:right-30">
+            <FlipCard2 pic="/hero.png" />
+          </div>
+          <div className="w-48 xl:w-56 lg:absolute lg:right-60 ">
+            <FlipCard3 pic="/hero.png" />
+          </div>
         </div>
+
       </div>
-    </div>
+    </section>
   );
 }

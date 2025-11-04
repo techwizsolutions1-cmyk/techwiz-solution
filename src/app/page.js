@@ -19,9 +19,12 @@ import Digitalmarketingright from "./components/digitalmarketingright";
  
 
 export default function Home() {
+  console.log("Resend key exists:", !!process.env.RESEND_API_KEY);
+
   return (
     <div className="overflow-hidden">
       
+
       <Hero />
     
       <About/>

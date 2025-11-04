@@ -21,7 +21,7 @@ const Digitalmarketingleft = () => {
 
   return (
     <div
-      className="relative h-[70vh] sm:h-[80vh] md:h-[85vh] lg:h-[90vh] 
+      className="relative h-[80vh] sm:h-[80vh] md:h-[85vh] lg:h-[90vh] 
       bg-[url('/service.png')] bg-cover bg-center rounded-xl overflow-hidden group cursor-pointer"
       onClick={() => isMobile && setShow(!show)}
     >
@@ -39,7 +39,7 @@ const Digitalmarketingleft = () => {
       {/* ✅ Back Side */}
       <motion.div
         className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center md:items-start 
-        gap-4 sm:gap-5 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-200 text-gray-900 text-center md:text-left 
+        gap-0 sm:gap-5 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-200 text-gray-900 text-center md:text-left 
         transition-all duration-300 z-10
         ${
           isMobile
