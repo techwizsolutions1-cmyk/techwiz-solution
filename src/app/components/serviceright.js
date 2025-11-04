@@ -6,69 +6,57 @@ import { FaWordpress, FaShopify, FaStore, FaCode } from "react-icons/fa";
 
 const Serviceright = () => {
   return (
-    <div id="web" className="w-full flex pr-3 pl-3 flex-col md:flex-row md:pl-10 md:pr-10
-     md:pt-10 mt-10 items-center md:items-start gap-8">
+    <div
+      id="web"
+      className=" lg:items-center w-full flex flex-col lg:flex-row items-stretch gap-8  
+      px-4 sm:px-6 md:px-10 lg:px-14 pt-8 md:pt-12 lg:pt-16"
+    >
       {/* ✅ Left Section */}
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/2 h-auto lg:h-[80vh] flex">
         <Serviceleft />
       </div>
 
       {/* ✅ Right Section */}
-      <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {/* 1️⃣ Wordpress */}
-        <div className="flex flex-col items-center border-2 border-gray-200 rounded-md p-6 md:p-8 hover:shadow-2xl hover:bg-blue-200 transition-all">
-          <div className="flex flex-col items-center text-center space-y-3">
-            <FaWordpress className="text-blue-600 text-4xl" />
-            <h4 className="font-bold text-lg md:text-xl text-blue-800">
-              Wordpresss
+      <div
+        className="w-full lg:w-1/2 h-auto lg:h-[80vh] grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 content-between"
+      >
+        {/* 🔹 Common Card Style */}
+        {[
+          {
+            icon: <FaWordpress className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
+            title: "WordPress",
+            desc: "Build fast, secure, and SEO-optimized websites that strengthen your brand and deliver measurable results."
+          },
+          {
+            icon: <FaStore className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
+            title: "E-commerce Store",
+            desc: "Launch conversion-ready online stores with smart integrations designed to increase sales and customer loyalty."
+          },
+          {
+            icon: <FaShopify className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
+            title: "Shopify Solutions",
+            desc: "Custom Shopify themes and apps tailored for seamless shopping experiences and long-term scalability."
+          },
+          {
+            icon: <FaCode className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
+            title: "Custom Development",
+            desc: "End-to-end web solutions engineered to match your workflows, goals, and growth plans."
+          },
+        ].map((service, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-start items-center border border-gray-200 rounded-xl p-3 sm:p-4 md:p-5
+              hover:shadow-md hover:bg-blue-100/60 transition-all duration-300 text-center h-full"
+          >
+            {service.icon}
+            <h4 className="font-semibold text-base sm:text-lg text-blue-800 mt-1">
+              {service.title}
             </h4>
+            <p className="text-xs sm:text-sm text-gray-700 font-medium mt-2 leading-snug">
+              {service.desc}
+            </p>
           </div>
-          <p className="text-sm md:text-base text-gray-700 font-semibold mt-4 text-center">
-             Build fast, secure, and SEO-optimized websites that strengthen your brand and deliver measurable results.
-          </p>
-        </div>
-
-        {/* 2️⃣ E-commerce Store */}
-        <div className="flex flex-col items-center border-2 border-gray-200 rounded-md p-6 md:p-8 hover:shadow-2xl hover:bg-blue-200 transition-all">
-          <div className="flex flex-col items-center text-center space-y-3">
-            <FaStore className="text-blue-600 text-4xl" />
-            <h4 className="font-bold text-lg md:text-xl text-blue-800">
-              E-commerce Store
-            </h4>
-          </div>
-          <p className="text-sm md:text-base text-gray-700 font-semibold mt-4 text-center">
-           Launch conversion-ready online stores with smart integrations designed to increase sales and customer loyalty.
-
-          </p>
-        </div>
-
-        {/* 3️⃣ Shopify Solutions */}
-        <div className="flex flex-col items-center border-2 border-gray-200 rounded-md p-6 md:p-8 hover:shadow-2xl hover:bg-blue-200 transition-all">
-          <div className="flex flex-col items-center text-center space-y-3">
-            <FaShopify className="text-blue-600 text-4xl" />
-            <h4 className="font-bold text-lg md:text-xl text-blue-800">
-              Shopify Solutions
-            </h4>
-          </div>
-          <p className="text-sm md:text-base text-gray-700 font-semibold mt-4 text-center">
-           Custom Shopify themes and apps tailored for seamless shopping experiences and long-term scalability.
-
-          </p>
-        </div>
-
-        {/* 4️⃣ Custom Development */}
-        <div className="flex flex-col items-center border-2 border-gray-200 rounded-md p-6 md:p-8 hover:shadow-2xl hover:bg-blue-200 transition-all">
-          <div className="flex flex-col items-center text-center space-y-3">
-            <FaCode className="text-blue-600 text-4xl" />
-            <h4 className="font-bold text-lg md:text-xl text-blue-800">
-              Custom Development
-            </h4>
-          </div>
-          <p className="text-sm md:text-base text-gray-700 font-semibold mt-4 text-center">
-            End-to-end web solutions engineered to match your workflows, goals, and growth plans.
-
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );

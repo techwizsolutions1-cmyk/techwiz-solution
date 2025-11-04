@@ -10,7 +10,6 @@ import {
   FaBars,
   FaTimes,
   FaInstagram,
-   
 } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import Image from "next/image";
@@ -18,14 +17,9 @@ import Image from "next/image";
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [openDesktopSubmenu, setOpenDesktopSubmenu] = useState(null);
-  const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 150) setIsSticky(true);
-      else setIsSticky(false);
-    };
+    const handleScroll = () => setIsSticky(window.scrollY > 150);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -33,68 +27,63 @@ const Header = () => {
   const navItems = [
     { name: "SEO SERVICES", id: "#seo" },
     { name: "WEB SOLUTIONS", id: "#web" },
-    {
-      name: "DIGITAL MARKETING",
-      id: "#digital",
-    
-    },
-   
-     { name: "OTHER EXPERTISE", id: "#service" },
+    { name: "DIGITAL MARKETING", id: "#digital" },
+    { name: "OTHER EXPERTISE", id: "#service" },
   ];
 
   return (
     <div className="flex flex-col w-full">
-      {/* 🔹 Top Header */}
-      <div className="text-gray-500 pt-3 hidden md:flex flex-row pl-10 space-x-18 font-semibold relative">
-        <div className="flex flex-row items-center gap-2">
+      {/* 🔹 Top Header (Desktop only) */}
+      <div className="hidden lg:flex text-gray-500 pt-3 flex-wrap justify-between items-center px-10 font-medium relative">
+        {/* Left: Phone */}
+        <div className="flex items-center gap-2">
           <FaPhoneVolume />
           <Link href="tel:+9223114661100">+92 231 1466100</Link>
         </div>
 
-        <div className="h-px w-px bg-gray-400"></div>
-
-        <div className="flex flex-row space-x-10">
-          <div>
+        {/* Middle: Links */}
+        <div className="flex gap-10 relative">
+          <div className="relative group">
             <Link href="#">HOME</Link>
-            <div className="w-12 h-1 bg-blue-300 absolute top-13"></div>
+            <div className="hidden w-10 h-[2px] bg-blue-300 absolute -bottom-1 group-hover:block transition-all"></div>
           </div>
-          <div className="group">
+          <div className="relative group">
             <Link href="#about">ABOUT US</Link>
-            <div className="hidden w-15 h-1 group-hover:block transition-all duration-200 bg-blue-400 absolute top-13"></div>
+            <div className="hidden w-12 h-[2px] bg-blue-400 absolute -bottom-1 group-hover:block transition-all"></div>
           </div>
-          <div className="group">
+          <div className="relative group">
             <Link href="#contact">CONTACT US</Link>
-            <div className="hidden w-17 h-1 group-hover:block transition-all duration-300 bg-blue-400 absolute top-13"></div>
+            <div className="hidden w-16 h-[2px] bg-blue-400 absolute -bottom-1 group-hover:block transition-all"></div>
           </div>
         </div>
 
-        <div className="h-px w-px bg-gray-400"></div>
-
-        <div className="flex flex-row space-x-2 justify-center items-center">
-          <CgMail />
-          <Link href="mailto:info@techwizpk.com">info@techwizpk.com</Link>
-        </div>
-
-        <div className="h-px w-px bg-gray-300"></div>
-
-        <div className="flex flex-row space-x-4 text-xl">
-          <Link href="https://www.facebook.com/techwizpk">
-            <FaFacebookF />
-          </Link>
-          <Link href="#">
-            <FaInstagram />
-          </Link>
-          <Link href="https://www.linkedin.com/in/tech-wizpk-b442b8361/">
-            <FaLinkedinIn />
-          </Link>
-          <Link href="https://wa.me/+923156540669"><FaWhatsapp /></Link>
+        {/* Right: Email + Socials */}
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            <CgMail />
+            <Link href="mailto:info@techwizpk.com">info@techwizpk.com</Link>
+          </div>
+          <div className="flex gap-3 text-xl pl-2">
+            <Link href="https://www.facebook.com/techwizpk">
+              <FaFacebookF />
+            </Link>
+            <Link href="#">
+              <FaInstagram />
+            </Link>
+            <Link href="https://www.linkedin.com/in/tech-wizpk-b442b8361/">
+              <FaLinkedinIn />
+            </Link>
+            <Link href="https://wa.me/+923156540669">
+              <FaWhatsapp />
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* Line */}
-      <div className="w-full h-px bg-gray-300 mt-5"></div>
+      {/* Divider */}
+      <div className="hidden lg:block w-full h-px bg-gray-300 mt-4"></div>
 
-      {/* 🔹 Desktop Navbar */}
+      {/* 🔹 Desktop Navbar (only lg and up) */}
       <motion.div
         initial={false}
         animate={{
@@ -102,123 +91,73 @@ const Header = () => {
           top: isSticky ? 0 : "auto",
           backgroundColor: isSticky ? "rgba(255,255,255,0.95)" : "transparent",
           boxShadow: isSticky
-            ? "0px 2px 10px rgba(0,0,0,0.1)"
-            : "0px 0px 0px transparent",
-          transition: { duration: 0.4, ease: "easeInOut" },
+            ? "0 2px 8px rgba(0,0,0,0.1)"
+            : "0 0 0 transparent",
         }}
-        className={`hidden md:flex flex-row justify-between items-center
-           font-bold text-gray-800 z-50 w-full px-2 py-4`}
+        transition={{ duration: 0.4 }}
+        className="hidden lg:flex justify-between items-center font-semibold text-gray-800 z-50 w-full px-8 py-5"
       >
         {/* Logo */}
-        <Image src="/logo.jpg" width={150} height={200} alt="logo" />
+        <Image src="/logo.jpg" width={150} height={100} alt="logo" />
 
         {/* Navbar Links */}
-        <div className="flex flex-row space-x-4 relative">
+        <div className="flex gap-6">
           {navItems.map((item, index) => (
             <div key={index} className="group relative">
               <Link
                 href={item.id}
-                className="hover:text-blue-600"
-                onClick={(e) => {
-                  if (item.sub) {
-                    e.preventDefault();
-                    setOpenDesktopSubmenu(
-                      openDesktopSubmenu === index ? null : index
-                    );
-                  } else {
-                    setMenuOpen(false);
-                  }
-                }}
+                className="hover:text-blue-600 transition-colors"
               >
                 {item.name}
               </Link>
-
-              {/* Underline */}
-              <div className="hidden h-1 w-full bg-blue-400 group-hover:block absolute top-8 transition-all duration-200"></div>
-
-              {/* Desktop Submenu */}
-              {item.sub && openDesktopSubmenu === index && (
-                <div className="flex flex-col absolute top-10 bg-white shadow-lg border border-gray-100 rounded-xl space-y-2 p-5 z-50">
-                  {item.sub.map((subItem, i) => (
-                    <Link
-                      key={i}
-                      href={subItem.id}
-                      className="text-gray-700 hover:text-blue-600"
-                    >
-                      {subItem.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
+              <div className="hidden group-hover:block h-[2px] w-full bg-blue-400 absolute -bottom-1"></div>
             </div>
           ))}
         </div>
 
+        {/* CTA */}
         <Link
           href="/free-quates"
-          className="pl-6 pr-6 py-3 border-2 border-blue-900 rounded-2xl hover:scale-105 hover:text-white text-blue-900 hover:bg-blue-900 transition"
+          className="px-6 py-3 border-2 border-blue-900 rounded-2xl hover:bg-blue-900 hover:text-white text-blue-900 transition-transform hover:scale-105"
         >
           Get a Quote Now →
         </Link>
       </motion.div>
 
-      {/* 🔹 Mobile Navbar */}
+      {/* 🔹 Mobile + Tablet Navbar (visible up to lg) */}
       <div
-        className={`md:hidden flex justify-between items-center px-4 py-3 ${
+        className={`flex justify-between items-center px-4 py-3 ${
           isSticky
             ? "fixed top-0 bg-white shadow-md w-full z-50"
             : "relative bg-white"
-        }`}
+        } lg:hidden`}
       >
-        <Image src="/logo.jpg" width={150} height={100} alt="logo" />
+        <Image src="/logo.jpg" width={130} height={80} alt="logo" />
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-2xl"
+          className="text-2xl focus:outline-none"
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* 🔹 Mobile Menu */}
+      {/* 🔹 Mobile/Tablet Menu */}
       {menuOpen && (
         <motion.div
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          className="md:hidden bg-white shadow-lg flex flex-col space-y-3 
-          py-4 px-5 text-gray-800 font-semibold"
+          className="lg:hidden bg-white shadow-lg flex flex-col space-y-3 py-4 px-5 text-gray-800 font-medium"
         >
           {navItems.map((item, index) => (
-            <div key={index}>
-              <button
-                onClick={() =>
-                  item.sub
-                    ? setOpenMobileSubmenu(
-                        openMobileSubmenu === index ? null : index
-                      )
-                    : setMenuOpen(false)
-                }
-                className="w-full text-left hover:text-blue-600"
-              >
-                <Link href={item.id}>{item.name}</Link>
-              </button>
-
-              {/* Mobile Submenu */}
-              {item.sub && openMobileSubmenu === index && (
-                <div className="pl-4 mt-2 space-y-1 text-gray-600">
-                  {item.sub.map((sub, i) => (
-                    <Link
-                      key={i}
-                      href={sub.id}
-                      onClick={() => setMenuOpen(false)}
-                      className="block hover:text-blue-500"
-                    >
-                      {sub.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <Link
+              key={index}
+              href={item.id}
+              onClick={() => setMenuOpen(false)}
+              className="block hover:text-blue-600 py-1"
+            >
+              {item.name}
+            </Link>
           ))}
 
           <Link
@@ -235,7 +174,6 @@ const Header = () => {
             <Link href="#">
               <FaInstagram />
             </Link>
-          
           </div>
         </motion.div>
       )}

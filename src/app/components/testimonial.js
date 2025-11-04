@@ -53,9 +53,10 @@ export default function Testimonial() {
       >
         {clients.map((client, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white text-gray-700 rounded-xl shadow-lg p-8 relative flex flex-col gap-5 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white text-gray-700 rounded-xl shadow-lg p-8 relative 
+            flex flex-col gap-5 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center gap-4">
-                <div className="w-20 h-20 rounded-full border-4 border-[#00D8FF] overflow-hidden">
+                <div className="w-20 h-20 rounded-full border-4 border-blue-850 overflow-hidden">
                   <img
                     src={client.image}
                     alt={client.name}
@@ -63,12 +64,12 @@ export default function Testimonial() {
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0B0D3B]">
+                  <h3 className="text-xl font-bold text-blue-900">
                     {client.name}
                   </h3>
-                  <p className="text-[#00AEEF] font-medium">{client.title}</p>
+                  <p className="text-blue-900 font-medium">{client.title}</p>
                 </div>
-                <FaQuoteRight className="text-[#00D8FF] text-5xl absolute right-6 top-6 opacity-20" />
+                <FaQuoteRight className="text-blue-800 text-5xl absolute right-6 top-6 opacity-20" />
               </div>
 
               <p className="text-gray-600 text-base leading-relaxed mt-4">

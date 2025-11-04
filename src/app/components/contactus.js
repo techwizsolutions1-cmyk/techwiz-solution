@@ -164,7 +164,7 @@ const ContactUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex flex-col justify-between gap-6"
+          className="flex-1 flex flex-col justify-between gap-9 lg:pb-9"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -207,7 +207,7 @@ const ContactUs = () => {
             </div>
 
             {/* Google Map */}
-            <div className="w-full h-60 rounded-2xl overflow-hidden">
+            <div className="w-full h-72 rounded-2xl overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d83025.91402397878!2d74.09512048961231!3d31.381287103236232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOpposite%20Tower%20One%2C%20D%20Block%2C%20Near%20Bowl%20Chowk%2C%20New%20Lahore%20City%20Phase%202%2C%20Zip%20Code%2053720%2C%20Canal%20Road%20Lahore!5e1!3m2!1sen!2spl!4v1761896168270!5m2!1sen!2spl"
                 className="w-full h-full"
@@ -218,37 +218,7 @@ const ContactUs = () => {
           </motion.div>
 
           {/* Social Media */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex gap-6 justify-center md:justify-start"
-          >
-            {[
-              {
-                icon: <FaFacebookF />,
-                color: "text-blue-600",
-                link: "https://www.facebook.com/techwizpk",
-              },
-              { icon: <FaInstagram />, color: "text-pink-500", link: "#" },
-              {
-                icon: <FaLinkedinIn />,
-                color: "text-blue-700",
-                link: "https://www.linkedin.com/in/tech-wizpk-b442b8361/",
-              },
-            ].map((social, idx) => (
-              <motion.a
-                key={idx}
-                href={social.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.2, rotate: 10 }}
-                className={`${social.color} text-3xl transition`}
-              >
-                {social.icon}
-              </motion.a>
-            ))}
-          </motion.div>
+          
         </motion.div>
       </div>
     </div>

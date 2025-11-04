@@ -28,30 +28,30 @@ const Industries = () => {
       name: "Technology & Startups",
       path: "/it2.jpeg",
       details:
-        "For tech companies and fast-growing startups, we provide innovative, scalable solutions that blend modern web development, UI/UX design, and AI-powered strategies. We focus on helping new businesses establish credibility, attract investors and customers, and position themselves as leaders in the digital world. With TechWizPK, startups can grow smarter and faster.",
+        "For tech companies and fast-growing startups, we provide innovative, scalable solutions that blend modern web development, UI/UX design, and AI-powered strategies. We focus on helping new businesses establish credibility, attract investors and customers, and position themselves as leaders in the digital world. ",
     },
     {
       id: 3,
       name: "Education & E-Learning",
       path: "/it3.jpeg",
       details:
-        "We empower schools, colleges, and online learning platforms with creative and technology-driven solutions. From designing interactive websites to implementing AI tools for better learning experiences, we make education more engaging, accessible, and impactful. Our SEO and marketing strategies also ensure institutions connect with the right students worldwide.",
+        "We empower schools, colleges, and online learning platforms with creative and technology-driven solutions. From designing interactive websites to implementing AI tools for better learning experiences, we make education more engaging, accessible, and impactful. ",
     },
     {
       id: 4,
       name: "Corporate & Professional Services",
       path: "/professional.png",
       details:
-        "We design customized digital strategies for professional businesses and enterprises to strengthen branding, generate high-quality leads, and expand market reach. Through expert SEO, advanced web solutions, and result-driven marketing, we help companies establish authority, grow consistently, and achieve long-term success in highly competitive industries.",
+        "We design customized digital strategies for professional businesses and enterprises to strengthen branding, generate high-quality leads, and expand market reach. Through expert SEO, advanced web solutions, and result-driven marketing, we help companies establish authority, grow consistently.",
     },
     {id:5,
       name:"Finance & Fintech",
       path:"/finances.png",
-      details:"We build trust for banks, fintech startups, and financial advisors through compliant, conversion-focused digital marketing. From SEO and paid ads to secure web solutions, we help financial brands improve visibility, acquire clients, and scale responsibly."
+      details:"We build trust for banks, fintech startups, and financial advisors through compliant, conversion-focused digital marketing. From SEO and paid ads to secure web solutions, we help financial brands improve visibility."
     },
      {name:"Retail & E-Commerce",id:6,
       path:"/retails.png",
-      details:"Our tailored e-commerce marketing solutions drive sales across platforms. From SEO-optimized product pages to performance ads and conversion funnels, we help retail brands grow revenue, improve customer experience, and expand globally with scalable, data-driven strategies."
+      details:"Our tailored e-commerce marketing solutions drive sales across platforms. From SEO-optimized product pages to performance ads and conversion funnels, we help retail brands grow revenue, improve customer experience."
      }
   ];
 
@@ -98,19 +98,20 @@ const Industries = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="relative rounded-2xl shadow-xl md:w-[70%] w-full bg-white border-2 border-blue-900 overflow-hidden"
+          className="relative rounded-2xl shadow-xl md:h-full md:w-[75%] w-full bg-white border-2
+           border-blue-900 overflow-hidden"
         >
           {card
             .filter((c) => c.id === active)
             .map((e) => (
               <div
                 key={e.id}
-                className="bg-cover bg-center md:h-[70vh] flex flex-col items-center justify-center p-6 md:p-10 text-gray-800"
+                className="bg-cover sm:text-sm md:text-base bg-center md:h-[80vh] flex flex-col items-center justify-center sm:p-6 md:p-7 text-gray-800"
                 style={{ backgroundImage: `url(${e.path})` }}
               >
                 <div className="bg-white/85 p-5 md:p-8 rounded-xl text-center space-y-3 md:space-y-5 max-w-3xl">
                   <h3 className="text-lg md:text-2xl font-bold">{e.name}</h3>
-                  <p className="text-sm md:text-base leading-relaxed">
+                  <p className="text-sm md:text-base md:leading-5">
                     {e.details}
                   </p>
                 </div>

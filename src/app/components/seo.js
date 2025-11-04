@@ -5,59 +5,60 @@ import Serviceleft2 from "./serviceleft2";
 
 const Seo = () => {
   return (
-    <div id="seo" className="w-full px-4 md:px-10 lg:px-20 py-10">
-      <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8">
-        {/* Left Section */}
-        <div className="w-full md:w-[45%]">
+    <div
+      id="seo"
+      className="w-full px-4 sm:px-6 md:px-10 lg:px-20 py-10 sm:py-14 md:py-20"
+    >
+      <div className="flex flex-col lg:flex-row justify-center items-stretch lg:items-center gap-8 md:gap-12">
+        {/* ✅ LEFT SECTION */}
+        <div className="w-full lg:w-[45%]">
           <Serviceleft2 />
         </div>
 
-        {/* Right Section */}
-        <div className="w-full md:w-[55%]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {/* ✅ RIGHT SECTION */}
+        <div className="w-full lg:w-[55%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
             {/* 1️⃣ GEO / AEO */}
-            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
-              <FaSearch className="text-blue-600 text-4xl mb-4" />
-              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+              <FaSearch className="text-blue-600 text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3" />
+              <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 GEO / AEO
               </h4>
-              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-               Optimize for AI-driven search engines and large language models to ensure your brand 
-               appears in conversational answers and voice queries.
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+                Optimize for AI-driven search engines and large language models to ensure your brand appears in conversational answers and voice queries.
               </p>
             </div>
 
             {/* 2️⃣ Local SEO */}
-            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
-              <FaMapMarkerAlt className="text-blue-600 text-4xl mb-4" />
-              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+              <FaMapMarkerAlt className="text-blue-600 text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3" />
+              <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 Local SEO
               </h4>
-              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-               Enhance visibility in global search and Google Business Profile  optimization, securing higher rankings in local and AI-powered results.
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+                Enhance visibility in global search and Google Business Profile optimization, securing higher rankings in local and AI-powered results.
               </p>
             </div>
 
             {/* 3️⃣ Ecommerce SEO */}
-            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
-              <FaShoppingCart className="text-blue-600 text-4xl mb-4" />
-              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+              <FaShoppingCart className="text-blue-600 text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3" />
+              <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 Ecommerce SEO
               </h4>
-              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
                 Boost online sales with product page optimization, structured data, and conversion-focused strategies built for growth.
               </p>
             </div>
 
             {/* 4️⃣ Traditional SEO */}
-            <div className="flex flex-col items-center border-2 border-gray-200 p-6 rounded-xl hover:bg-blue-100 hover:shadow-xl transition-all duration-300">
-              <FaCog className="text-blue-600 text-4xl mb-4" />
-              <h4 className="font-bold text-lg md:text-xl text-blue-800 mb-2">
+            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+              <FaCog className="text-blue-600 text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3" />
+              <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1">
                 Traditional SEO
               </h4>
-              <p className="text-sm md:text-base text-gray-700 font-medium text-center">
-              Refine on-page, off-page, and technical SEO to strengthen rankings, fix errors, and sustain organic performance.
-
+              <p className="text-xs sm:text-sm text-gray-700 font-medium leading-relaxed">
+                Refine on-page, off-page, and technical SEO to strengthen rankings, fix errors, and sustain organic performance.
               </p>
             </div>
           </div>
