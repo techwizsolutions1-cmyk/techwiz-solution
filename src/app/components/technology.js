@@ -35,7 +35,7 @@ const Technology = () => {
   return (
     <div
       className="w-full flex flex-col-reverse lg:flex-row items-center md:items-start 
-      gap-10 md:gap-16 lg:gap-20 px-4 sm:px-6 md:px-10 lg:px-20 py-10 md:py-16"
+      gap-10 md:gap-16 lg:gap-20 px-4 sm:px-6 md:px-10 lg:px-20  md:py-16"
     >
       {/* ✅ LEFT SECTION (Text) */}
       <div className="w-full md:w-full  lg:w-1/2 flex flex-col justify-center text-center md:text-center space-y-4 sm:space-y-6">

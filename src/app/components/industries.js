@@ -64,12 +64,12 @@ const Industries = () => {
         </div>
        <div className="flex flex-col">
          <h4 className="text-xl md:text-4xl font-bold text-gray-800 leading-snug">
-          Tailored <span className="text-blue-900">IT Solutions</span> Backed by
-        </h4>
-        <h4 className="text-xl md:text-4xl font-bold text-gray-800 ">
-          <span className="text-blue-900">Expertise</span> Serving a Wide Range
+          Tailored <span className="text-blue-900">IT Solutions</span> Backed by  <span className="text-blue-900">Expertise</span> Serving a Wide Range
           of Industries
         </h4>
+        
+         
+        
        </div>
       </div>
 

@@ -46,7 +46,7 @@ export default function FlipCard2({pic}) {
 
           {/* Back Side */}
           <div
-            className="absolute inset-0 bg-blue-500 text-white rounded-full flex
+            className="absolute inset-0 bg-blue-500 text-white rounded-full flex space-y-2
             flex-col justify-center items-center [transform:rotateY(180deg)] backface-hidden"
           >
                <h1 className="font-bold text-xl text-center">Marketing Growth</h1>

@@ -8,8 +8,9 @@ export default function Footer() {
   return (
     <footer className="bg-[#07092B] text-white overflow-hidden">
       {/* --- Top CTA Section --- */}
-      <div className="relative bg-gradient-to-r from-[#0B0D3B] via-[#0C0E4A] to-[#0B0D3B] px-8 md:px-16 py-10">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+      <div className="relative bg-gradient-to-r from-[#0B0D3B] via-[#0C0E4A] to-[#0B0D3B] 
+      px-8 md:px-16 py-10">
+        <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center gap-3 text-center md:text-left">
           <div className="max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
               Looking for the Best IT Business Solutions?
@@ -20,9 +21,11 @@ export default function Footer() {
             </p>
           </div>
 
-          <button className="bg-white text-[#07092B] font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-gradient-to-r hover:from-[#6A11CB] hover:to-[#2575FC] hover:text-white transition-all duration-300">
-            Book a Strategy Call →
-          </button>
+          <button className="px-8 py-3 bg-white text-black font-semibold
+          md:w-[50%]lg:w-full rounded-2xl shadow-md hover:bg-black hover:text-white transition-all duration-300">
+  Book a Strategy Call
+</button>
+
         </div>
 
         {/* Light Gradient Border Effect */}

@@ -8,11 +8,11 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="bg-[url('/hero.png')] bg-cover bg-center w-full h-[100vh] relative mt-1">
-      <div className="flex flex-col lg:flex-row pt-10 w-full justify-between lg:pt-20 lg:pl-20 px-5 lg:pr-10">
+      <div className="flex flex-col  md:justify-center md:items-center  lg:flex-row pt-10 w-full justify-between lg:pt-20 lg:pl-20 px-5 lg:pr-10">
         
         {/* ✅ Left Side */}
         <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-8 lg:w-1/2 text-center lg:text-left">
-          <h4 className="font-semibold text-blue-300 text-lg md:text-xl">
+          <h4 className="font-semibold text-blue-300 text-lg md:text-xl md:justify-center md:items-center md:h-full">
             Welcome to Techwiz Solutions
           </h4>
 

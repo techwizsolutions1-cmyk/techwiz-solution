@@ -38,7 +38,9 @@ const Serviceleft = () => {
 
       {/* 🔹 Back Side */}
       <motion.div
-        className={`absolute top-0 left-0 w-full h-full flex-col justify-center items-center md:items-start gap-4 sm:gap-5 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-100/90 backdrop-blur-sm rounded-xl transition-all duration-300 
+        className={`absolute top-0 left-0 w-full h-full flex-col justify-center 
+          items-center md:items-start gap-0 sm:gap-2 md:gap-6 p-4 sm:p-6 md:p-8
+           bg-blue-100/90 backdrop-blur-sm rounded-xl transition-all duration-300 
           ${
             isMobile
               ? show
@@ -53,13 +55,13 @@ const Serviceleft = () => {
           Our Services
         </div>
 
-        <h4 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center md:text-left leading-snug">
+        <h4 className="font-bold text-2xl sm:text-xl md:text-4xl text-center md:text-left leading-snug">
           Custom Web Solutions That Drive{" "}
           <span className="text-blue-900">Results</span>
         </h4>
 
         <motion.p
-          className="text-gray-700 text-sm sm:text-base md:text-[17px] leading-relaxed text-center md:text-left max-w-xl"
+          className="text-gray-700 text-sm sm:text-sm  md:text-[17px] leading-relaxed text-center md:text-left max-w-xl"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
