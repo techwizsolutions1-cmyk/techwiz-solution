@@ -1,137 +1,167 @@
 "use client";
-import React, { useState } from "react";
-import { useContext } from "react";
-import {abc} from "@/app/components/contextprovider"
+import React, { useState, useContext } from "react";
+import { abc } from "@/app/components/contextprovider";
+
 export default function Page() {
-  const {val,setval}=useContext(abc)
+  const { val } = useContext(abc);
+
   const [form, setForm] = useState({
     name: "",
-    email: "",
-    website: "",
+    fullName: "",
+    workEmail: "",
     company: "",
-    phone: "",
-    budget: "",
+    phoneNumber: "",
+    projectBudget: "",
     comments: "",
+    subject: "New Contact Request",
+    message: "",
   });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Form submitted!");
-    console.log(form);
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, website: val }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setStatus("✅ Email sent successfully!");
+        setForm({
+          name: "",
+          fullName: "",
+          workEmail: "",
+          company: "",
+          phoneNumber: "",
+          projectBudget: "",
+          comments: "",
+          subject: "New Contact Request",
+          message: "",
+        });
+      } else {
+        setStatus("❌ Failed to send email. Please try again.");
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("⚠️ Something went wrong. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div
-      style={{
-        maxWidth: "700px",
-        margin: "40px auto",
-        padding: "20px",
-        border: "1px solid #ddd",
-        borderRadius: "10px",
-      }}
-    >
-      <h2 style={{ textAlign: "center" }}>
-        Request a <span style={{ color: "red" }}>FREE Proposal</span> Now!
+    <div className="max-w-2xl mx-auto mt-10 p-6 border border-gray-200 rounded-xl shadow-md bg-white">
+      <h2 className="text-2xl font-semibold text-center mb-6">
+        Request a <span className="text-red-600">FREE Proposal</span> Now!
       </h2>
 
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: "grid", gap: "15px", marginTop: "20px" }}
-      >
-        {/* Name */}
+      <form onSubmit={handleSubmit} className="grid gap-4">
+        {/* Full Name */}
         <div>
-          <label htmlFor="name">First and Last Name *</label>
-          <br />
+          <label htmlFor="name" className="font-medium">
+            Full Name *
+          </label>
           <input
             id="name"
             name="name"
             type="text"
+            required
             value={form.name}
             onChange={handleChange}
-            style={{ width: "100%", padding: "8px" }}
-            className="border-2 border-black"
+            className="w-full border-2 border-gray-300 rounded-lg p-2"
           />
         </div>
 
         {/* Email */}
         <div>
-          <label htmlFor="email">Work Email Address *</label>
-          <br />
+          <label htmlFor="workEmail" className="font-medium">
+            Work Email Address *
+          </label>
           <input
-            id="email"
-            name="email"
+            id="workEmail"
+            name="workEmail"
             type="email"
-            value={form.email}
+            required
+            value={form.workEmail}
             onChange={handleChange}
-            style={{ width: "100%", padding: "8px" }}
-              className="border-2 border-black"
+            className="w-full border-2 border-gray-300 rounded-lg p-2"
           />
         </div>
 
         {/* Website & Company */}
-        <div style={{ display: "flex", gap: "10px" }}>
-          <div style={{ flex: 1 }}>
-            <label htmlFor="website">Website *</label>
-            <br />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label htmlFor="website" className="font-medium">
+              Website *
+            </label>
             <input
               id="website"
               name="website"
               type="text"
-                className="border-2 border-black"
-              
-              onChange={handleChange}
-             value={val}
-              style={{ width: "100%", padding: "8px" }}
+              value={val}
+              readOnly
+              className="w-full border-2 border-gray-300 rounded-lg p-2 bg-gray-100"
             />
           </div>
 
-          <div style={{ flex: 1 }}>
-            <label htmlFor="company">Company *</label>
-            <br />
+          <div>
+            <label htmlFor="company" className="font-medium">
+              Company *
+            </label>
             <input
               id="company"
               name="company"
               type="text"
               value={form.company}
               onChange={handleChange}
-                className="border-2 border-black"
-
-              style={{ width: "100%", padding: "8px" }}
+              required
+              className="w-full border-2 border-gray-300 rounded-lg p-2"
             />
           </div>
         </div>
 
         {/* Phone */}
         <div>
-          <label htmlFor="phone">Phone Number *</label>
-          <br />
+          <label htmlFor="phoneNumber" className="font-medium">
+            Phone Number *
+          </label>
           <input
-            id="phone"
-            name="phone"
+            id="phoneNumber"
+            name="phoneNumber"
             type="text"
-            value={form.phone}
+            value={form.phoneNumber}
             onChange={handleChange}
             placeholder="(000) 000-0000"
-            style={{ width: "100%", padding: "8px" }}
-              className="border-2 border-black"
+            required
+            className="w-full border-2 border-gray-300 rounded-lg p-2"
           />
         </div>
 
-        {/* Budget */}
+        {/* Project Budget */}
         <div>
-          <label htmlFor="budget">Project Budget *</label>
-          <br />
+          <label htmlFor="projectBudget" className="font-medium">
+            Project Budget *
+          </label>
           <select
-            id="budget"
-            name="budget"
-            value={form.budget}
+            id="projectBudget"
+            name="projectBudget"
+            value={form.projectBudget}
             onChange={handleChange}
-            style={{ width: "100%", padding: "8px" }}
-            
+            required
+            className="w-full border-2 border-gray-300 rounded-lg p-2"
           >
             <option value="">Select project budget</option>
             <option value="0-1000">$0 - $1,000</option>
@@ -142,34 +172,38 @@ export default function Page() {
 
         {/* Comments */}
         <div>
-          <label htmlFor="comments">Comments or Questions</label>
-          <br />
+          <label htmlFor="comments" className="font-medium">
+            Comments or Questions
+          </label>
           <textarea
             id="comments"
             name="comments"
-            placeholder="Looking to get more leads? Frustrated with your current results? Planning something new? Tell us something!"
+            rows="4"
             value={form.comments}
             onChange={handleChange}
-            rows="4"
-            style={{ width: "100%", padding: "8px" }}
-              className="border-2 border-black"
+            placeholder="Tell us about your project..."
+            className="w-full border-2 border-gray-300 rounded-lg p-2"
           />
         </div>
 
-        {/* Button */}
+        {/* Submit Button */}
         <button
           type="submit"
-          style={{
-          
-            color: "white",
-            padding: "10px",
-            border: "none",
-            borderRadius: "5px",
-          }}
-          className="bg-blue-900"
+          disabled={loading}
+          className={`w-full py-3 rounded-lg text-white font-semibold transition ${
+            loading
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-blue-900 hover:bg-blue-800"
+          }`}
         >
-          Submit Request
+          {loading ? "Sending..." : "Submit Request"}
         </button>
+
+        {status && (
+          <p className="text-center mt-2 text-sm font-medium text-gray-700">
+            {status}
+          </p>
+        )}
       </form>
     </div>
   );
