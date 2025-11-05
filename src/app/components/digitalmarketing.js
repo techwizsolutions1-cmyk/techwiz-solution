@@ -27,11 +27,7 @@ const cards = [
     desc: "Automate personalized email campaigns to nurture leads, increase customer retention, and boost overall marketing performance.",
     color: "bg-amber-500",
   },
-  {
-    title: "Brand Strategy & Design",
-    desc: "Build a unique brand identity with powerful visuals, storytelling, and consistent digital experiences that leave a lasting impression.",
-    color: "bg-cyan-500",
-  },
+  
 ];
 
 export default function DigitalMarketing() {

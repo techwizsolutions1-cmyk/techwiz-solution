@@ -7,7 +7,7 @@ const Portfolio = () => {
   const [active, setActive] = useState("Seo");
 
   // ✅ Define your categories
-  const items = ["Seo", "Digital Marketing", "Web Solutions", "UI/UX"];
+  const items = ["SEO", "Digital Marketing", "Web Solutions"];
 
   // ✅ Map each tab to its component
   const components = {

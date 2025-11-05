@@ -16,7 +16,7 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
       from: " Techwiz Technology <onboarding@resend.dev>", // 👈 yahan verified sender use karo
-      to: ["thecreatorwithart234@gmail.com"],
+      to: ["zainabsiddiq2308@gmail.com"],
       subject: `📩 New Contact Form Submission from ${name}`,
       react: <EmailTemplate comments={comments}  
       subject={subject} name={name} company={company}
