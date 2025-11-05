@@ -74,14 +74,7 @@ export default function About() {
         </div>
 
         {/* ✅ Button */}
-        <Link href="/free-quates" className="flex justify-center lg:justify-start">
-          <button
-            className="mt-6 px-6 sm:px-8 py-3 sm:py-4 font-bold border-2 border-blue-900 rounded-2xl text-blue-900 hover:bg-blue-900 cursor-pointer hover:text-white hover:scale-105 transition"
-            id="btn"
-          >
-            Get a Quote Now →
-          </button>
-        </Link>
+      
       </div>
     </div>
   );
