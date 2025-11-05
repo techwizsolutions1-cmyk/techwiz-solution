@@ -38,19 +38,20 @@ const Serviceleft = () => {
 
       {/* 🔹 Back Side */}
       <motion.div
-        className={`absolute top-0 left-0 w-full h-full flex-col justify-center 
-          items-center md:items-start gap-0 sm:gap-2 md:gap-6 p-4 sm:p-6 md:p-8
-           bg-blue-100/90 backdrop-blur-sm rounded-xl transition-all duration-300 
-          ${
-            isMobile
-              ? show
-                ? "flex"
-                : "hidden"
-              : "hidden group-hover:flex"
-          }`}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
+  onClick={(e) => e.stopPropagation()} // 🧠 prevent clicks from closing the card
+  className={`absolute top-0 left-0 w-full h-full flex-col justify-center 
+    items-center md:items-start gap-0 sm:gap-2 md:gap-6 p-4 sm:p-6 md:p-8
+     bg-blue-100/90 backdrop-blur-sm rounded-xl transition-all duration-300 
+    ${
+      isMobile
+        ? show
+          ? "flex"
+          : "hidden"
+        : "hidden group-hover:flex"
+    }`}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+>
         <div className="font-semibold text-blue-600 text-lg sm:text-xl">
           Our Services
         </div>

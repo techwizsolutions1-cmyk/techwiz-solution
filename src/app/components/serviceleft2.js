@@ -36,13 +36,13 @@ const Serviceleft2 = () => {
       </div>
 
       {/* ✅ BACK SIDE */}
-      <motion.div
-        className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center
-           items-start gap-0 sm:gap-4 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-100/95 backdrop-blur-sm transition-all duration-500
-        ${isMobile ? (show ? "flex" : "hidden") : "hidden group-hover:flex"}`}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
+     <motion.div
+  className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center
+     items-start gap-0 sm:gap-4 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-100/95 backdrop-blur-sm transition-all duration-500
+  ${isMobile ? (show ? "flex" : "hidden") : "hidden group-hover:flex"}`}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+>
         <div className="font-semibold text-lg sm:text-xl text-blue-600">
           Our Services
         </div>

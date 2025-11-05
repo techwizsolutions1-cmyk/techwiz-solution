@@ -38,20 +38,21 @@ const Digitalmarketingleft = () => {
 
       {/* ✅ Back Side */}
       <motion.div
-        className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center md:items-start 
-        gap-0 sm:gap-5 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-200 text-gray-900 text-center md:text-left 
-        transition-all duration-300 z-10
-        ${
-          isMobile
-            ? show
-              ? "flex"
-              : "hidden"
-            : "hidden group-hover:flex"
-        }`}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.4 }}
-      >
+  onClick={(e) => e.stopPropagation()} // ✅ stops closing when typing or clicking input
+  className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center md:items-start 
+  gap-0 sm:gap-5 md:gap-6 p-4 sm:p-6 md:p-8 bg-blue-200 text-gray-900 text-center md:text-left 
+  transition-all duration-300 z-10
+  ${
+    isMobile
+      ? show
+        ? "flex"
+        : "hidden"
+      : "hidden group-hover:flex"
+  }`}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.4 }}
+>
         <div className="font-semibold text-base sm:text-lg md:text-xl text-blue-600">
           Our Services
         </div>
