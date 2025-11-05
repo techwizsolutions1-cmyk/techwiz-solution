@@ -1,19 +1,24 @@
-import React from "react";
+import * as React from "react";
 
-export function EmailTemplate({name},{fullName},{workEmail},{company},{phoneNumber},{projectBudget},{comments},{email},{subject},{message}) {
-  return (
-    <div>
-      <h1>Welcome, {firstName}!</h1>
-      <h1>name:{name}</h1>
-     <h1>fullName:{fullName}</h1>
-     <h1>work email:{workEmail}</h1>
-     <h1>company:{company}</h1>
-     <h1>phone number:{phoneNumber}</h1>
-     <h1>project:{projectBudget}</h1>
-     <h1>comments:{comments}</h1>
-     <h1>email:{email}</h1>
-     <h1>subject:{subject}</h1>
-     <h1>message:{message}</h1>
-    </div>
-  );
-}
+export const EmailTemplate = ({
+  name,
+  email,
+  subject,
+  message,
+  company,
+  phoneNumber,
+  projectBudget,
+  comments,
+}) => (
+  <div>
+    <h1>New Contact Form Submission</h1>
+    <p><strong>Name:</strong> {name}</p>
+    <p><strong>Email:</strong> {email}</p>
+    <p><strong>Subject:</strong> {subject}</p>
+    <p><strong>Message:</strong> {message}</p>
+    {company && <p><strong>Company:</strong> {company}</p>}
+    {phoneNumber && <p><strong>Phone:</strong> {phoneNumber}</p>}
+    {projectBudget && <p><strong>Budget:</strong> {projectBudget}</p>}
+    {comments && <p><strong>Comments:</strong> {comments}</p>}
+  </div>
+);

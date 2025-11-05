@@ -7,7 +7,8 @@ import { Settings, UserCircle } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="flex flex-col lg:flex-row lg:space-x-16 px-4 sm:px-6 md:px-10 pt-10 md:pt-16 items-center lg:items-start">
+    <div className="flex flex-col lg:flex-row lg:space-x-16 px-4 sm:px-6 md:px-10 pt-10
+    md:pt-20 items-center lg:items-start">
       {/* ✅ Left Section (Image) */}
       <div className="relative w-full sm:w-[90%] md:w-[480px] h-[40vh] sm:h-[50vh] md:h-[70vh] mb-8 lg:mb-0 rounded-2xl overflow-hidden shadow-md">
         <Image
@@ -39,9 +40,10 @@ export default function About() {
         </h4>
 
         {/* Text Content */}
-        <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-3 sm:space-y-0 items-center sm:items-start">
-          <div className="hidden sm:block w-1 bg-blue-500"></div>
-          <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-[600px]">
+        <div className="flex  flex-col sm:flex-row sm:space-x-6 space-y-3 lg:justify-start lg:items-start
+        sm:space-y-0 items-center sm:items-start">
+          
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-[600px] ">
             At <span className="font-semibold">TechWizPK</span>, we deliver
             reliable IT solutions that keep your business running seamlessly.
             Our expert team ensures your digital presence is fast, secure, and

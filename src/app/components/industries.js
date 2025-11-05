@@ -56,9 +56,9 @@ const Industries = () => {
   ];
 
   return (
-    <div className="w-full md:py-10">
+    <div className="w-full md:py-14">
       {/* ✅ Header Section */}
-      <div className="pt-10 pb-8 flex flex-col items-center w-[90vw] md:w-[70vw] mx-auto space-y-3 text-center">
+      <div className=" pt-3 pb-8 flex flex-col items-center w-[90vw] md:w-[70vw] mx-auto space-y-3 text-center">
         <div className="font-bold  md:text-xl text-blue-500">
           Industries We Serve
         </div>
@@ -81,7 +81,8 @@ const Industries = () => {
             <button
               key={e.id}
               onClick={() => setActive(e.id)}
-              className={`min-w-[250px] md:min-w-[auto] p-3 rounded-lg font-semibold text-sm md:text-lg transition text-center whitespace-nowrap ${
+              className={`min-w-[250px] md:min-w-[auto] p-3 rounded-lg font-semibold text-sm md:text-lg 
+                lg:py-4 transition text-center whitespace-nowrap ${
                 active === e.id
                   ? "bg-blue-900 text-white shadow-md"
                   : "bg-white border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white"

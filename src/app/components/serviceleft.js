@@ -25,12 +25,14 @@ const Serviceleft = () => {
       onClick={() => isMobile && setShow(!show)}
     >
       {/* 🔹 Front Side */}
-      <div className="pt-16 sm:pt-20 flex flex-col gap-y-4 sm:gap-y-6 md:gap-y-7 px-4 sm:px-6 md:px-10 text-center md:text-left justify-center items-center md:items-start h-full bg-black/30 md:bg-transparent">
-        <div className="font-semibold text-blue-300 text-base sm:text-lg md:text-xl">
+      <div className="  flex flex-col gap-y-4 sm:gap-y-6 md:gap-y-7
+       px-4 sm:px-6 md:px-10 text-center md:text-center justify-center items-center 
+       md:items-center h-full bg-black/30 md:bg-transparent">
+        <div className="font-semibold text-blue-300 text-base sm:text-lg md:text-2xl md:text-center">
           Our Services
         </div>
 
-        <h4 className="font-bold text-2xl sm:text-3xl md:text-4xl text-white md:text-black leading-snug">
+        <h4 className="font-bold text-2xl sm:text-3xl md:text-5xl text-white md:text-black leading-snug">
           Secure, Scalable, and User-Focused{" "}
           <span className="text-blue-900">Web Experiences</span>
         </h4>

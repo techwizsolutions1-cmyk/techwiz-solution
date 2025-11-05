@@ -24,7 +24,7 @@ const Serviceleft2 = () => {
       onClick={() => isMobile && setShow(!show)}
     >
       {/* ✅ FRONT SIDE */}
-      <div className="pt-16 sm:pt-20 flex flex-col justify-center
+      <div className="pt-10 sm:pt-20 flex flex-col justify-center
        md:justify-center md:items-center gap-y-5 sm:gap-y-6 px-5 sm:px-6 md:px-10 text-center lg:text-left">
         <div className="font-semibold text-lg sm:text-xl text-blue-300">
           Our Services
