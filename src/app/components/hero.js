@@ -7,11 +7,13 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative bg-[url('/hero.png')] bg-cover bg-center w-full h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative bg-[url('/hero.png')] bg-cover bg-center w-full 
+    h-[90vh] flex items-center justify-center overflow-hidden">
       {/* 🔹 Overlay for text contrast */}
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 flex flex-col lg:flex-col xl:flex-row items-center justify-between w-full max-w-7xl px-6 sm:px-10 xl:px-20 gap-10">
+      <div className="relative z-10 flex flex-col  lg:flex-row items-center
+       justify-between w-full max-w-7xl px-6 sm:px-10 xl:px-20 gap-10">
         
         {/* ✅ Left Side (Text Content) */}
         <div className="flex flex-col text-center lg:text-left space-y-5 lg:w-1/2">
@@ -39,7 +41,7 @@ export default function Hero() {
         </div>
 
         {/* ✅ Right Side (Three FlipCards — visible only on laptops/desktops) */}
-        <div className="hidden lg:hidden xl:flex lg:flex-row justify-center items-center lg:w-1/2 gap-6 relative">
+        <div className="hidden  lg:flex lg:flex-row justify-center items-center lg:w-1/2 gap-6 relative">
           <div className="w-48 xl:w-56 lg:absolute lg:-bottom-35 lg:left-0 ">
             <FlipCard pic="/hero.png" />
           </div>

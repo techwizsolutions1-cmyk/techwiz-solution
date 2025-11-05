@@ -24,11 +24,12 @@ const Serviceleft2 = () => {
       onClick={() => isMobile && setShow(!show)}
     >
       {/* ✅ FRONT SIDE */}
-      <div className="pt-16 sm:pt-20 flex flex-col justify-center md:justify-start gap-y-5 sm:gap-y-6 px-5 sm:px-6 md:px-10 text-center md:text-left">
+      <div className="pt-16 sm:pt-20 flex flex-col justify-center
+       md:justify-center md:items-center gap-y-5 sm:gap-y-6 px-5 sm:px-6 md:px-10 text-center lg:text-left">
         <div className="font-semibold text-lg sm:text-xl text-blue-300">
           Our Services
         </div>
-        <h4 className="font-bold text-2xl sm:text-3xl md:text-4xl leading-snug">
+        <h4 className="font-bold text-2xl sm:text-3xl md:text-5xl leading-snug">
           Advanced SEO Solutions That Drive Visibility &
           <span className="text-blue-900 ml-2">Growth</span>
         </h4>
