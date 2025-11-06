@@ -22,13 +22,7 @@ export async function POST(req) {
       message,
     } = body;
 
-    if (!name || !email || !message) {
-      console.error("❌ Missing required fields:", { name, email, message });
-      return NextResponse.json(
-        { success: false, error: "Name, email aur message required hain" },
-        { status: 400 }
-      );
-    }
+   
 
     // ✅ Simple HTML template (works without React render)
     const html = `
