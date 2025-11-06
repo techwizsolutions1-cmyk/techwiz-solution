@@ -76,7 +76,7 @@ export default function Testimonial() {
                 {client.review}
               </p>
             </div>
-            <div className="mt-10"></div>
+            <div className="mt-10 pt-6 "></div>
           </SwiperSlide>
         ))}
       </Swiper>

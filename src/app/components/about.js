@@ -21,7 +21,7 @@ export default function About() {
       </div>
 
       {/* ✅ Right Section (Text) */}
-      <div className="flex flex-col w-full lg:w-[520px] space-y-4 text-center lg:text-left">
+      <div className="flex flex-col w-full lg:w-[520px] space-y-4 text-center lg:text-left lg:justify-center lg:pt-5">
         {/* Animated Heading */}
         <motion.div
           className="font-bold text-blue-600 text-base sm:text-lg md:text-xl"

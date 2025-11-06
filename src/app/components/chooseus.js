@@ -18,7 +18,7 @@ const Chooseus = () => {
   return (
     <div className="w-full pb-10 px-4 md:px-10 lg:px-20">
       {/* ✅ Header Section */}
-      <div className="max-w-[800px] mx-auto text-center mt-10 space-y-3 px-4">
+      <div className="max-w-[800px] mx-auto text-center mt-10 space-y-3 px-4 lg:mt-15">
         <div className="text-blue-300 font-semibold text-base md:text-lg">
           Why Choose Us?
         </div>

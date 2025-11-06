@@ -104,7 +104,7 @@ export default function Footer() {
 
           <ul className="space-y-4 text-gray-400 mt-6">
             <li className="flex items-start gap-3">
-              <FaLocationDot className="text-[#00D8FF] mt-1 text-lg" />
+              <FaLocationDot className="text-[#00D8FF] mt-1 text-lg lg:text-2xl" />
               Opposite Tower One, D Block, Near Bowl Chowk, New Lahore City
               Phase 2, Zip Code 53720, Canal Road Lahore
             </li>

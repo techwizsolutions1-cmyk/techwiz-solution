@@ -18,7 +18,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="w-full mt-20 px-4 md:px-10 lg:px-20">
+    <div className="w-full mt-0 px-4 md:px-10 lg:px-20">
       {/* ✅ Header */}
       <div className="flex flex-col items-center space-y-6 text-center">
         <h4 className="text-3xl md:text-5xl font-bold text-gray-900">

@@ -35,15 +35,16 @@ const Technology = () => {
   return (
     <div
       className="w-full flex flex-col-reverse lg:flex-row items-center md:items-start 
-      gap-10 md:gap-16 lg:gap-20 px-4 sm:px-6 md:px-10 lg:px-20  md:py-16"
+      gap-10 md:gap-16 lg:gap-20 px-4 sm:px-6 md:px-10 lg:px-20  md:py-16 "
     >
       {/* ✅ LEFT SECTION (Text) */}
-      <div className="w-full md:w-full  lg:w-1/2 flex flex-col justify-center text-center md:text-center space-y-4 sm:space-y-6">
-        <div className="text-blue-400 font-semibold text-base sm:text-lg">
+      <div className="w-full md:w-full  lg:w-1/2 flex flex-col justify-center 
+      text-center md:text-center space-y-4 sm:space-y-6 md:space-y-2 lg:pt-3">
+        <div className="text-blue-400 font-semibold text-base sm:text-lg ">
          Innovation That Leads
         </div>
 
-        <h4 className="text-gray-900 font-bold text-2xl sm:text-3xl md:text-4xl ">
+        <h4 className="text-gray-900 font-bold text-2xl sm:text-3xl md:text-3xl ">
           Smart Technology, Real Results
         </h4>
 

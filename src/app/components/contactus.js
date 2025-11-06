@@ -164,7 +164,7 @@ const ContactUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex flex-col justify-between gap-9 lg:pb-9"
+          className="flex-1 flex flex-col justify-between gap-9 lg:pb-15"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -215,10 +215,11 @@ const ContactUs = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+          
           </motion.div>
 
           {/* Social Media */}
-          
+         
         </motion.div>
       </div>
     </div>

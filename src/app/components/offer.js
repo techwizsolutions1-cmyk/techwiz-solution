@@ -43,7 +43,7 @@ const Offer = () => {
   return (
     <motion.div
       id="offer"
-      className="flex flex-col lg:flex-row items-center lg:items-start justify-between mt-10 lg:mt-40  
+      className="flex flex-col lg:flex-row items-center lg:items-start justify-between mt-10 lg:mt-45
       gap-15 md:gap-12 lg:gap-16 px-2 sm:px-6 md:px-10 lg:px-16 py-16 bg-[#010024] text-white overflow-hidden"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
