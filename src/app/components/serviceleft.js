@@ -28,14 +28,14 @@ const Serviceleft = () => {
       <div className="  flex flex-col gap-y-4 sm:gap-y-6 md:gap-y-7
        px-4 sm:px-6 md:px-10 text-center md:text-center justify-center items-center 
        md:items-center h-full bg-black/30 md:bg-transparent">
-        <div className="font-semibold text-blue-300 text-base sm:text-lg md:text-2xl md:text-center">
-          Our Services
+        <div className="font-semibold text-blue-500 text-base sm:text-lg md:text-2xl md:text-center">
+         WEB EXPERT
         </div>
 
-        <h4 className="font-bold text-2xl sm:text-3xl md:text-5xl text-white md:text-black leading-snug">
+        <h2 className="font-bold text-2xl sm:text-3xl md:text-5xl text-white md:text-black leading-snug">
           Secure, Scalable, and User-Focused{" "}
           <span className="text-blue-900">Web Experiences</span>
-        </h4>
+        </h2>
       </div>
 
       {/* 🔹 Back Side */}
@@ -54,14 +54,11 @@ const Serviceleft = () => {
   initial={{ opacity: 0 }}
   whileInView={{ opacity: 1 }}
 >
-        <div className="font-semibold text-blue-600 text-lg sm:text-xl">
-          Our Services
-        </div>
-
-        <h4 className="font-bold text-2xl sm:text-xl md:text-4xl text-center md:text-left leading-snug">
+        
+        <h3 className="font-bold text-2xl sm:text-xl md:text-4xl text-center md:text-left leading-snug">
           Custom Web Solutions That Drive{" "}
           <span className="text-blue-900">Results</span>
-        </h4>
+        </h3>
 
         <motion.p
           className="text-gray-700 text-sm sm:text-sm  md:text-[17px] leading-relaxed text-center md:text-left max-w-xl"
@@ -85,10 +82,10 @@ const Serviceleft = () => {
             required
           />
           <Link
-            href="/abc/forms"
+            href="/forms/proposal"
             className="font-bold bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-center hover:bg-blue-800 transition-all duration-200"
           >
-            Send me a proposal
+            Send Me a Proposal
           </Link>
         </div>
       </motion.div>

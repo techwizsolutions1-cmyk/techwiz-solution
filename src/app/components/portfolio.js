@@ -21,9 +21,9 @@ const Portfolio = () => {
     <div className="w-full mt-0 px-4 md:px-10 lg:px-20">
       {/* ✅ Header */}
       <div className="flex flex-col items-center space-y-6 text-center">
-        <h4 className="text-3xl md:text-5xl font-bold text-gray-900">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
           Portfolio
-        </h4>
+        </h2>
 
         {/* ✅ Category Tabs */}
         <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-lg md:text-2xl font-semibold">
@@ -34,7 +34,7 @@ const Portfolio = () => {
               className="flex flex-col items-center cursor-pointer group transition-transform duration-300"
             >
               {/* Tab Text */}
-              <div
+              <h3
                 className={`${
                   active === item
                     ? "text-blue-600 scale-105"
@@ -42,7 +42,7 @@ const Portfolio = () => {
                 } transition-transform duration-300`}
               >
                 {item}
-              </div>
+              </h3>
 
               {/* Underline */}
               <div

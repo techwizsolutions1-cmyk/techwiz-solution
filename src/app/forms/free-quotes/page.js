@@ -71,7 +71,7 @@ export default function Page() {
         {!submitted ? (
           <>
             <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-              Request a <span className="text-indigo-600">FREE Proposal</span> Now!
+              Request a <span className="text-indigo-600">FREE  Quotes</span> Now!
             </h1>
 
             {/* Error message */}
@@ -84,9 +84,9 @@ export default function Page() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input label="First and Last Name *" name="name" value={formData.name} onChange={handleChange} required />
-                <Input label="Work Email Address *" name="email" type="email" value={formData.email} onChange={handleChange} required />
+                <Input label="Your Email Adress *" name="email" type="email" value={formData.email} onChange={handleChange} required />
                 <Input label="Website *" name="website" value={formData.website} onChange={handleChange} required />
-                <Input label="Company *" name="company" value={formData.company} onChange={handleChange} required />
+                <Input label="Company *" name="company" value={formData.company} onChange={handleChange}  />
                 <Input label="Phone Number *" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="(000) 000-0000" required />
                 <Select
                   label="Project Budget *"
@@ -95,10 +95,10 @@ export default function Page() {
                   onChange={handleChange}
                   required
                   options={[
-                    "Under $5,000",
-                    "$5,000 - $10,000",
-                    "$10,000 - $20,000",
-                    "$20,000+",
+                    "25,000PKR - 45,000PKR/month",
+                    "45,000PKR - 70,000PKR/month",
+                    "45,000PKR - 70,000PKR/month",
+                    "70,000PKR-100,000PKR/month",
                   ]}
                 />
               </div>
@@ -152,7 +152,8 @@ function Input({ label, name, type = "text", value, onChange, placeholder, requi
         placeholder={placeholder}
         onChange={onChange}
         required={required}
-        className="w-full border border-gray-300 rounded-xl p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+        className="w-full border border-gray-300
+         rounded-xl p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
       />
     </div>
   );

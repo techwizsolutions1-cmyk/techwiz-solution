@@ -49,7 +49,7 @@ export default function FlipCard({pic}) {
             className="absolute inset-0 bg-blue-500 text-white rounded-full flex space-y-2
             flex-col justify-center items-center [transform:rotateY(180deg)] backface-hidden"
           >
-            <h1 className="text-center font-bold text-xl">Web Solution</h1>
+            <h2 className="text-center font-bold text-xl">Web Solution</h2>
             <p className="px-4 text-center text-sm">
             Build intelligent, secure, and seamless websites users truly trust
             </p>

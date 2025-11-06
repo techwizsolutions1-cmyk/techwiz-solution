@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "TechWiz Solutions",
     images: [
       {
-        url: "https://techwiz-solution.vercel.app/images/preview.jpg",
+        url: "/about.avif",
         width: 1200,
         height: 630,
         alt: "TechWiz Solutions Preview",
@@ -46,7 +46,7 @@ export const metadata = {
       "Empower Your Business Growth with Proven IT & Digital Solutions | Tech",
     description:
       "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
-    images: ["https://techwiz-solution.vercel.app/images/preview.jpg"],
+    images: ["/about.avif"],
   },
 };
 

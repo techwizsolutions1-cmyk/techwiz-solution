@@ -63,10 +63,10 @@ const Industries = () => {
           Industries We Serve
         </div>
        <div className="flex flex-col">
-         <h4 className="text-xl md:text-4xl font-bold text-gray-800 leading-snug">
+         <h2 className="text-xl md:text-4xl font-bold text-gray-800 leading-snug">
           Tailored <span className="text-blue-900">IT Solutions</span> Backed by  <span className="text-blue-900">Expertise</span> Serving a Wide Range
           of Industries
-        </h4>
+        </h2>
         
          
         

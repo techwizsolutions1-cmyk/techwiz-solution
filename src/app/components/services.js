@@ -154,9 +154,9 @@ export default function Services() {
               {card.icon}
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-800 mb-3">
+              <h3 className="text-3xl md:text-4xl font-extrabold text-slate-800 mb-3">
                 {card.title}
-              </h2>
+              </h3>
               <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-6">
                 {card.desc}
               </p>

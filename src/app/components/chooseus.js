@@ -19,19 +19,19 @@ const Chooseus = () => {
     <div className="w-full pb-10 px-4 md:px-10 lg:px-20">
       {/* ✅ Header Section */}
       <div className="max-w-[800px] mx-auto text-center mt-10 space-y-3 px-4 lg:mt-15">
-        <div className="text-blue-300 font-semibold text-base md:text-lg">
+        <h2 className="text-blue-300 font-semibold text-base md:text-lg">
           Why Choose Us?
-        </div>
+        </h2>
        
        <div className="flex flex-col">
-         <h4 className="text-2xl md:text-4xl font-bold leading-snug">
+         <h3 className="text-2xl md:text-4xl font-bold leading-snug">
          We Partner With Businesses 
-        </h4>
-        <h4 className="text-2xl md:text-4xl font-bold leading-snug">
+        </h3>
+        <h3 className="text-2xl md:text-4xl font-bold leading-snug">
           <span className="text-blue-800"> Across </span> Diverse {" "}
           <br className="hidden md:block" />
         Industries
-        </h4>
+        </h3>
        </div>
       </div>
 
@@ -49,9 +49,9 @@ const Chooseus = () => {
             }`}
             onClick={() => setval(1)}
           >
-            <div className="font-bold text-sm md:text-base">
+            <h4 className="font-bold text-sm md:text-base">
             Fueling Business Growth
-            </div>
+            </h4>
             {val === 1 && (
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-[90%] h-1 mt-2 rounded-full"></div>
             )}
@@ -64,9 +64,9 @@ const Chooseus = () => {
             }`}
             onClick={() => setval(2)}
           >
-            <div className="font-bold text-sm md:text-base">
+            <h4 className="font-bold text-sm md:text-base">
               Your Goals, Our Commitment
-            </div>
+            </h4>
             {val === 2 && (
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-[90%] h-1 mt-2 rounded-full"></div>
             )}
@@ -79,9 +79,9 @@ const Chooseus = () => {
             }`}
             onClick={() => setval(3)}
           >
-            <div className="font-bold text-sm md:text-base">
+            <h4 className="font-bold text-sm md:text-base">
             Smart Technology, Real Results
-            </div>
+            </h4>
             {val === 3 && (
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-[90%] h-1 mt-2 rounded-full"></div>
             )}

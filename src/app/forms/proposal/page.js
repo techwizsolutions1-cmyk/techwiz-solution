@@ -164,9 +164,9 @@ export default function Page() {
             className="w-full border-2 border-gray-300 rounded-lg p-2"
           >
             <option value="">Select project budget</option>
-            <option value="0-1000">$0 - $1,000</option>
-            <option value="1000-5000">$1,000 - $5,000</option>
-            <option value="5000+">$5,000+</option>
+            <option value="0-1000">25,000PKR - 45,000PKR/month</option>
+            <option value="1000-5000">45,000PKR - 70,000PKR/month</option>
+            <option value="5000+">70,000PKR-100,000PKR/month</option>
           </select>
         </div>
 

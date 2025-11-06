@@ -44,9 +44,9 @@ const Technology = () => {
          Innovation That Leads
         </div>
 
-        <h4 className="text-gray-900 font-bold text-2xl sm:text-3xl md:text-3xl ">
+        <h3 className="text-gray-900 font-bold text-2xl sm:text-3xl md:text-3xl ">
           Smart Technology, Real Results
-        </h4>
+        </h3>
 
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-[600px] mx-auto md:mx-0">
        Leveraging cutting-edge tools, AI insights,

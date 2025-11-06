@@ -57,14 +57,14 @@ const Offer = () => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <motion.h4
+        <motion.h2
           className="font-bold text-3xl sm:text-4xl md:text-5xl text-blue-300 text-center lg:text-left"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
           What We Offer
-        </motion.h4>
+        </motion.h2>
 
         <motion.div
           className="relative w-full sm:w-[400px] md:w-[500px] lg:w-[520px] h-[280px] sm:h-[360px] md:h-[420px] lg:h-[460px] rounded-2xl overflow-hidden mt-4"
@@ -100,9 +100,9 @@ const Offer = () => {
           >
             <div className="flex items-center space-x-4 mb-2">
               <div>{item.icon}</div>
-              <h4 className="text-blue-300 text-lg sm:text-xl font-semibold hover:text-blue-500 transition-colors">
+              <h3 className="text-blue-300 text-lg sm:text-xl font-semibold hover:text-blue-500 transition-colors">
                 {item.title}
-              </h4>
+              </h3>
             </div>
             <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed">
               {item.desc}

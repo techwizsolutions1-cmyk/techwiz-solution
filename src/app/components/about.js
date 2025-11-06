@@ -33,11 +33,11 @@ export default function About() {
         </motion.div>
 
         {/* Title */}
-        <h4 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug text-gray-800">
+        <h2 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug text-gray-800">
           We Design{" "}
           <span className="text-blue-600">Digital Solutions</span> That Are
           Simple, Affordable,
-        </h4>
+        </h2>
 
         {/* Text Content */}
         <div className="flex  flex-col sm:flex-row sm:space-x-6 space-y-3 lg:justify-start lg:items-start

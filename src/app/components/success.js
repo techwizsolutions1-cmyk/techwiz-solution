@@ -16,9 +16,9 @@ const Success = () => {
           Fuel Your Curiosity
         </div>
 
-        <h4 className="text-gray-900 font-bold text-2xl sm:text-3xl md:text-3xl leading-snug">
+        <h3 className="text-gray-900 font-bold text-2xl sm:text-3xl md:text-3xl leading-snug">
           Your Goals, Our Commitment
-        </h4>
+        </h3>
 
         <p className="text-gray-700 text-sm sm:text-base text-center  max-w-[600px] mx-auto md:mx-0">
           Your success is our priority. We align every strategy with your goals,

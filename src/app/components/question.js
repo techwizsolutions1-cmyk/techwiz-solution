@@ -50,15 +50,15 @@ export default function Question() {
             }`}
           >
             <div className="flex justify-between items-center p-5 text-lg font-semibold">
-              {faq.question}
+             <h3> {faq.question}</h3>
               <span className="text-2xl">
                 {activeIndex === index ? <FiMinus /> : <FiPlus />}
               </span>
             </div>
             {activeIndex === index && (
-              <div className="p-5 bg-white text-gray-700">
+              <h4 className="p-5 bg-white text-gray-700">
                 {faq.answer}
-              </div>
+              </h4>
             )}
           </div>
         ))}

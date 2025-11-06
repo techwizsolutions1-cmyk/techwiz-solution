@@ -32,13 +32,13 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full" id="header">
       {/* 🔹 Top Header (Desktop only) */}
       <div className="hidden lg:flex text-gray-500 pt-3 flex-wrap justify-between items-center px-10 font-medium relative">
         {/* Left: Phone */}
         <div className="flex items-center gap-2">
           <FaPhoneVolume />
-          <Link href="tel:+9223114661100">+92 231 1466100</Link>
+          <Link href="tel:+92214661100">+92214661100</Link>
         </div>
 
         {/* Middle: Links */}
@@ -117,7 +117,7 @@ const Header = () => {
 
         {/* CTA */}
         <Link
-          href="/free-quates"
+          href="/forms/free-quotes"
           className="px-6 py-3 border-2 border-blue-900 rounded-2xl hover:bg-blue-900 hover:text-white text-blue-900 transition-transform hover:scale-105"
         >
           Get a Quote Now →
@@ -161,7 +161,7 @@ const Header = () => {
           ))}
 
           <Link
-            href="/abc/forms"
+            href="/forms/free-quotes"
             className="mt-3 border-2 border-blue-900 text-blue-900 rounded-2xl py-2 text-center hover:bg-blue-900 hover:text-white"
           >
             Get a Quote Now →
