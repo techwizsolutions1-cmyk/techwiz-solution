@@ -7,7 +7,7 @@ import { Settings, UserCircle } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="flex flex-col lg:flex-row lg:space-x-16 px-4 sm:px-6 md:px-10 pt-10
+    <div id="about" className="flex flex-col lg:flex-row lg:space-x-16 px-4 sm:px-6 md:px-10 pt-10
     md:pt-20 items-center lg:items-start">
       {/* ✅ Left Section (Image) */}
       <div className="relative w-full sm:w-[90%] md:w-[480px] h-[40vh] sm:h-[50vh] md:h-[70vh] mb-8 lg:mb-0 rounded-2xl overflow-hidden shadow-md">

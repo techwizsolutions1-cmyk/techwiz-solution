@@ -30,12 +30,12 @@ html {
 
 
  #about{
-  scroll-margin-top: 400px;
+  scroll-margin-top:150px;
 
 }
-#contact{scroll-margin-top: 100px;}
+#contact{scroll-margin-top: 245px;}
 #seo{
-  scroll-margin-top: 200px;
+  scroll-margin-top: 60px;
 }
 #web{
   scroll-margin-top: 150px;
@@ -44,5 +44,5 @@ html {
   scroll-margin-top: 240px;
 }
 #digital{
-   scroll-margin-top: 350px;
+   scroll-margin-top: 30px;
 }
