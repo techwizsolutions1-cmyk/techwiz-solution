@@ -47,3 +47,6 @@ html {
 #digital{
    scroll-margin-top: 190px;
 }
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

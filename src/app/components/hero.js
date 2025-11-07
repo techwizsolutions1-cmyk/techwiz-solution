@@ -42,7 +42,7 @@ export default function Hero() {
 
         {/* ✅ Right Side (Three FlipCards — visible only on laptops/desktops) */}
         <div className="hidden  lg:flex lg:flex-row justify-center items-center lg:w-1/2 gap-6 relative">
-          <div className="w-48 xl:w-56 lg:absolute lg:-bottom-35 lg:left-0 ">
+          <div className="w-48 xl:w-56 lg:absolute lg:-bottom-40 lg:left-0 ">
             <FlipCard pic="/hero.png" />
           </div>
           <div className="w-48 xl:w-56  lg:absolute lg:right-30">

@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ContextProvider from "./components/contextprovider";
+
 import Header from "./components/header";
 import Footer from "./components/footer";
+import ContextProvider from "./components/contextprovider";
 import Script from "next/script"; // ✅ import Script
 
 const geistSans = Geist({
@@ -20,6 +21,8 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  metadataBase: new URL("https://techwizpk.com/"),
+
   description:
     "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
   openGraph: {
