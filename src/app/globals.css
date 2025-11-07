@@ -52,3 +52,19 @@ html {
  section {
   scroll-margin-top: 150px; /* equal to header height */
 }
+#seo,#web,#services ,#contact{
+  scroll-margin-top: 150px; /* header height */
+}
+#digital{
+  scroll-margin-top: 500px; /* header height */
+}
+
+@media (max-width: 1024px) {
+  #seo ,#web,#servives{
+    scroll-margin-top: 150px;
+  }
+  #digital{
+    scroll-margin-top: 200px;
+  }
+}
+

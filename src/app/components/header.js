@@ -34,44 +34,43 @@ const Header = () => {
 //       });
 //     });
 //   }, []);
-
 useEffect(() => {
-  const header = document.querySelector("header, #header");
+  const header = document.getElementById("header");
   const links = document.querySelectorAll("a[href^='#']");
 
   const handleClick = (e) => {
     const link = e.currentTarget;
     const targetId = link.getAttribute("href")?.substring(1);
     const targetEl = document.getElementById(targetId);
-
     if (!targetEl) return;
 
     e.preventDefault();
 
-    const isMobile = window.innerWidth < 768;
-
-    // 🧠 Wait a bit longer on mobile so menu closes and layout settles
+    const isMobile = window.innerWidth < 1024;
     const delay = isMobile ? 400 : 100;
 
     setTimeout(() => {
       const headerHeight = header ? header.offsetHeight : 0;
 
-      // 👇 add extra offset on mobile so it doesn't go too high
-      const yOffset = isMobile
-        ? -(headerHeight - 60) // adjust 60 → more padding for mobile
-        : -(headerHeight + 10);
+      // 🧩 Offset fine-tuned for both
+      const extraSpace = isMobile ? 20 : -10; // slight adjust for desktop
+      const scrollTarget =
+        targetEl.getBoundingClientRect().top +
+        window.scrollY -
+        (headerHeight - extraSpace);
 
-      const y =
-        targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: scrollTarget, behavior: "smooth" });
 
-      window.scrollTo({ top: y, behavior: "smooth" });
+      // ✅ Update URL hash manually (so it appears in address bar)
+      window.history.pushState(null, "", `#${targetId}`);
     }, delay);
   };
 
   links.forEach((link) => link.addEventListener("click", handleClick));
 
-  return () =>
+  return () => {
     links.forEach((link) => link.removeEventListener("click", handleClick));
+  };
 }, []);
 
 
