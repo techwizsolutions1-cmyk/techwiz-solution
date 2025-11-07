@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import ContextProvider from "./components/contextprovider";
-import Script from "next/script"; // ✅ import Script
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,14 +24,15 @@ export const metadata = {
     icon: "/favicon.ico",
   },
   metadataBase: new URL("https://techwizpk.com/"),
-  
+
   robots: {
     index: false,
     follow: false,
   },
-  
+
   openGraph: {
-    title: "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
+    title:
+      "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
     description:
       "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
     url: "https://techwiz-solution.vercel.app",
@@ -50,19 +51,35 @@ export const metadata = {
   twitter: {
     card: "summary",
     site: "@techwiz.pk",
-    title: "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
+    title:
+      "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
     description:
       "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
     images: ["/about.avif"],
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* ❌ Don’t put Script here — metadata handles head content */}
-      <meta name="robots" content="noindex, nofollow" />
+      <head>
+        {/* ✅ Google Tag Manager Script */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){
+              w[l]=w[l]||[];
+              w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),
+              dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;
+              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NR4X3NDJ');
+          `}
+        </Script>
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
