@@ -49,3 +49,6 @@ html {
 .rotate-y-180 {
   transform: rotateY(180deg);
 } */
+ section {
+  scroll-margin-top: 150px; /* equal to header height */
+}
