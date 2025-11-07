@@ -27,9 +27,12 @@
 html {
   scroll-behavior: smooth; /* optional, for smooth scroll */
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 135px;
+}
 
-
- #about{
+ /* #about{
   scroll-margin-top:150px;
 
 }
@@ -42,11 +45,11 @@ html {
   scroll-margin-top: 175px;
 }
 #service{
-  scroll-margin-top: 240px;
+  scroll-margin-top: 180px;
 }
 #digital{
    scroll-margin-top: 190px;
 }
 .rotate-y-180 {
   transform: rotateY(180deg);
-}
+} */
