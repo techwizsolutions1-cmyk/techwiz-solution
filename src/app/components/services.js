@@ -121,7 +121,7 @@ export default function Services() {
   },
    {
     id: "technical-seo",
-    title: "Technical Seo",
+    title: "Technical SEO",
     icon: <BarChart2 className="w-10 h-10" />,
     desc: `Optimizing website structure, speed, and crawlability to improve search engine visibility and drive organic growth.`,
     points: [

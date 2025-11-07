@@ -136,7 +136,7 @@ useEffect(() => {
             <Link href="https://www.linkedin.com/in/tech-wizpk-b442b8361/">
               <FaLinkedinIn />
             </Link>
-            <Link href="https://wa.me/+923156540669">
+            <Link href="https://wa.me/+923214661100">
               <FaWhatsapp />
             </Link>
           </div>
