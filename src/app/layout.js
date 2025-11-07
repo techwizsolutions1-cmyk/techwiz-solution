@@ -55,9 +55,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <meta name="robots" content="noindex, nofollow" />
+      
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* <!-- Google Tag Manager (noscript) --> */}
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR4X3NDJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+{/* <!-- End Google Tag Manager (noscript) --> */}
+
         <ContextProvider>
           <Header/>
           {children}
