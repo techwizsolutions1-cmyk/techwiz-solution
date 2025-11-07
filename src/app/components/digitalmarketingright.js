@@ -57,7 +57,7 @@ const Digitalmarketingright = () => {
           <div
             key={index}
             className="flex flex-col justify-start items-center text-center border border-gray-200 rounded-xl 
-            p-3 sm:p-4 md:p-5 lg:p-6
+            p-3 sm:p-4 md:p-5 lg:p-6 lg:pb-8
             w-full max-w-[320px] h-auto 
             hover:shadow-xl hover:bg-blue-100/60 transition-all duration-300"
           >

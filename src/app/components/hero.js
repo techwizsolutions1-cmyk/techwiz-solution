@@ -32,7 +32,7 @@ export default function Hero() {
           </p>
 
           <div>
-            <Link href="https://wa.me/+923156540669">
+            <Link href="https://wa.me/+923214661100">
               <button className="mt-4 px-8 py-3 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg transition duration-300">
                 Book a Strategy Call →
               </button>

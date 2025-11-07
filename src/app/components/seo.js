@@ -19,7 +19,9 @@ const Seo = () => {
         <div className="w-full lg:w-[55%]">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
             {/* 1️⃣ GEO / AEO */}
-            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+            <div className="flex flex-col justify-start items-center text-center 
+            border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4
+             hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px] lg:pb-7">
               <FaSearch className="text-blue-600 text-2xl sm:text-3xl md:text-5xl mb-2 sm:mb-3" />
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1 md:text-2xl">
                 GEO / AEO
@@ -30,7 +32,9 @@ const Seo = () => {
             </div>
 
             {/* 2️⃣ Local SEO */}
-            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+            <div className="flex flex-col justify-start items-center text-center border-2
+             border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all 
+             duration-300 min-h-[180px] sm:min-h-[200px] lg:pb-5">
               <FaMapMarkerAlt className="text-blue-600 text-2xl sm:text-3xl md:text-5xl mb-2 sm:mb-3" />
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1 md:text-2xl">
                 Local SEO
@@ -41,7 +45,7 @@ const Seo = () => {
             </div>
 
             {/* 3️⃣ Ecommerce SEO */}
-            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+            <div className=" lg:pb-10 flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
               <FaShoppingCart className="text-blue-600 text-2xl sm:text-3xl md:text-5xl mb-2 sm:mb-3 " />
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1 md:text-2xl">
                 Ecommerce SEO
@@ -52,7 +56,7 @@ const Seo = () => {
             </div>
 
             {/* 4️⃣ Traditional SEO */}
-            <div className="flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
+            <div className=" lg:pb-10 flex flex-col justify-start items-center text-center border-2 border-gray-200 rounded-xl p-3 sm:p-4 md:p-4 hover:bg-blue-100/60 hover:shadow-md transition-all duration-300 min-h-[180px] sm:min-h-[200px]">
               <FaCog className="text-blue-600 text-2xl sm:text-3xl md:text-5xl mb-2 sm:mb-3 " />
               <h4 className="font-bold text-base sm:text-lg text-blue-800 mb-1 md:text-2xl">
                 Traditional SEO

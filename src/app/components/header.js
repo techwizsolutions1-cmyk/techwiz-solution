@@ -38,7 +38,7 @@ const Header = () => {
         {/* Left: Phone */}
         <div className="flex items-center gap-2">
           <FaPhoneVolume />
-          <Link href="tel:+92214661100">+92214661100</Link>
+          <Link href="tel:+923214661100">+923214661100</Link>
         </div>
 
         {/* Middle: Links */}

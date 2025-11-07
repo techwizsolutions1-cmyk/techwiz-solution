@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="https://wa.me/+92214661100">
+          <Link href="https://wa.me/+923214661100">
             <div className="fixed bottom-0 right-0 lg:bottom-10 lg:right-10 text-white text-4xl lg:text-7xl z-50 p-0">
               <div className="text-white bg-green-400 rounded-2xl lg:rounded-4xl animate-bounce overflow-hidden shadow-lg">
                 <BsWhatsapp />
