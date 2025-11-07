@@ -75,14 +75,14 @@ const Serviceleft = () => {
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl mt-3">
           <input
             type="text"
-            placeholder="Enter your Website"
+            placeholder="Enter your Buisness name"
             value={val}
             onChange={(e) => setVal(e.target.value)}
             className="border-2 border-blue-600 rounded-xl py-2.5 sm:py-3 px-3 sm:px-4 text-center sm:text-left flex-1 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm sm:text-base"
             required
           />
           <Link
-            href="/forms/proposal"
+            href="/forms/web-quot"
             className="font-bold bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-center hover:bg-blue-800 transition-all duration-200"
           >
             Send Me a Proposal
