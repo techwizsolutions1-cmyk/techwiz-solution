@@ -16,24 +16,24 @@ import Image from "next/image";
 
 const Header = () => {
 
-// useEffect(() => {
-//     const links = document.querySelectorAll("a[href^='#']");
-//     links.forEach((link) => {
-//       link.addEventListener("click", (e) => {
-//         const targetId = link.getAttribute("href")?.substring(1);
-//         const targetEl = document.getElementById(targetId);
-//         if (targetEl) {
-//           e.preventDefault();
-//           // Smooth scroll + offset fix
-//           const yOffset = -150; // header ke height ke barabar
-//           const y =
-//             targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
+useEffect(() => {
+    const links = document.querySelectorAll("a[href^='#']");
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        const targetId = link.getAttribute("href")?.substring(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          // Smooth scroll + offset fix
+          const yOffset = -150; // header ke height ke barabar
+          const y =
+            targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
 
-//           window.scrollTo({ top: y, behavior: "smooth" });
-//         }
-//       });
-//     });
-//   }, []);
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      });
+    });
+  }, []);
 
 
 

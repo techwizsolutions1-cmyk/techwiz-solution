@@ -27,10 +27,6 @@
 html {
   scroll-behavior: smooth; /* optional, for smooth scroll */
 }
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 135px;
-}
 
  /* #about{
   scroll-margin-top:150px;
