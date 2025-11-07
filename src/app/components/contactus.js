@@ -164,7 +164,7 @@ const ContactUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex flex-col justify-between gap-9 lg:pb-15"
+          className="flex-1 flex flex-col justify-between gap-9 "
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
