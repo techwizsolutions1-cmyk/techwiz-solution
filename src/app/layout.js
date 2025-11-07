@@ -18,16 +18,20 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
+  description:
+    "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
   icons: {
     icon: "/favicon.ico",
   },
   metadataBase: new URL("https://techwizpk.com/"),
-
-  description:
-    "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
+  
+  robots: {
+    index: false,
+    follow: false,
+  },
+  
   openGraph: {
-    title:
-      "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
+    title: "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
     description:
       "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
     url: "https://techwiz-solution.vercel.app",
@@ -42,16 +46,17 @@ export const metadata = {
     ],
     type: "website",
   },
+
   twitter: {
     card: "summary",
     site: "@techwiz.pk",
-    title:
-      "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
+    title: "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
     description:
       "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
     images: ["/about.avif"],
   },
 };
+
 
 export default function RootLayout({ children }) {
   return (
