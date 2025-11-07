@@ -16,63 +16,63 @@ import Image from "next/image";
 
 const Header = () => {
 
-// useEffect(() => {
-//     const links = document.querySelectorAll("a[href^='#']");
-//     links.forEach((link) => {
-//       link.addEventListener("click", (e) => {
-//         const targetId = link.getAttribute("href")?.substring(1);
-//         const targetEl = document.getElementById(targetId);
-//         if (targetEl) {
-//           e.preventDefault();
-//           // Smooth scroll + offset fix
-//           const yOffset = -150; // header ke height ke barabar
-//           const y =
-//             targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
-
-//           window.scrollTo({ top: y, behavior: "smooth" });
-//         }
-//       });
-//     });
-//   }, []);
-
 useEffect(() => {
-  const timer = setTimeout(() => {
     const links = document.querySelectorAll("a[href^='#']");
-
-    const handleClick = (e) => {
-      const link = e.currentTarget;
-      const targetId = link.getAttribute("href")?.substring(1);
-      const targetEl = document.getElementById(targetId);
-
-      if (targetEl) {
-        e.preventDefault();
-
-        requestAnimationFrame(() => {
-          // Header height
-          let yOffset = -150;
-
-          // 👇 Contact ke liye thoda kam offset
-          if (targetId.toLowerCase() === "contact") {
-            yOffset = -270; // ya 0 try karlo agar zyada upar ja raha hai
-          }
-
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        const targetId = link.getAttribute("href")?.substring(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          // Smooth scroll + offset fix
+          const yOffset = -150; // header ke height ke barabar
           const y =
             targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
 
           window.scrollTo({ top: y, behavior: "smooth" });
-        });
-      }
-    };
+        }
+      });
+    });
+  }, []);
 
-    links.forEach((link) => link.addEventListener("click", handleClick));
+// useEffect(() => {
+//   const timer = setTimeout(() => {
+//     const links = document.querySelectorAll("a[href^='#']");
 
-    return () => {
-      links.forEach((link) => link.removeEventListener("click", handleClick));
-    };
-  }, 100);
+//     const handleClick = (e) => {
+//       const link = e.currentTarget;
+//       const targetId = link.getAttribute("href")?.substring(1);
+//       const targetEl = document.getElementById(targetId);
 
-  return () => clearTimeout(timer);
-}, []);
+//       if (targetEl) {
+//         e.preventDefault();
+
+//         requestAnimationFrame(() => {
+//           // Header height
+//           let yOffset = -150;
+
+//           // 👇 Contact ke liye thoda kam offset
+//           if (targetId.toLowerCase() === "contact") {
+//             yOffset = -270; // ya 0 try karlo agar zyada upar ja raha hai
+//           }
+
+//           const y =
+//             targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
+
+//           window.scrollTo({ top: y, behavior: "smooth" });
+//         });
+//       }
+//     };
+
+//     links.forEach((link) => link.addEventListener("click", handleClick));
+
+//     return () => {
+//       links.forEach((link) => link.removeEventListener("click", handleClick));
+//     };
+//   }, 100);
+
+//   return () => clearTimeout(timer);
+// }, []);
 
 
 
