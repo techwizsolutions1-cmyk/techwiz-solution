@@ -35,9 +35,8 @@ const Header = () => {
 //     });
 //   }, []);
 
-
 useEffect(() => {
-  const header = document.querySelector("header, #header"); // try both selectors
+  const header = document.querySelector("header, #header");
   const links = document.querySelectorAll("a[href^='#']");
 
   const handleClick = (e) => {
@@ -49,19 +48,24 @@ useEffect(() => {
 
     e.preventDefault();
 
-    // Wait for menu animation/layout to settle (esp. on mobile)
+    const isMobile = window.innerWidth < 768;
+
+    // 🧠 Wait a bit longer on mobile so menu closes and layout settles
+    const delay = isMobile ? 400 : 100;
+
     setTimeout(() => {
       const headerHeight = header ? header.offsetHeight : 0;
-      const isMobile = window.innerWidth < 768;
 
-      // fine-tuned offsets for both
-      const yOffset = isMobile ? -(headerHeight - 5) : -(headerHeight + 10);
+      // 👇 add extra offset on mobile so it doesn't go too high
+      const yOffset = isMobile
+        ? -(headerHeight - 60) // adjust 60 → more padding for mobile
+        : -(headerHeight + 10);
 
       const y =
         targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
 
       window.scrollTo({ top: y, behavior: "smooth" });
-    }, 100); // slight delay ensures layout stabilized
+    }, delay);
   };
 
   links.forEach((link) => link.addEventListener("click", handleClick));
