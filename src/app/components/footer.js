@@ -57,19 +57,19 @@ export default function Footer() {
 
           <div className="flex gap-4 text-[#00D8FF] text-xl mt-4">
             <a
-              href="#"
+              href="https://www.facebook.com/techwizpk"
               className="p-2 bg-[#0B0D3B] rounded-full hover:bg-[#00D8FF] hover:text-white transition-all duration-300"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/techwizpkc/"
               className="p-2 bg-[#0B0D3B] rounded-full hover:bg-[#00D8FF] hover:text-white transition-all duration-300"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/tech-wizpk-b442b8361/"
               className="p-2 bg-[#0B0D3B] rounded-full hover:bg-[#00D8FF] hover:text-white transition-all duration-300"
             >
               <FaLinkedinIn />
