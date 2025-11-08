@@ -68,3 +68,11 @@ html {
   }
 }
 
+/* Ensure consistent rendering in all browsers */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img, video, canvas {
+  display: block;
+}

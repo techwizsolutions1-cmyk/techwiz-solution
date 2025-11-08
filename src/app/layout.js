@@ -5,6 +5,8 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import ContextProvider from "./components/contextprovider";
 import Script from "next/script";
+import ContextProvider2 from "./components/contextprovider2";
+import ContextProvider3 from "./components/contextprovider3";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -110,9 +112,13 @@ export default function RootLayout({ children }) {
         </noscript>
 
         <ContextProvider>
-          <Header />
+         <ContextProvider2>
+         <ContextProvider3>
+         
           {children}
           <Footer />
+         </ContextProvider3>
+         </ContextProvider2>
         </ContextProvider>
       </body>
     </html>

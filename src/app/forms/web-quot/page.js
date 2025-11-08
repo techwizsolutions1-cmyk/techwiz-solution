@@ -1,9 +1,8 @@
 "use client";
 import React, { useState, useContext } from "react";
-import { abc } from "@/app/components/contextprovider";
-
+ import { abcd } from "@/app/components/contextprovider2";
 export default function Page() {
-  const { val } = useContext(abc);
+  const { val2 } = useContext(abcd);
 
   const [form, setForm] = useState({
     name: "",
@@ -30,11 +29,11 @@ export default function Page() {
     setStatus("");
 
     try {
-      const res = await fetch("/api/forms", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, website: val }),
-      });
+     const res = await fetch("/api/forms", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ ...form, website: val2 }),
+});
 
       const data = await res.json();
 
@@ -88,7 +87,7 @@ export default function Page() {
         {/* Email */}
         <div>
           <label htmlFor="workEmail" className="font-medium">
-            Work Email Address *
+            Your Email Address *
           </label>
           <input
             id="workEmail"
@@ -111,9 +110,9 @@ export default function Page() {
               id="website"
               name="website"
               type="text"
+             
               
-              readOnly
-              className="w-full border-2 border-gray-300 rounded-lg p-2 bg-gray-100"
+              className="w-full border-2 border-gray-300 rounded-lg p-2 "
             />
           </div>
 
@@ -125,7 +124,7 @@ export default function Page() {
               id="company"
               name="company"
               type="text"
-              value={val}
+              value={val2}
               onChange={handleChange}
               required
               className="w-full border-2 border-gray-300 rounded-lg p-2"
@@ -164,9 +163,10 @@ export default function Page() {
             className="w-full border-2 border-gray-300 rounded-lg p-2"
           >
             <option value="">Select project budget</option>
-            <option value="0-1000">25,000PKR - 45,000PKR/month</option>
-            <option value="1000-5000">45,000PKR - 70,000PKR/month</option>
-            <option value="5000+">70,000PKR-100,000PKR/month</option>
+            <option value="0-1000">23,000PKR - 50,000PKR/month</option>
+            <option value="1000-5000">50,000PKR - 65,000PKR/month</option>
+            <option value="5000+">65,000PKR-80,000PKR/month</option>
+             <option value="5000+">80,000PKR-100,000PKR/month</option>
           </select>
         </div>
 

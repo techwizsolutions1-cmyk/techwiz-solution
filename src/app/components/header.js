@@ -140,7 +140,7 @@ useEffect(() => {
       </div>
 
       {/* Divider */}
-      <div className="hidden lg:block w-full h-px bg-gray-300 mt-4"></div>
+      <div className="hidden lg:block w-full h-px  bg-[#FFFFFF] mt-4"></div>
 
       {/* 🔹 Desktop Navbar (only lg and up) */}
       <motion.div

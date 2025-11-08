@@ -1,9 +1,8 @@
 "use client";
 import React, { useState, useContext } from "react";
-import { abc } from "@/app/components/contextprovider";
-
+import { abcde } from "@/app/components/contextprovider3";
 export default function Page() {
-  const { val } = useContext(abc);
+  const { val3 } = useContext(abcde);
 
   const [form, setForm] = useState({
     name: "",
@@ -33,7 +32,7 @@ export default function Page() {
       const res = await fetch("/api/forms", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, website: val }),
+        body: JSON.stringify({ ...form, website: val3 }),
       });
 
       const data = await res.json();
@@ -88,7 +87,7 @@ export default function Page() {
         {/* Email */}
         <div>
           <label htmlFor="workEmail" className="font-medium">
-            Your Email Address *
+            Work Email Address *
           </label>
           <input
             id="workEmail"
@@ -111,10 +110,9 @@ export default function Page() {
               id="website"
               name="website"
               type="text"
-              value={val}
-              readOnly
               required
-              className="w-full border-2 border-gray-300 rounded-lg p-2 bg-gray-100"
+              
+              className="w-full border-2 border-gray-300 rounded-lg p-2 "
             />
           </div>
 
@@ -126,7 +124,7 @@ export default function Page() {
               id="company"
               name="company"
               type="text"
-              value={form.company}
+              value={val3}
               onChange={handleChange}
               required
               className="w-full border-2 border-gray-300 rounded-lg p-2"

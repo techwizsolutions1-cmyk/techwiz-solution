@@ -2,10 +2,9 @@
 import React, { useContext, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { abc } from "@/app/components/contextprovider";
-
+import { abcd } from "./contextprovider2";
 const Serviceleft = () => {
-  const { val, setVal } = useContext(abc);
+  const { val2, setVal2 } = useContext(abcd);
   const [show, setShow] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -43,7 +42,7 @@ const Serviceleft = () => {
   onClick={(e) => e.stopPropagation()} // 🧠 prevent clicks from closing the card
   className={`absolute top-0 left-0 w-full h-full flex-col justify-center 
     items-center md:items-start gap-0 sm:gap-2 md:gap-6 p-4 sm:p-6 md:p-8
-     bg-blue-100/90 backdrop-blur-sm rounded-xl transition-all duration-300 
+     bg-blue-300 backdrop-blur-sm rounded-xl transition-all duration-300 
     ${
       isMobile
         ? show
@@ -75,9 +74,9 @@ const Serviceleft = () => {
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xl mt-3">
           <input
             type="text"
-            placeholder="Enter your Buisness name"
-            value={val}
-            onChange={(e) => setVal(e.target.value)}
+            placeholder="Enter your Website"
+            value={val2}
+            onChange={(e) => setVal2(e.target.value)}
             className="border-2 border-blue-600 rounded-xl py-2.5 sm:py-3 px-3 sm:px-4 text-center sm:text-left flex-1 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm sm:text-base"
             required
           />

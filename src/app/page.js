@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </div>
           </Link>
-
+   <Header />
           <Hero />
           <About />
           <Industries />
