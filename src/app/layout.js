@@ -32,7 +32,7 @@ export const metadata = {
     canonical: "https://techwizpk.com",
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
 
