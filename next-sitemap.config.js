@@ -2,8 +2,13 @@
 module.exports = {
   siteUrl: 'https://techwizpk.com',
   generateRobotsTxt: true,
-  generateIndexSitemap: true, // sitemap_index.xml banaye
-  sitemapBaseFileName: 'sitemap', // ← ye line se sitemap-0.xml → sitemap.xml ban jayegi
+
+  // Index sitemap banaye
+  generateIndexSitemap: true,
+
+  // Base name 'sitemap' rakho taake sitemap.xml bane
+  sitemapBaseFileName: 'sitemap',
+
   transform: async (config, path) => {
     if (path === '/') {
       return {
