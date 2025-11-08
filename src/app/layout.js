@@ -25,11 +25,15 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://techwizpk.com/"),
 
+  // ✅ Remove noindex & add canonical
+  metadataBase: new URL("https://techwizpk.com/"),
+  alternates: {
+    canonical: "https://techwizpk.com",
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true, // noindex remove, now it will index
+    follow: true,
   },
 
   openGraph: {
@@ -37,7 +41,7 @@ export const metadata = {
       "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
     description:
       "Transform your business with TechWiz — Expert Web, and digital marketing services that accelerate growth and drive real-world results.",
-    url: "https://techwiz-solution.vercel.app",
+    url: "https://techwizpk.com",
     siteName: "TechWiz Solutions",
     images: [
       {
@@ -114,7 +118,6 @@ export default function RootLayout({ children }) {
         <ContextProvider>
          <ContextProvider2>
          <ContextProvider3>
-         
           {children}
           <Footer />
          </ContextProvider3>
