@@ -2,13 +2,8 @@
 module.exports = {
   siteUrl: 'https://techwizpk.com',
   generateRobotsTxt: true,
-
-  // Index sitemap banaye
-  generateIndexSitemap: true,
-
-  // Base name 'sitemap' rakho taake sitemap.xml bane
-  sitemapBaseFileName: 'sitemap',
-
+  generateIndexSitemap: false, // ❌ Disable index sitemap
+  sitemapSize: 5000, // ✅ Large limit taake sab ek file me ho
   transform: async (config, path) => {
     if (path === '/') {
       return {
@@ -18,6 +13,10 @@ module.exports = {
         priority: 1.0,
       };
     }
-    return undefined;
+    return {
+      loc: `${config.siteUrl}${path}`,
+      changefreq: 'weekly',
+      priority: 0.7,
+    };
   },
 };

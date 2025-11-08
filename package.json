@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-     "postbuild": "npx next-sitemap && node scripts/fix-sitemap.js",
+     "build": "next build",
+    "postbuild": "npx next-sitemap",
     "dev": "next dev",
-    "build": "next build",
+   
     "start": "next start",
     "lint": "eslint"
   },
