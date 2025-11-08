@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
         <ContextProvider>
           <ContextProvider2>
             <ContextProvider3>
-              <Header />
+             
               {children}
               <Footer />
             </ContextProvider3>
