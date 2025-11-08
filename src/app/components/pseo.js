@@ -8,7 +8,7 @@ import Link from "next/link";
 const slidesData = [
   {
     link:"https://www.twoguys.ae/",
-    title: "Two Guys Home Furnishing Dubai",
+    title: "Two Guys ",
     img: "/Graph.png",
     tableContent: (
       <>
@@ -157,7 +157,7 @@ const slidesData = [
   },
   {
     link:"https://blindsandcurtains.ae/",
-    title: "Blinds and Curtains Dubai",
+    title: " BnC",
     img: "/blindgraph.png",
     tableContent: (
       <>
@@ -328,7 +328,8 @@ const Pseo = () => {
         <div className="relative w-full overflow-hidden">
           {/* Left Button */}
           <button
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-500 text-white px-3 py-2 rounded-full shadow hover:bg-blue-600"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-500
+             text-white px-3 py-2 rounded-full shadow hover:bg-blue-600"
             onClick={scrollLeft}
           >
             &#8592;
@@ -348,7 +349,7 @@ const Pseo = () => {
                       src={slide.img}
                       alt={slide.title}
                       fill
-                      className=" hover:scale-110 object-cover md:object-cover"
+                      className=" hover:scale-110  object-contain md:object-contain"
                     />
                   </div>
                   <h3 className=" mt-6 font-semibold text-gray-800 text-center">
@@ -399,7 +400,8 @@ const Pseo = () => {
           {/* Header */}
           <div className="flex flex-col md:flex-row  items-center mb-6 border-b pb-4 justify-between">
             <h4 className="text-2xl font-bold text-gray-800">{slidesData[activeTable].title}</h4>
-           <p>PROJECT: <Link href={slidesData[activeTable].link} className="text-blue-400 underline">VISIT WEBSITE</Link></p>
+           <p>PROJECT: <Link href={slidesData[activeTable].link} className="text-blue-400 underline">
+           VISIT WEBSITE</Link></p>
 <div className="flex flex-row justify-center space-x-5">
              <Link href="/free-quates"> 
              <button className="mt-3 md:mt-0 bg-blue-950 text-white px-3 py-4 font-semibold hover:scale-105 transition-all duration-200 shadow-md">
