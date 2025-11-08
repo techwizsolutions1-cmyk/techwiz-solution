@@ -4,9 +4,9 @@ import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import ContextProvider from "./components/contextprovider";
-import Script from "next/script";
 import ContextProvider2 from "./components/contextprovider2";
 import ContextProvider3 from "./components/contextprovider3";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,16 +26,17 @@ export const metadata = {
     icon: "/favicon.ico",
   },
 
-  // ✅ Remove noindex & add canonical
+  // ✅ SEO & Indexing
   metadataBase: new URL("https://techwizpk.com/"),
   alternates: {
     canonical: "https://techwizpk.com",
   },
   robots: {
-    index: true, // noindex remove, now it will index
+    index: true,
     follow: true,
   },
 
+  // ✅ Open Graph
   openGraph: {
     title:
       "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
@@ -54,8 +55,9 @@ export const metadata = {
     type: "website",
   },
 
+  // ✅ Twitter Card
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@techwiz.pk",
     title:
       "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
@@ -69,7 +71,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ Google Tag Manager Script */}
+        {/* ✅ Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){
@@ -86,26 +88,22 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* ✅ Microsoft Clarity Script */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* ✅ Microsoft Clarity */}
         <Script id="ms-clarity" strategy="afterInteractive">
           {`
-            (function (c, l, a, r, i, t, y) {
-              c[a] = c[a] || function () {
-                (c[a].q = c[a].q || []).push(arguments);
-              };
-              t = l.createElement(r);
-              t.async = 1;
-              t.src = "https://www.clarity.ms/tag/" + i;
-              y = l.getElementsByTagName(r)[0];
-              y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "u28i05mfst");
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);
+              t.async=1;
+              t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];
+              y.parentNode.insertBefore(t,y);
+            })(window,document,"clarity","script","u28i05mfst");
           `}
         </Script>
 
-        {/* ✅ Google Tag Manager (noscript) */}
+        {/* ✅ GTM noscript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NR4X3NDJ"
@@ -116,12 +114,13 @@ export default function RootLayout({ children }) {
         </noscript>
 
         <ContextProvider>
-         <ContextProvider2>
-         <ContextProvider3>
-          {children}
-          <Footer />
-         </ContextProvider3>
-         </ContextProvider2>
+          <ContextProvider2>
+            <ContextProvider3>
+              <Header />
+              {children}
+              <Footer />
+            </ContextProvider3>
+          </ContextProvider2>
         </ContextProvider>
       </body>
     </html>
