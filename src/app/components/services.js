@@ -138,18 +138,18 @@ export default function Services() {
   return (
     <section id="service" className="w-full bg-gradient-to-br mt-10  md:mt-20
      from-sky-50 to-white  md:py-16 px-6 md:px-12 rounded-3xl  md:pt-0
-     shadow-sm border border-slate-200 space-y-16">
-<div className="flex flex-col space-y-3">
+     shadow-sm border border-slate-200 lg:space-y-16">
+<div className="flex flex-col  space-y-3 ">
    
 </div>
       {cards.map((card) => (
         <div
           key={card.id}
           id={card.id}
-          className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between  lg:gap-10"
+          className="max-w-6xl mx-auto flex flex-col md:flex-row  gap-0 items-center justify-between  lg:gap-10"
         >
           {/* Left Content */}
-          <div className="flex items-start gap-5 flex-1">
+          <div className="flex items-start  gap-5 flex-1">
             <div className=" p-2 lg:p-4 bg-blue-100 rounded-2xl text-blue-600 pb-2">
               {card.icon}
             </div>
@@ -170,9 +170,7 @@ export default function Services() {
                 ))}
               </ul>
 
-              <p className="text-sm text-slate-500 italic">
-                Empowering businesses with modern digital solutions.
-              </p>
+           
             </div>
           </div>
 

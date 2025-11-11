@@ -32,8 +32,8 @@ export default function Testimonial() {
 
   return (
     <section className="bg-[#07092B] text-white py-20">
-      <div className="text-center mb-12 p-3">
-        <h2 className="text-4xl font-bold">
+      <div className="text-center mb-12 px-8 lg:p-3">
+        <h2 className="lg:text-4xl  text-2xl font-bold">
           What Says Our <span className="text-blue-600">Happy</span> Clients About Us
         </h2>
       </div>

@@ -47,7 +47,8 @@ export default function Home() {
       <main>
         <div className="overflow-hidden relative">
           <Link href="#header">
-            <div className="fixed bottom-0 md:bottom-10 md:left-10 rounded-2xl md:rounded-4xl md:text-2xl cursor-pointer text-2xl md:px-5 z-50 animate-bounce bg-blue-900 text-white px-2 py-2 md:pt-5 md:pb-5">
+            <div className="fixed bottom-0 left-5 md:bottom-10 md:left-10 rounded-2xl md:rounded-4xl md:text-2xl cursor-pointer
+             text-2xl md:px-5 z-50 animate-bounce bg-blue-900 text-white px-2 py-2 md:pt-5 md:pb-5">
               <div>
                 <BiArrowToTop />
               </div>
@@ -55,8 +56,10 @@ export default function Home() {
           </Link>
 
           <Link href="https://wa.me/+923214661100">
-            <div className="fixed bottom-0 right-0 lg:bottom-10 lg:right-10 text-white text-4xl lg:text-7xl z-50 p-0">
-              <div className="text-white bg-green-400 rounded-2xl lg:rounded-4xl animate-bounce overflow-hidden shadow-lg">
+            <div className="fixed bottom-0 right-5 lg:bottom-10 
+            lg:right-10 text-white text-3xl lg:text-3xl text-center z-50 p-0">
+              <div className="text-white bg-green-400 rounded-sm lg:rounded-sm lg:p-3 p-1
+               animate-bounce overflow-hidden shadow-lg">
                 <BsWhatsapp />
               </div>
             </div>

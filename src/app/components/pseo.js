@@ -328,7 +328,7 @@ const Pseo = () => {
         <div className="relative w-full overflow-hidden">
           {/* Left Button */}
           <button
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-500
+            className=" hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-500
              text-white px-3 py-2 rounded-full shadow hover:bg-blue-600"
             onClick={scrollLeft}
           >
@@ -349,10 +349,10 @@ const Pseo = () => {
                       src={slide.img}
                       alt={slide.title}
                       fill
-                      className=" hover:scale-110  object-contain md:object-contain"
+                      className=" scale-140 hover:scale-140  object-contain md:object-contain"
                     />
                   </div>
-                  <h3 className=" mt-6 font-semibold text-gray-800 text-center">
+                  <h3 className=" lg:mt-10 font-semibold text-gray-800 text-center">
                     {slide.title}
                   </h3>
                   <button
@@ -368,7 +368,7 @@ const Pseo = () => {
 
           {/* Right Button */}
           <button
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-500 text-white px-3 py-2 rounded-full shadow hover:bg-blue-600"
+            className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-500 text-white px-3 py-2 rounded-full shadow hover:bg-blue-600"
             onClick={scrollRight}
           >
             &#8594;

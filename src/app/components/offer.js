@@ -4,7 +4,12 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Briefcase, Headphones, Hammer } from "lucide-react";
-
+import { MessageSquare, MessagesSquare, Users, UserRound, Speech } from "lucide-react";
+import { FaRocket, FaBoxOpen } from "react-icons/fa";
+import { MdSupportAgent } from "react-icons/md";
+import {FaUserTie} from "react-icons/fa";
+import { BarChart3 } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 const Offer = () => {
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
@@ -22,21 +27,21 @@ const Offer = () => {
   const services = [
     {
       id: 1,
-      icon: <Briefcase size={42} className="text-blue-300" />,
+      icon:<Users size={42} className="text-blue-300"/>,
       title: "Consulting",
       desc: "TechWizPK provides expert consulting in web development, SEO, and digital strategy, helping brands strengthen their online visibility and unlock consistent business growth.",
     },
     {
       id: 2,
-      icon: <Headphones size={42} className="text-blue-300" />,
+      icon: <MdSupportAgent size={42} className="text-blue-300" />,
       title: "Support",
       desc: "Our dedicated support team ensures your digital platforms stay secure, fast, and reliable with proactive monitoring and seamless technical assistance.",
     },
     {
       id: 3,
-      icon: <Hammer size={42} className="text-blue-300" />,
-      title: "Production",
-      desc: "We craft high-impact digital products — from websites to campaigns — delivering quality outputs that engage audiences and accelerate success.",
+      icon: < TrendingUp size={42} className="text-blue-300" />,
+      title: "Build & Scale",
+      desc: "We build high-performing digital services and scale them for lasting success — turning your vision into measurable growth.",
     },
   ];
 
