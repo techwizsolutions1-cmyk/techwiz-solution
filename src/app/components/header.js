@@ -78,7 +78,7 @@ useEffect(() => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsSticky(window.scrollY > 150);
+    const handleScroll = () => setIsSticky(window.scrollY > 80);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -104,15 +104,15 @@ useEffect(() => {
         <div className="flex gap-10 relative">
           <div className="relative group">
             <Link href="#">HOME</Link>
-            <div className="hidden w-10 h-[2px] bg-blue-300 absolute -bottom-1 group-hover:block transition-all"></div>
+            <div className="hidden w-full h-[2px] bg-blue-300 absolute -bottom-1 group-hover:block transition-all"></div>
           </div>
           <div className="relative group">
             <Link href="#about">ABOUT US</Link>
-            <div className="hidden w-12 h-[2px] bg-blue-400 absolute -bottom-1 group-hover:block transition-all"></div>
+            <div className="hidden w-full h-[2px] bg-blue-400 absolute -bottom-1 group-hover:block transition-all"></div>
           </div>
           <div className="relative group">
             <Link href="#contact">CONTACT US</Link>
-            <div className="hidden w-16 h-[2px] bg-blue-400 absolute -bottom-1 group-hover:block transition-all"></div>
+            <div className="hidden w-full h-[2px] bg-blue-400 absolute -bottom-1 group-hover:block transition-all"></div>
           </div>
         </div>
 
@@ -206,7 +206,8 @@ useEffect(() => {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          className="lg:hidden bg-white shadow-lg flex flex-col space-y-3 py-4 px-5 text-gray-800 font-medium"
+          className="lg:hidden bg-white shadow-lg flex flex-col space-y-3 py-4  fixed top-15 w-full  z-50
+          px-5 text-gray-800 font-medium"
         >
           {navItems.map((item, index) => (
             <Link
@@ -221,7 +222,8 @@ useEffect(() => {
 
           <Link
             href="/forms/free-quotes"
-            className="mt-3 border-2 border-blue-900 text-blue-900 rounded-2xl py-2 text-center hover:bg-blue-900 hover:text-white"
+            className="mt-3 border-2 border-blue-900 text-blue-900 rounded-2xl py-2
+             text-center hover:bg-blue-900 hover:text-white"
           >
             Get a Quote Now →
           </Link>

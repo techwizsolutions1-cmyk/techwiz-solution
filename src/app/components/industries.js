@@ -56,7 +56,7 @@ const Industries = () => {
   ];
 
   return (
-    <div className="w-full md:py-14">
+    <div className="w-full md:py-14 mt-7 md:mt-0">
       {/* ✅ Header Section */}
       <div className=" pt-3 pb-8 flex flex-col items-center w-[90vw] md:w-[70vw] mx-auto space-y-3 text-center">
         <div className="font-bold  md:text-xl text-blue-500">

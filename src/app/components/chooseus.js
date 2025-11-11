@@ -93,7 +93,7 @@ const Chooseus = () => {
       </div>
 
       {/* ✅ Content Section */}
-      <div className="md:mt-8 ">
+      <div className=" mt-5 md:mt-8 ">
         {newcontain
           .filter((e) => e.id === val)
           .map((e) => (

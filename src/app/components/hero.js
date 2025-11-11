@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative bg-[url('/hero.png')] bg-cover bg-center w-full 
-    h-[90vh] flex items-center justify-center overflow-hidden">
+    h-[90vh]  lg:[100vh] flex items-center justify-center overflow-hidden">
       {/* 🔹 Overlay for text contrast */}
       <div className="absolute inset-0 bg-black/50" />
 
@@ -42,14 +42,14 @@ export default function Hero() {
 
         {/* ✅ Right Side (Three FlipCards — visible only on laptops/desktops) */}
         <div className="hidden  lg:flex lg:flex-row justify-center items-center lg:w-1/2 gap-6 relative">
-          <div className="w-48 xl:w-56 lg:absolute lg:-bottom-40 lg:left-0 ">
-            <FlipCard pic="/hero.png" />
+          <div className="w-48 lg:w-46 lg:absolute lg:-bottom-45 lg:left-20  ">
+            <FlipCard pic="/hero.png "  className="bg-contain "/>
           </div>
-          <div className="w-48 xl:w-56  lg:absolute lg:right-30">
-            <FlipCard2 pic="/hero.png" />
+          <div className="w-48 lg:w-56  lg:absolute lg:-top-55  lg:right-28">
+            <FlipCard2 pic="/hero.png"  className="bg-cover" />
           </div>
-          <div className="w-48 xl:w-56 lg:absolute lg:right-60 ">
-            <FlipCard3 pic="/hero.png" />
+          <div className="w-48 lg:w-56 lg:absolute lg:right-62  ">
+            <FlipCard3 pic="/hero.png"   className="bg-cover"/>
           </div>
         </div>
 
@@ -57,5 +57,4 @@ export default function Hero() {
     </section>
   );
 }
-
 
