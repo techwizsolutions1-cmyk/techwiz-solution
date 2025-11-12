@@ -34,12 +34,12 @@ export default function Footer() {
             className="px-8 py-3 bg-white text-black font-semibold md:w-1/2 lg:w-auto rounded-2xl shadow-md 
             hover:bg-blue-950 hover:text-white transition-all duration-300"
           >
-          Get Fres Consultation
+          Get Free Consultation
           </button></Link>
         </div>
 
         {/* Light Gradient Border Effect */}
-        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#00D8FF] to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r bg-blue-900 to-transparent"></div>
       </div>
 
       {/* --- Main Footer Content --- */}
