@@ -395,7 +395,8 @@ const Pseo = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="absolute top-0 border-4 border-black z-50 w-full bg-white/95 backdrop-blur-lg shadow-2xl rounded-xl p-6 overflow-y-auto"
+          className="absolute top-0 border-4 border-black z-50 w-full bg-white/95 
+          backdrop-blur-lg shadow-2xl rounded-xl p-6 overflow-y-auto"
         >
           {/* Header */}
           <div className="flex flex-col md:flex-row  items-center mb-6 border-b pb-4 justify-between">
@@ -404,7 +405,8 @@ const Pseo = () => {
            VISIT WEBSITE</Link></p>
 <div className="flex flex-row justify-center space-x-5">
              <Link href="/free-quates"> 
-             <button className="mt-3 md:mt-0 bg-blue-950 text-white px-3 py-4 font-semibold hover:scale-105 transition-all duration-200 shadow-md">
+             <button className="mt-3 md:mt-0 bg-blue-950 text-white px-3 py-4 
+             font-semibold hover:scale-105 transition-all duration-200 shadow-md">
             Send Me a Proposal
             </button></Link>
             <div className="text-3xl cursor-pointer font-bold" onClick={() => setActiveTable(null)}>
