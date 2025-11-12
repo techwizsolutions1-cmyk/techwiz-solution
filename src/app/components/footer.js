@@ -29,12 +29,13 @@ export default function Footer() {
             </p>
           </div>
 
-          <button
+        
+        <Link href="tel:+923214661100">  <button
             className="px-8 py-3 bg-white text-black font-semibold md:w-1/2 lg:w-auto rounded-2xl shadow-md 
             hover:bg-blue-950 hover:text-white transition-all duration-300"
           >
-            Book a Strategy Call
-          </button>
+          Get Fres Consultation
+          </button></Link>
         </div>
 
         {/* Light Gradient Border Effect */}
