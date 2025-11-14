@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Header from "./components/header";
+
 import Footer from "./components/footer";
 import ContextProvider from "./components/contextprovider";
 import ContextProvider2 from "./components/contextprovider2";
@@ -26,7 +26,6 @@ export const metadata = {
     icon: "/favicon.ico",
   },
 
-  // ✅ SEO & Indexing
   metadataBase: new URL("https://techwizpk.com/"),
   alternates: {
     canonical: "https://techwizpk.com",
@@ -36,7 +35,6 @@ export const metadata = {
     follow: true,
   },
 
-  // ✅ Open Graph
   openGraph: {
     title:
       "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
@@ -55,7 +53,6 @@ export const metadata = {
     type: "website",
   },
 
-  // ✅ Twitter Card
   twitter: {
     card: "summary_large_image",
     site: "@techwiz.pk",
@@ -86,10 +83,36 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-NR4X3NDJ');
           `}
         </Script>
+
+        {/* ✅ Meta Pixel Code */}
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '855069489697607');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+
+        {/* Meta Pixel noscript */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=855069489697607&ev=PageView&noscript=1"
+          />
+        </noscript>
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* ✅ Microsoft Clarity */}
+        {/* Microsoft Clarity */}
         <Script id="ms-clarity" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
@@ -103,7 +126,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* ✅ GTM noscript */}
+        {/* GTM noscript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NR4X3NDJ"
@@ -116,7 +139,6 @@ export default function RootLayout({ children }) {
         <ContextProvider>
           <ContextProvider2>
             <ContextProvider3>
-             
               {children}
               <Footer />
             </ContextProvider3>
