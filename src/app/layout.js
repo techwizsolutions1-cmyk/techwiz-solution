@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 export const metadata = {
   title: "Empower Your Business Growth with Proven IT & Digital Solutions | TechWiz",
   description:
@@ -147,3 +147,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+ 

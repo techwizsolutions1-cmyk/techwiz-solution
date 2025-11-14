@@ -22,7 +22,8 @@ const Serviceleft2 = () => {
 
   return (
     <div
-      className="relative h-[70vh] sm:h-[80vh] md:h-[96vh] bg-[url('/service.png')] bg-cover bg-center group rounded-xl overflow-hidden cursor-pointer"
+      className="relative h-[70vh] sm:h-[80vh] md:h-[85vh] bg-[url('/service.png')] bg-cover
+       bg-center group rounded-xl overflow-hidden cursor-pointer"
       onClick={() => isMobile && setShow(!show)}
     >
       {/* 🔹 Front Side */}

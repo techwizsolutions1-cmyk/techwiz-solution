@@ -11,7 +11,7 @@ export default function Footer() {
     { name: "SEO Services", path: "#seo" },
     { name: "Web Solutions", path: "#web" },
     { name: "Digital Marketing", path: "#digital" },
-    { name: "AI Technology", path: "#ai" },
+
   ];
 
   return (
@@ -63,7 +63,7 @@ export default function Footer() {
 
           <div className="flex gap-4 text-white  text-xl mt-4">
             <a
-              href="https://www.facebook.com/techwizpk"
+              href="https://www.facebook.com/techwizpksolutions"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-[#0B0D3B]  rounded-full hover:bg-blue-900 hover:text-white transition-all duration-300"
@@ -113,7 +113,7 @@ export default function Footer() {
         {/* Official Info Section */}
         <div className="lg:w-1/3">
           <h3 className="text-2xl font-bold mb-3 relative inline-block">
-            Official Info
+           Reach Us
             <span className="absolute left-0 -bottom-1 w-10 h-[2px] bg-blue-900"></span>
           </h3>
 
@@ -136,8 +136,9 @@ export default function Footer() {
       {/* --- Bottom Bar --- */}
       <div className="text-center py-5 text-gray-400 text-sm border-t border-gray-700">
         © {new Date().getFullYear()}{" "}
-        <span className="text-blue-700">TechWiz</span>. All rights reserved.
+        <span className="text-blue-700 font-semibold"> TechwizPK Solutions </span > <span>| Built With Passion By      <Link href="https://pkitsol.com/" className="underline font-semibold"> PK IT Sol</Link></span>
       </div>
+ 
     </footer>
   );
 }

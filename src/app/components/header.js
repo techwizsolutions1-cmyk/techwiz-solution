@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import Image from "next/image";
-
+import { FaPhone } from "react-icons/fa6";
 const Header = () => {
 
 // useEffect(() => {
@@ -96,7 +96,7 @@ useEffect(() => {
       <div className="hidden lg:flex text-gray-500 pt-3 flex-wrap justify-between items-center px-10 font-medium relative">
         {/* Left: Phone */}
         <div className="flex items-center gap-2">
-          <FaPhoneVolume />
+       <FaPhone />
           <Link href="tel:+923214661100">+923214661100</Link>
         </div>
 
@@ -123,7 +123,7 @@ useEffect(() => {
             <Link href="mailto:info@techwizpk.com">info@techwizpk.com</Link>
           </div>
           <div className="flex gap-3 text-xl pl-2">
-            <Link href="https://www.facebook.com/techwizpk">
+            <Link href="https://www.facebook.com/techwizpksolutions">
               <FaFacebookF />
             </Link>
             <Link href="https://www.instagram.com/techwizpkc/">
@@ -229,7 +229,7 @@ useEffect(() => {
           </Link>
 
           <div className="flex space-x-4 text-xl pt-3 border-t border-gray-200">
-            <Link href="https://www.facebook.com/techwizpk">
+            <Link href="https://www.facebook.com/techwizpksolutions">
               <FaFacebookF />
             </Link>
             <Link href="https://www.instagram.com/techwizpkc/">

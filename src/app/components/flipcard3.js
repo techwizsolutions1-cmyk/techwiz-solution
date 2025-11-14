@@ -45,7 +45,7 @@ export default function FlipCard3() {
               src="/aitechnology.png"
               alt="AI Technology"
               fill
-              className="object-contain rounded-full"
+              className="object-cover rounded-full"
             />
           </div>
 

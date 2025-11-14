@@ -2,71 +2,73 @@
 
 import React from "react";
 import Digitalmarketingleft from "./digitalmarketingleft";
-import {
-  FaBullhorn,
-  FaEnvelopeOpenText,
-  FaUserFriends,
-  FaVideo,
-} from "react-icons/fa";
+import { FaBullhorn, FaEnvelopeOpenText, FaUserFriends, FaVideo } from "react-icons/fa";
 
 const Digitalmarketingright = () => {
+  const cards = [
+    {
+      icon: <FaBullhorn className="text-3xl text-blue-700" />,
+      title: "Social Media Ads",
+      desc: "Run high-performing campaigns on Facebook, Instagram, and LinkedIn to expand reach and conversions.",
+    },
+    {
+      icon: <FaEnvelopeOpenText className="text-3xl text-blue-700" />,
+      title: "Email Marketing",
+      desc: "Engage and retain customers with automated, personalized email campaigns.",
+    },
+    {
+      icon: <FaUserFriends className="text-3xl text-blue-700" />,
+      title: "Influencer Marketing",
+      desc: "Collaborate with trusted influencers to build credibility and increase conversions.",
+    },
+    {
+      icon: <FaVideo className="text-3xl text-blue-700" />,
+      title: "Video Marketing",
+      desc: "Create powerful video content optimized for engagement and SEO.",
+    },
+  ];
+
   return (
     <div
       id="digital"
-      className="w-full flex flex-col lg:flex-row items-center lg:items-start gap-10 
-      px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 lg:mb-20"
+      className="
+        w-full flex flex-col lg:flex-row 
+        items-stretch gap-12 
+        px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 
+        lg:mb-20
+      "
     >
-      {/* ✅ Left Section */}
-      <div className="w-full lg:w-1/2">
+      {/* Left Section */}
+      <div className="w-full lg:w-1/2 h-full self-stretch flex">
         <Digitalmarketingleft />
       </div>
 
-      {/* ✅ Right Section */}
-      <div
-        className="
-        w-full lg:w-1/2 grid 
-        grid-cols-1 sm:grid-cols-2 
-        gap-4 sm:gap-5 md:gap-6 
-        lg:mt-0
-        place-items-center
-        "
-      >
-        {/* 🔹 Card Component */}
-        {[
-          {
-            icon: <FaBullhorn className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
-            title: "Social Media Ads",
-            desc: "Run high-performing campaigns on Facebook, Instagram, and LinkedIn to expand reach and conversions.",
-          },
-          {
-            icon: <FaEnvelopeOpenText className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
-            title: "Email Marketing",
-            desc: "Engage, nurture, and retain customers with automated, personalized email campaigns that build loyalty.",
-          },
-          {
-            icon: <FaUserFriends className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
-            title: "Influencer Marketing",
-            desc: "Collaborate with trusted voices in your industry to boost credibility, awareness, and conversions authentically.",
-          },
-          {
-            icon: <FaVideo className="text-blue-600 text-3xl sm:text-4xl mb-2" />,
-            title: "Video Marketing",
-            desc: "Create powerful video content optimized for SEO and engagement to capture attention and drive results.",
-          },
-        ].map((card, index) => (
+      {/* Right Section */}
+      <div className="
+        w-full lg:w-1/2 
+        grid grid-cols-1 sm:grid-cols-2 gap-6 
+        h-full
+      ">
+        {cards.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col justify-start items-center text-center border border-gray-200 rounded-xl 
-            p-3 sm:p-4 md:p-5 lg:p-6 lg:pb-8
-            w-full max-w-[320px] h-auto 
-            hover:shadow-xl hover:bg-blue-100/60 transition-all duration-300"
+            className="
+              flex flex-col items-center justify-start text-center 
+              border border-gray-200 rounded-2xl p-6 
+              shadow-sm bg-white
+              transition-all duration-300 
+              hover:shadow-xl hover:-translate-y-2 hover:bg-blue-50/70
+              h-[38vh]
+            "
           >
-            {card.icon}
-            <h4 className="font-bold text-base sm:text-lg md:text-xl text-blue-800 mb-1 sm:mb-2">
-              {card.title}
+            {service.icon}
+
+            <h4 className="text-blue-800 text-xl font-bold mt-2">
+              {service.title}
             </h4>
-            <p className="text-xs sm:text-sm md:text-base text-gray-700 font-medium leading-relaxed">
-              {card.desc}
+
+            <p className="text-gray-600 text-sm mt-2  md:text-base leading-relaxed">
+              {service.desc}
             </p>
           </div>
         ))}

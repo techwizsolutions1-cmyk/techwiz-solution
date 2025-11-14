@@ -349,7 +349,7 @@ const Pseo = () => {
                       src={slide.img}
                       alt={slide.title}
                       fill
-                      className=" scale-140 hover:scale-140  object-contain md:object-contain"
+                      className=" scale-135 lg:scale-130   object-contain md:object-contain"
                     />
                   </div>
                   <h3 className=" lg:mt-10 font-semibold text-gray-800 text-center">

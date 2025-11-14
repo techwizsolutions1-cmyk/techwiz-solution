@@ -25,7 +25,7 @@ export default function FlipCard2() {
       {/* Perspective wrapper */}
       <div className="group [perspective:1200px]">
         <div
-          className={`relative w-56 h-56 rounded-full transition-transform duration-700 
+          className={`relative w-66 h-66 rounded-full transition-transform duration-700 
           [transform-style:preserve-3d] border-4 border-white shadow-lg
           ${isSticky ? "[transform:rotateY(180deg)]" : "[transform:rotateY(0deg)]"}
           group-hover:[transform:rotateY(180deg)]`}

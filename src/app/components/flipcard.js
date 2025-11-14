@@ -94,7 +94,7 @@ export default function FlipCard() {
       {/* 3D Perspective Wrapper */}
       <div className="group [perspective:1200px]">
         <div
-          className={`relative w-56 h-56 rounded-full border-4 border-white shadow-lg transition-transform duration-700 [transform-style:preserve-3d]
+          className={`relative w-66 h-66 rounded-full border-4 border-white shadow-lg transition-transform duration-700 [transform-style:preserve-3d]
             ${isSticky ? "rotate-y-180" : ""}
             group-hover:rotate-y-180`}
           style={{
