@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-
 import Footer from "./components/footer";
 import ContextProvider from "./components/contextprovider";
 import ContextProvider2 from "./components/contextprovider2";
@@ -84,7 +83,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* ✅ Meta Pixel Code */}
+        {/* ✅ Your Exact Meta Pixel Code */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -100,7 +99,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* Meta Pixel noscript */}
+        {/* ✅ Your Meta Pixel <noscript> */}
         <noscript>
           <img
             height="1"
