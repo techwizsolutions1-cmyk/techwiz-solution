@@ -16,7 +16,7 @@ const slidesData = [
           <td className="py-2">1</td>
           <td>sintered stone flooring</td>
           <td>
-            <Link href="https://i.imgur.com/lSY8kcm.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/lSY8kcm.png" className="text-blue-600 underline  hover:underline">
               1
             </Link>
           </td>
@@ -30,7 +30,7 @@ const slidesData = [
           <td className="py-2">2</td>
           <td>linen curtains dubai</td>
           <td>
-            <Link href="https://i.imgur.com/KGWiNyR.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/KGWiNyR.png" className="text-blue-600 underline hover:underline">
               9
             </Link>
           </td>
@@ -44,7 +44,7 @@ const slidesData = [
           <td className="py-2">3</td>
           <td>Home Furnishing</td>
           <td>
-            <Link href="https://i.imgur.com/U9shyx0.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/U9shyx0.png" className="text-blue-600 underline hover:underline">
               11
             </Link>
           </td>
@@ -58,7 +58,7 @@ const slidesData = [
           <td className="py-2">4</td>
           <td>shutters in Dubai</td>
           <td>
-            <Link href="https://i.imgur.com/jlHLRTG.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/jlHLRTG.png" className="text-blue-600 underline hover:underline">
               15
             </Link>
           </td>
@@ -86,7 +86,7 @@ const slidesData = [
           <td className="py-2">6</td>
           <td>blackout curtains dubai</td>
           <td>
-            <Link href="https://i.imgur.com/7NfGVdP.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/7NfGVdP.png" className="text-blue-600 underline hover:underline">
               29
             </Link>
           </td>
@@ -100,7 +100,7 @@ const slidesData = [
           <td className="py-2">7</td>
           <td>Window Curtains Dubai</td>
           <td>
-            <Link href="https://www.twoguys.ae/curtains/" className="text-blue-600 hover:underline">
+            <Link href="https://www.twoguys.ae/curtains/" className="text-blue-600  underline hover:underline">
               30
             </Link>
           </td>
@@ -114,7 +114,7 @@ const slidesData = [
           <td className="py-2">8</td>
           <td>blinds in dubai</td>
           <td>
-            <Link href="https://i.imgur.com/DCjFJTz.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/DCjFJTz.png" className="text-blue-600  underline hover:underline">
               33
             </Link>
           </td>
@@ -128,7 +128,7 @@ const slidesData = [
           <td className="py-2">9</td>
           <td>SPC flooring dubai</td>
           <td>
-            <Link href="https://i.imgur.com/o97DbQq.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/o97DbQq.png" className="text-blue-600 underline  hover:underline">
               35
             </Link>
           </td>
@@ -142,7 +142,7 @@ const slidesData = [
           <td className="py-2">10</td>
           <td>wall decor dubai</td>
           <td>
-            <Link href="https://i.imgur.com/JGhNT7f.png" className="text-blue-600 hover:underline">
+            <Link href="https://i.imgur.com/JGhNT7f.png" className="text-blue-600  underline hover:underline">
               35
             </Link>
           </td>
@@ -164,61 +164,61 @@ const slidesData = [
         <tr className="hover:bg-blue-50 transition">
           <td>1</td>
           <td>dubai curtains and blinds</td>
-          <td><Link href="https://i.imgur.com/4lIsfVU.png">2</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/4lIsfVU.png">2</Link></td>
           <td><Link href="https://blindsandcurtains.ae/ ">https://blindsandcurtains.ae/ </Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>2</td>
           <td>motorised curtains</td>
-          <td><Link href="https://i.imgur.com/V6rRZiZ.png">2</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/V6rRZiZ.png">2</Link></td>
           <td><Link href="https://blindsandcurtains.ae/curtains/motorised-curtains/ ">https://blindsandcurtains.ae/curtains/motorised-curtains/ </Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>3</td>
           <td>dubai blinds</td>
-          <td><Link href="https://i.imgur.com/RVglZtR.png">2</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/RVglZtR.png">2</Link></td>
           <td><Link href="https://blindsandcurtains.ae/ ">https://blindsandcurtains.ae/ </Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>4</td>
           <td>conservatory blinds</td>
-          <td><Link href="https://i.imgur.com/U4WS8xk.png">2</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/U4WS8xk.png">2</Link></td>
           <td><Link href="https://blindsandcurtains.ae/blinds/conservatory-blinds/">https://blindsandcurtains.ae/blinds/conservatory-blinds/</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>5</td>
           <td>full height shutters</td>
-          <td><Link href="https://i.imgur.com/B8sgbJJ.png">3</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/B8sgbJJ.png">3</Link></td>
           <td><Link href="https://blindsandcurtains.ae/shutters-range/full-heig/">https://blindsandcurtains.ae/shutters-range/full-heig/</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>6</td>
           <td>office curtains</td>
-          <td><Link href="https://i.imgur.com/jIs6iFO.png">3</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/jIs6iFO.png">3</Link></td>
           <td><Link href="https://blindsandcurtains.ae/curtains/office-window-curtains/">https://blindsandcurtains.ae/curtains/office-window-curtains/</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>7</td>
           <td>duplex blinds dubai</td>
-          <td><Link href="https://i.imgur.com/T4FG9Wc.png">3</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/T4FG9Wc.png">3</Link></td>
           <td><Link href="https://blindsandcurtains.ae/blinds/duplex-blinds/ ">https://blindsandcurtains.ae/blinds/duplex-blinds/ </Link></td>
         </tr>
          <tr className="hover:bg-blue-50 transition">
           <td>8</td>
           <td>outdoor blinds dubai</td>
-          <td><Link href="https://blindsandcurtains.ae/balcony-blinds-and-curtains/">4</Link></td>
+          <td className="underline"><Link href="https://blindsandcurtains.ae/balcony-blinds-and-curtains/">4</Link></td>
           <td><Link href="https://blindsandcurtains.ae/balcony-blinds-and-curtains/">https://blindsandcurtains.ae/balcony-blinds-and-curtains/</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>9</td>
           <td>motorised curtains</td>
-          <td><Link href="https://i.imgur.com/QygFSUg.png">6</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/QygFSUg.png">6</Link></td>
           <td><Link href="https://blindsandcurtains.ae/curtains/motorised-curtains/">https://blindsandcurtains.ae/curtains/motorised-curtains/</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>10</td>
           <td>blackout roller blinds</td>
-          <td><Link href="https://i.imgur.com/D33DhGo.png">6</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/D33DhGo.png">6</Link></td>
           <td><Link href="https://blindsandcurtains.ae/blinds/roller-blinds/blackout-roller-blinds/ ">https://blindsandcurtains.ae/blinds/roller-blinds/blackout-roller-blinds/ </Link></td>
         </tr>
       </>
@@ -233,31 +233,31 @@ const slidesData = [
         <tr className="hover:bg-blue-50 transition">
           <td>1</td>
           <td>Interior Vinyl Film</td>
-          <td><Link href="https://interiorfilm.ae/">1</Link></td>
+          <td className="underline"><Link href="https://interiorfilm.ae/">1</Link></td>
           <td><Link href="https://interiorfilm.ae/ ">https://interiorfilm.ae/ </Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>2</td>
           <td>Pure Gold Vinyl</td>
-          <td><Link href="https://i.imgur.com/9RL1AFb.png">1</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/9RL1AFb.png">1</Link></td>
           <td><Link href="https://interiorfilm.ae/products?category=cement-grey-series ">https://interiorfilm.ae/products?category=cement-grey-series </Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>3</td>
           <td>Cement Grey Vinyl</td>
-          <td><Link href="https://interiorfilm.ae/products?category=cement-grey-series">1</Link></td>
+          <td className="underline"><Link href="https://interiorfilm.ae/products?category=cement-grey-series">1</Link></td>
           <td><Link href="https://interiorfilm.ae/products?category=cement-grey-series">https://interiorfilm.ae/products?category=cement-grey-series</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>4</td>
           <td>Offwhite Fabric Vinyl</td>
-          <td><Link href="https://i.imgur.com/lWinmSJ.png">1</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/lWinmSJ.png">1</Link></td>
           <td><Link href="https://interiorfilm.ae/product/offwhite-fabric-vinyl">https://interiorfilm.ae/product/offwhite-fabric-vinyl</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>5</td>
           <td>White Vinyl Film</td>
-          <td><Link href="https://i.imgur.com/PCLnfCd.png">1</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/PCLnfCd.png">1</Link></td>
           <td><Link href="https://interiorfilm.ae/product/pure-white-vinyl-film">https://interiorfilm.ae/product/pure-white-vinyl-film</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
@@ -269,25 +269,25 @@ const slidesData = [
         <tr className="hover:bg-blue-50 transition">
           <td>7</td>
           <td>wood vinyl wrap</td>
-          <td><Link href="https://i.imgur.com/WRa05ZP.png">2</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/WRa05ZP.png">2</Link></td>
           <td><Link href="https://interiorfilm.ae/products?category=wood-grain-series">https://interiorfilm.ae/products?category=wood-grain-series</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>8</td>
           <td>Grey Wood Vinyl</td>
-          <td><Link href="https://i.imgur.com/uPqLixN.png">2</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/uPqLixN.png">2</Link></td>
           <td><Link href="https://interiorfilm.ae/product/grey-wood-vinyl">https://interiorfilm.ae/product/grey-wood-vinyl</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>9</td>
           <td>Metallic Vinyl</td>
-          <td><Link href="https://i.imgur.com/rptamdb.png">3</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/rptamdb.png">3</Link></td>
           <td><Link href="https://interiorfilm.ae/product/metallic-silver-vinyl">https://interiorfilm.ae/product/metallic-silver-vinyl</Link></td>
         </tr>
         <tr className="hover:bg-blue-50 transition">
           <td>10</td>
           <td>Marble Wrap</td>
-          <td><Link href="https://i.imgur.com/yQcwRM8.png">3</Link></td>
+          <td className="underline"><Link href="https://i.imgur.com/yQcwRM8.png">3</Link></td>
           <td><Link href="https://interiorfilm.ae/product/grey-marble-vinyl-wrap ">https://interiorfilm.ae/product/grey-marble-vinyl-wrap</Link></td>
         </tr>
       </>
@@ -405,7 +405,7 @@ const Pseo = () => {
            VISIT WEBSITE</Link></p>
 <div className="flex flex-row justify-center space-x-5">
              <Link href="/free-quates"> 
-             <button className="mt-3 md:mt-0 bg-blue-950 text-white px-3 py-4 
+             <button className="mt-3 md:mt-0 px-4 rounded-3xl border-2 border-blue-950 text-blue-900 hover:text-white hover:bg-blue-950 px-3 py-4 
              font-semibold hover:scale-105 transition-all duration-200 shadow-md">
             Send Me a Proposal
             </button></Link>
@@ -415,19 +415,24 @@ const Pseo = () => {
 </div>
           </div>
   <div className="overflow-hidden">
-      <motion.span
-        className="text-sm  font-normal inline-block whitespace-nowrap"
-        initial={{ x: -200 }}
-        animate={{ x: 400 }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-         
-        }}
-      >
-        👉👉 Click on the rank number to instantly view the live Google search
-        results and explore how your website appears in real-time.
-      </motion.span>
+     <motion.span
+  className="text-sm font-normal inline-block whitespace-nowrap cursor-pointer"
+  initial={{ x: -200 }}
+  animate={{ x: 400 }}
+  transition={{
+    duration: 5,
+    repeat: Infinity,
+    ease: "linear",
+  }}
+  whileHover={{
+    x: 0,          // hover par yahin ruk jayega
+    transition: { duration: 0 } // instant stop
+  }}
+  
+>
+  👉👉 Click on the rank number to instantly view the live Google search
+  results and explore how your website appears in real-time.
+</motion.span>
     </div>
           {/* Table */}
           <div className="w-full overflow-x-auto">

@@ -32,7 +32,8 @@ const Seo = () => {
       id="seo"
       className="w-full px-4 sm:px-6 md:px-10 lg:px-20 py-10 sm:py-14 md:py-20"
     >
-      <div className=" lg:mt-5 flex flex-col lg:flex-row justify-between items-stretch gap-10 lg:h-[85vh]">
+      <div className=" lg:mt-5 flex flex-col  lg:flex-row
+       justify-between  gap-10 lg:h-[85vh]">
         
         {/* LEFT SECTION */}
         <div className="w-full lg:w-[45%] h-full flex">
